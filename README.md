@@ -33,8 +33,8 @@ def Fun():
     print("I Have More than 400+ problem solved on leetcode 😎" + " GFG .")
     print("I am also 3 ⭐⭐⭐ on codechef")
 
-  print("I learned a lot from the open-source 🆓 community " + " 
-  I love would to collaboration & share my knowledge through open-source.")
+  print("I learned a lot from the open-source 🆓 community " +  
+  "I love would to collaboration & share my knowledge through open-source.")
   
 Fun()
 ```
