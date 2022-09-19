@@ -12,7 +12,7 @@
 ![Visitors](https://komarev.com/ghpvc/?username=shubhamj010)
 [![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=102)](https://github.com/sindresorhus/awesome)
 
-### Myself Shubham Jha a passionate self-taught web developer and a software engineer from india., I am a community guy who loves technology and see myself as tech enthoziast.
+### Myself Shubham Jha a passionate self-taught web developer and a  4th year software engineering student from india and 4th year engineering student., I am a community guy who loves technology and see myself as tech enthoziast.
 
 <hr>
 <br>
@@ -24,14 +24,16 @@
 
 def Fun():
   print("I am a versatilist and easily adapt to different hats (Full Stack Web Developer 🌐,
-  Currently learning ML Engineer 🤖 | beginner level Designer 🎨) depending on what the project requires.") 
+  Currently learning React Farmworks 🤖 | beginner level Designer 🎨) depending on what the project requires.") 
 
   print("I love exploring new tech stack 💻 & leveraging them to build cool stuffs 🛠️.")
 
   for _ in range(inf):
     print("I am also an open-source 🌏 enthusiast" +" Foss supporter.")
+    print("I Have More than 400+ problem solved on leetcode 😎" + " GFG .")
+    print("I am also 3 ⭐⭐⭐ on codechef")
 
-  print("I learned a lot from the open-source🆓 community " + " 
+  print("I learned a lot from the open-source 🆓 community " + " 
   I love would to collaboration & share my knowledge through open-source.")
   
 Fun()
@@ -50,7 +52,7 @@ Fun()
 
 - 🤝 &nbsp; I’m looking forward to meet new delevloper such as myself
 
-- 🌱 &nbsp; I’m currently learning ML and Firbase
+- 🌱 &nbsp; I’m currently learning Flask and Firbase and also practicing CP sheet of Striver as well.
 
 - 👨🏻‍💻 &nbsp; Most of my projects are available on [Github](https://github.com/shubhamj010?tab=repositories)
 
