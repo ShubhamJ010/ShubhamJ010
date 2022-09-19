@@ -95,8 +95,7 @@ I love would to collaboration & share my knowledge through open-source.")
 
 
 
-<br><br>
+<br>
 
-
-
-<img align="center" alt="GIF" src="assets/123.png" width="250px"/>
+### 💼 My Projects:
+<img style=" text-align: center;" alt="GIF" src="assets/123.png" width="250px"/>
