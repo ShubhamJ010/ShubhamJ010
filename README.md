@@ -6,26 +6,32 @@
 </a>	<a href="https://www.linkedin.com/in/shubham-jha-2742b5167/">
   <img align="left" alt="Shubham's LinkedIN" width="22px" src="https://raw.githubusercontent.com/peterthehan/peterthehan/master/assets/linkedin.svg" /></a><a href="https://anilist.co/user/ShubhamJha/"	>
   <img align="left" alt="Shubham's anilist" width="22px" src="https://anilist.co/img/icons/icon.svg" /></a>
-
 <br/>
+<br/>
+
+![Visitors](https://komarev.com/ghpvc/?username=shubhamj010)
+[![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=102)](https://github.com/sindresorhus/awesome)
 
 ### Myself Shubham Jha a passionate self-taught web developer and a software engineer from india., I am a community guy who loves technology and see myself as tech enthoziast.
 
 <hr>
 <br>
 
-<img style=" width: 80%;
-  float: right;
-  margin-left: 30px;" align="right" alt="GIF" src="https://raw.githubusercontent.com/rahul-jha98/rahul-jha98/main/techstack.gif" width="180px"/>
+
   
 ```python
-print("I am a versatilist and easily adapt to different hats (Full Stack Web Developer 🌐, Currently learning ML Engineer 🤖 or beginner level Designer 🎨) depending on what the project requires"). 
-I love exploring new tech stack 💻 and leveraging them to build cool stuffs 🛠️. 
-I am also an open-source 🌏 enthusiast and maintainer. i
-learned a lot from the open-source🆓 community and i love how collaboration and knowledge sharing happened through open-source.
+print("I am a versatilist and easily adapt to different hats (Full Stack Web Developer 🌐,
+Currently learning ML Engineer 🤖 | beginner level Designer 🎨) depending on what the project requires.") 
+
+print("I love exploring new tech stack 💻 & leveraging them to build cool stuffs 🛠️.")
+
+for _ in range(inf):
+  print("I am also an open-source 🌏 enthusiast" +" Foss supporter.")
+
+print("I learned a lot from the open-source🆓 community " + " 
+I love would to collaboration & share my knowledge through open-source.")
 ```
-<br/>
-<br/>
+<br/><br>
 
 
 
@@ -79,9 +85,10 @@ learned a lot from the open-source🆓 community and i love how collaboration an
 <a href='https://github.com/rahul-jha98/github-stats-transparent' align="left" >
 
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=ShubhamJ010&theme=tokyonight)](https://github.com/anuraghazra/github-readme-stats)</a>
+<img align ="right" alt="GIF" src="https://raw.githubusercontent.com/rahul-jha98/rahul-jha98/main/techstack.gif" width="250px"/>
 
-### 📊 Leetcode Stats
-
+### 📈 Leetcode Stats
+<img align ="right" alt="GIF" src="https://c.tenor.com/wjS2sXen8iMAAAAC/stonks-up-stongs.gif" width="250px"/>
 <a href='https://leetcode.com/it19077/'  align="right">
 
 ![LeetCode Stats](https://leetcard.jacoblin.cool/it19077?theme=unicorn&font=Antic%20Didone&ext=heatmap)</a>
