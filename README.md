@@ -36,9 +36,7 @@ I love would to collaboration & share my knowledge through open-source.")
 
 
 
-<img style=" width: 100%;
-  float: right;
-  margin-left: 30px;" align="right" alt="GIF" src="assets/13626.gif" width="360px"/>
+<img style="border-radius: 50%;" align="right" alt="GIF" src="assets/13626.gif" height="auto" width="300" />
 
 
 ### 🧐 More About Me: &nbsp;
@@ -88,7 +86,7 @@ I love would to collaboration & share my knowledge through open-source.")
 <img align ="right" alt="GIF" src="https://raw.githubusercontent.com/rahul-jha98/rahul-jha98/main/techstack.gif" width="250px"/>
 
 ### 📈 Leetcode Stats
-<img align ="right" alt="GIF" src="https://c.tenor.com/wjS2sXen8iMAAAAC/stonks-up-stongs.gif" width="250px"/>
+<img align ="right" alt="GIF" src="https://c.tenor.com/wjS2sXen8iMAAAAC/stonks-up-stongs.gif" width="290px"/>
 <a href='https://leetcode.com/it19077/'  align="right">
 
 ![LeetCode Stats](https://leetcard.jacoblin.cool/it19077?theme=unicorn&font=Antic%20Didone&ext=heatmap)</a>
@@ -98,4 +96,5 @@ I love would to collaboration & share my knowledge through open-source.")
 <br>
 
 ### 💼 My Projects:
-<img style=" text-align: center;" alt="GIF" src="assets/123.png" width="250px"/>
+<img align ="centre" alt="GIF" src="assets/123.png" width="250px"/>
+<p>&nbsp;&nbsp;&nbsp;</p>
