@@ -89,7 +89,7 @@ Fun()
 ### 📊 Github Stats
 <a href='https://github.com/ShubhamJ010' align="left" >
 
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=ShubhamJ010&theme=tokyonight)](https://github.com/anuraghazra/github-readme-stats)</a>
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=ShubhamJ010&theme=tokyonight)](https://github.com/ShubhamJ010)</a>
 <img align ="right" alt="GIF" src="https://raw.githubusercontent.com/rahul-jha98/rahul-jha98/main/techstack.gif" width="250px"/>
 
 ### 📈 Leetcode Stats
