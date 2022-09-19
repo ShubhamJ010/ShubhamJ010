@@ -91,7 +91,7 @@ Fun()
 
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=ShubhamJ010&theme=tokyonight)](https://github.com/ShubhamJ010)</a>
 <img align ="right" alt="GIF" src="https://raw.githubusercontent.com/rahul-jha98/rahul-jha98/main/techstack.gif" width="250px"/>
-
+<br>
 ### 📈 Leetcode Stats
 <img align ="right" alt="GIF" src="https://c.tenor.com/wjS2sXen8iMAAAAC/stonks-up-stongs.gif" width="290px"/>
 <a href='https://leetcode.com/it19077/'  align="right">
