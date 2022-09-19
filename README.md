@@ -1,16 +1,84 @@
-### Hi there 👋
+## Hi there <a href="https://www.gautamkrishnar.com/"><img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="5%"></a>, I'm Shubham Jha!
 
-<!--
-**ShubhamJ010/ShubhamJ010** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+<a href="https://www.instagram.com/shubham.j010/">
+  <img align="left" alt="Abhishek's Instagram" width="22px" src="https://raw.githubusercontent.com/hussainweb/hussainweb/main/icons/instagram.png" /></a>	<a href="https://discordapp.com/users/283568690514100225/">
+  <img align="left" alt="Abhishek's Discord" width="22px" src="https://raw.githubusercontent.com/peterthehan/peterthehan/master/assets/discord.svg" />
+</a>	<a href="https://www.linkedin.com/in/shubham-jha-2742b5167/">
+  <img align="left" alt="Abhishek's LinkedIN" width="22px" src="https://raw.githubusercontent.com/peterthehan/peterthehan/master/assets/linkedin.svg" /></a><a href="https://www.linkedin.com/in/shubham-jha-2742b5167/">	
+  <img align="left" alt="Abhishek's LinkedIN" width="22px" src="https://anilist.co/img/icons/icon.svg" />https://anilist.co/user/ShubhamJha/></a>
 
-Here are some ideas to get you started:
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+
+<br/>
+
+##### I'm Shubham a passionate self-taught web developer and a software engineer from india., I am a community guy who loves technology and see myself as tech enthoziast.
+
+<br><br>
+
+I am a versatilist and easily adapt to different hats (Full Stack Web Developer 🌐, Currently learning ML Engineer 🤖 or beginner level Designer 🎨) depending on what the project requires. I love exploring new tech stack 💻 and leveraging them to build cool stuffs 🛠️. I am also an open-source 🌏 enthusiast and maintainer. i learned a lot from the open-source🆓 community and i love how collaboration and knowledge sharing happened through open-source.
+<br/>
+<br/>
+
+<img align="left" alt="GIF" src="https://raw.githubusercontent.com/rahul-jha98/rahul-jha98/main/techstack.gif" width="360px"/><img align="right" alt="GIF" src="assets/13626.gif" width="360px"/>
+
+
+
+
+
+### 🧐 More About Me: &nbsp;
+
+- 😄   Just an avid learner :)
+
+- 🤝 &nbsp; I’m looking forward to meet new delevloper such as myself
+
+- 🌱  I’m currently learning ML
+
+- 👨🏻‍💻 &nbsp; Most of my projects are available on [Github](https://github.com/shubhamj010?tab=repositories)
+
+- 💬 &nbsp; Ask me about anything tech related, I am happy to help;
+
+- 📫 &nbsp; Feel free to ping me on [LinkedIn](https://www.linkedin.com/in/shubham-jha-2742b5167/)
+
+- 📝 &nbsp; Checkout my [resume](https://shubhamj010.github.io/MYCV/)
+
+- 💻 &nbsp; When I am free, I watch anime , manga and stuff . Checkout my [Myanimelist](https://myanimelist.net/profile/SHUBHAM_jha) and [Traktv](https://trakt.tv/users/shubham_jha10)
+
+- ⚡ Fun fact: I love playing games and I'm building PC.
+
+  
+
+<br>
+
+### 🔨 Languages and Tools:
+<a href="https://www.python.org" target="_blank"><img align="left" alt="Python" height ="42px" src="https://raw.githubusercontent.com/rahul-jha98/github_readme_icons/main/language_and_tools/square/python/python.svg"></a>
+<a href="http://www.cplusplus.org/" target="_blank"><img align="left" alt="Java" height ="42px" src="https://raw.githubusercontent.com/get-icon/geticon/fc0f660daee147afb4a56c64e12bde6486b73e39/icons/c-plusplus.svg"></a>
+<a href="https://firebase.google.com/" target="_blank"> <img align="left" src="https://raw.githubusercontent.com/rahul-jha98/github_readme_icons/main/language_and_tools/square/firebase/firebase.svg" alt="firebase" height ="42px"/> </a>
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"> <img align="left" alt="JavaScript" height ="42px"  src="https://raw.githubusercontent.com/rahul-jha98/github_readme_icons/main/language_and_tools/square/javascript/javascript.svg"> </a>
+<a href="https://reactjs.org/" target="_blank"> <img align="left" alt="React" height ="42px" src="https://raw.githubusercontent.com/rahul-jha98/github_readme_icons/main/language_and_tools/square/react/react.svg"></a>
+<a href="https://nodejs.org" target="_blank"><img align="left" alt="Node.js" height ="42px" src="https://raw.githubusercontent.com/rahul-jha98/github_readme_icons/main/language_and_tools/square/node/node.svg"></a>
+
+### <a href="https://nodejs.org" target="_blank"><img align="left" alt="Node.js" height ="42px" src="https://raw.githubusercontent.com/get-icon/geticon/fc0f660daee147afb4a56c64e12bde6486b73e39/icons/mysql.svg"></a>
+
+### <a href="https://git-scm.com/" target="_blank"> <img src="https://raw.githubusercontent.com/rahul-jha98/github_readme_icons/main/language_and_tools/square/git-scm/git-scm.svg" align="left" alt="git" height='42px'/> </a>
+<a href="https://www.figma.com/" target="_blank"> <img src="https://raw.githubusercontent.com/rahul-jha98/github_readme_icons/main/language_and_tools/square/figma/figma.svg" alt="figma" height='42px'/> </a>
+
+<br>
+
+
+### 📊 Github Stats
+<a href='https://github.com/rahul-jha98/github-stats-transparent'>
+
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=ShubhamJ010&theme=tokyonight)](https://github.com/anuraghazra/github-readme-stats)</a>
+
+### 📊 Leetcode Stats
+
+<a href='https://leetcode.com/it19077/'>
+
+![LeetCode Stats](https://leetcard.jacoblin.cool/it19077?theme=unicorn&font=Antic%20Didone&ext=heatmap)</a>
+
+
+
+<br><br>
+
+
+
