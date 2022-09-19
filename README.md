@@ -20,16 +20,21 @@
 
   
 ```python
-print("I am a versatilist and easily adapt to different hats (Full Stack Web Developer 🌐,
-Currently learning ML Engineer 🤖 | beginner level Designer 🎨) depending on what the project requires.") 
+#python
 
-print("I love exploring new tech stack 💻 & leveraging them to build cool stuffs 🛠️.")
+def Fun():
+  print("I am a versatilist and easily adapt to different hats (Full Stack Web Developer 🌐,
+  Currently learning ML Engineer 🤖 | beginner level Designer 🎨) depending on what the project requires.") 
 
-for _ in range(inf):
-  print("I am also an open-source 🌏 enthusiast" +" Foss supporter.")
+  print("I love exploring new tech stack 💻 & leveraging them to build cool stuffs 🛠️.")
 
-print("I learned a lot from the open-source🆓 community " + " 
-I love would to collaboration & share my knowledge through open-source.")
+  for _ in range(inf):
+    print("I am also an open-source 🌏 enthusiast" +" Foss supporter.")
+
+  print("I learned a lot from the open-source🆓 community " + " 
+  I love would to collaboration & share my knowledge through open-source.")
+  
+Fun()
 ```
 <br/><br>
 
