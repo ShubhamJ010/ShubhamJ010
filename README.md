@@ -43,10 +43,11 @@ Fun()
 
 
 
-<img style="border-radius: 50%;" align="right" alt="GIF" src="assets/13626.gif" height="auto" width="300" />
+
 
 
 ### 🧐 More About Me: &nbsp;
+<img style="border-radius: 50%;" align="right" alt="GIF" src="assets/13626.gif" height="auto" width="300" />
 
 - 😄 &nbsp; Just an avid learner :)
 
@@ -103,5 +104,4 @@ Fun()
 <br>
 
 ### 💼 My Projects:
-<img align ="centre" alt="GIF" src="assets/123.png" width="180px"/>
-<p>&nbsp;&nbsp;&nbsp;</p>
+<p></p><img align ="right" alt="GIF" src="assets/123.png" width="180px"/>
