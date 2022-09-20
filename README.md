@@ -104,4 +104,4 @@ Fun()
 <br>
 
 ### 💼 My Projects:
-<p></p><img align ="right" alt="GIF" src="assets/123.png" width="180px"/>
+<p align="center"><img  alt="GIF" src="assets/123.png" width="180px"/></p>
