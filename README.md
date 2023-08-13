@@ -2,9 +2,9 @@
 
 <a href="https://www.instagram.com/shubham.j010/">
   <img align="left" alt="Shubham's Instagram" width="22px" src="https://raw.githubusercontent.com/hussainweb/hussainweb/main/icons/instagram.png" /></a>	<a href="https://discordapp.com/users/283568690514100225/">
-  <img align="left" alt="shubham's Discord" width="22px" src="https://raw.githubusercontent.com/peterthehan/peterthehan/master/assets/discord.svg" />
+  <img align="left" alt="shubham's Discord" width="22px" src="https://www.svgrepo.com/show/353655/discord-icon.svg" />
 </a>	<a href="https://www.linkedin.com/in/shubham-jha-2742b5167/">
-  <img align="left" alt="Shubham's LinkedIN" width="22px" src="https://raw.githubusercontent.com/peterthehan/peterthehan/master/assets/linkedin.svg" /></a><a href="https://anilist.co/user/ShubhamJha/"	>
+  <img align="left" alt="Shubham's LinkedIN" width="22px" src="https://www.svgrepo.com/show/469190/linkedin.svg" /></a><a href="https://anilist.co/user/ShubhamJha/"	>
   <img align="left" alt="Shubham's anilist" width="22px" src="https://anilist.co/img/icons/icon.svg" /></a>
 <br/>
 <br/>
