@@ -12,7 +12,7 @@
 ![Visitors](https://komarev.com/ghpvc/?username=shubhamj010)
 [![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=102)](https://github.com/sindresorhus/awesome)
 
-### Myself Shubham Jha a passionate self-taught web developer and 4th year software engineering student from india., I am a community guy who loves technology and see myself as tech enthoziast.
+### I'm Shubham Jha: A passionate and dedicated self-taught web developer specializing in Java and Python, with expertise in React and Angular UI design, excelling in software implementation and delivering robust solutions.
 
 <hr>
 <br>
