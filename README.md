@@ -82,7 +82,7 @@ Fun()
 <a href="https://nodejs.org" target="_blank"><img align="left" alt="Node.js" height ="42px" src="https://www.svgrepo.com/show/448236/linux.svg"></a>
 <a href="https://nodejs.org" target="_blank"><img align="left" alt="Node.js" height ="42px" src="https://www.svgrepo.com/show/452156/angular.svg"></a>
 <a href="https://nodejs.org" target="_blank"><img align="left" alt="Node.js" height ="42px" src="https://www.svgrepo.com/show/448221/docker.svg"></a>
-<a href="https://nodejs.org" target="_blank"><img align="left" alt="Node.js" height ="42px" src="https://www.svgrepo.com/show/448236/linux.svg"></a>
+<!-- <a href="https://nodejs.org" target="_blank"><img align="left" alt="Node.js" height ="42px" src="https://www.svgrepo.com/show/448236/linux.svg"></a> -->
 
 ### <a href="https://nodejs.org" target="_blank"><img align="left" alt="Node.js" height ="42px" src="https://raw.githubusercontent.com/get-icon/geticon/fc0f660daee147afb4a56c64e12bde6486b73e39/icons/mysql.svg"></a>
 
