@@ -11,6 +11,7 @@
 
 ![Visitors](https://komarev.com/ghpvc/?username=shubhamj010)
 [![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=102)](https://github.com/sindresorhus/awesome)
+[![LinkedIn Badge](https://img.shields.io/badge/LinkedIn-Shubham%20Jha-blue?style=flat-square&logo=linkedin)](https://in.linkedin.com/in/shubhamj010?trk=profile-badge)
 
 ### I'm Shubham Jha: A passionate and dedicated self-taught web developer specializing in Java and Python, with expertise in React and Angular UI design, excelling in software implementation and delivering robust solutions.
 
@@ -103,8 +104,6 @@ Fun()
 <a href='https://leetcode.com/it19077/'  align="right">
 
 ![LeetCode Stats](https://leetcard.jacoblin.cool/it19077?theme=unicorn&font=Antic%20Didone&ext=heatmap)</a>
-
-
 
 <br>
 
