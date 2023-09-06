@@ -62,7 +62,7 @@ Fun()
 
 - 📫 &nbsp; Feel free to ping me on [LinkedIn](https://www.linkedin.com/in/shubham-jha-2742b5167/)
 
-- 📝 &nbsp; Checkout my [resume](https://shubhamj010.github.io/MYCV/)
+- 📝 &nbsp; Checkout my [resume](https://flowcv.com/resume/cqqqb67qrh)
 - ⚡ Fun fact: I love playing games and building PC.
 
 - 💻 &nbsp; When I am free, I watch anime , manga and stuff . Checkout my [Myanimelist](https://myanimelist.net/profile/SHUBHAM_jha) and [Traktv](https://trakt.tv/users/shubham_jha10)
