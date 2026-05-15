@@ -88,8 +88,8 @@ public final class Shubham implements JavaDeveloper, AnimeEnjoyer, NightCoder {
 | 📂 **Repos** | 16 (pub) / 0 (priv) |
 | ⭐ **Stars** | 12 received |
 | 🌟 **Starred** | 1 repositories |
-| 🚀 **Last Commit** | youtube-music-scrobbler |
-| 📅 **Updated** | 2026-05-16 04:51 |
+| 🚀 **Last Commit** | ShubhamJ010 |
+| 📅 **Updated** | 2026-05-15 23:37 |
 
 <!--END_GITHUB_STATS-->
 
