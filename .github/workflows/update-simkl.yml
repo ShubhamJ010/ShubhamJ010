@@ -2,7 +2,7 @@ name: update-simkl
 
 on:
   schedule:
-    - cron: '0 */6 * * *'
+    - cron: '0 12 1 * *'
   workflow_dispatch:
 
 jobs:
@@ -82,7 +82,7 @@ jobs:
                   flags=re.DOTALL,
               )
           else:
-              content += f"\n\n## JustRated\n\n{new_block}\n"
+              content += f"\n\n\n<!--START_SIMKL-->\n{stats_md}\n<!--END_SIMKL-->\n"
 
           with open(readme_path, "w") as f:
               f.write(content)

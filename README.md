@@ -69,17 +69,17 @@ public final class Shubham implements JavaDeveloper, AnimeEnjoyer, NightCoder {
   <img alt="Linux" height="36" src="https://www.svgrepo.com/show/448236/linux.svg" />
 </p>
 
-## Listening
-
-[![Last.fm](https://lastfm-recently-played.vercel.app/api?user=Shubham_jha&count=1&width=400)](https://www.last.fm/user/Shubham_jha)
-
 ## GitHubStats
 
 <!--START_SECTION:waka-->
 *Stats will auto-populate once the GitHub Action runs (needs WakaTime + GH_TOKEN setup).*
 <!--END_SECTION:waka-->
 
-## JustRated
+## just-played
+
+[![Last.fm](https://lastfm-recently-played.vercel.app/api?user=Shubham_jha&count=1&width=400)](https://www.last.fm/user/Shubham_jha)
+
+## justWatched
 
 <!--START_SIMKL-->
 *Set `SIMKL_CLIENT_ID` secret to show Simkl stats.*
@@ -87,7 +87,7 @@ public final class Shubham implements JavaDeveloper, AnimeEnjoyer, NightCoder {
 
 ## MySocials
 
-<p style="display: flex; align-items: center; gap: 16px; flex-wrap: wrap;">
+<p style="display: flex; justify-content: center; align-items: center; gap: 20px; flex-wrap: wrap;">
   <a href="https://github.com/shubhamj010"><img alt="GitHub" height="28" src="https://www.svgrepo.com/show/475654/github-color.svg" /></a>
   <a href="https://www.linkedin.com/in/shubham-jha-2742b5167/"><img alt="LinkedIn" height="28" src="https://www.svgrepo.com/show/469190/linkedin.svg" /></a>
   <a href="https://www.instagram.com/shubham.j010/"><img alt="Instagram" height="28" src="https://www.svgrepo.com/show/452229/instagram-1.svg" /></a>
@@ -95,4 +95,5 @@ public final class Shubham implements JavaDeveloper, AnimeEnjoyer, NightCoder {
   <a href="https://anilist.co/user/ShubhamJha/"><img alt="AniList" height="28" src="https://anilist.co/img/icons/icon.svg" /></a>
   <a href="https://simkl.com/2218813/?utm_source=twitter&utm_medium=StatsAll&utm_campaign=Share#stats"><img alt="Simkl" height="28" src="https://cdn.simpleicons.org/simkl/ffffff" /></a>
   <a href="https://myanimelist.net/profile/SHUBHAM_jha"><img alt="MyAnimeList" height="28" src="https://cdn.myanimelist.net/images/favicon.ico" /></a>
+</p>
 
