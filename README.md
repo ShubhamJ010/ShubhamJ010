@@ -76,7 +76,13 @@ public final class Shubham implements JavaDeveloper, AnimeEnjoyer, NightCoder {
 ## justWatched
 
 <!--START_SIMKL-->
-*Set `SIMKL_CLIENT_ID` secret to show Simkl stats.*
+> 🎬 **7250h 18m** total watched across all services
+>
+> 🎥 **Movies:** 355 completed (755h 20m)
+> 🎥 **Tv:** 113 completed (3429h 2m)
+> 📺 **Watching:** 5 tv (168 eps)
+> 🎥 **Anime:** 379 completed (3065h 56m)
+> 📺 **Watching:** 4 anime (36 eps)
 <!--END_SIMKL-->
 
 ## GithubStats
