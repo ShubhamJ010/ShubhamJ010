@@ -1,0 +1,99 @@
+name: update-simkl
+
+on:
+  schedule:
+    - cron: '0 */6 * * *'
+  workflow_dispatch:
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Fetch & format Simkl stats
+        env:
+          SIMKL_CLIENT_ID: ${{ secrets.SIMKL_CLIENT_ID }}
+        run: |
+          python3 << 'PYEOF'
+          import json, os, re, urllib.request
+
+          client_id = os.environ.get("SIMKL_CLIENT_ID")
+          user_id = "2218813"
+          stats_md = ""
+
+          if not client_id:
+              stats_md = "> Set `SIMKL_CLIENT_ID` secret to show Simkl stats."
+          else:
+              try:
+                  url = f"https://api.simkl.com/users/{user_id}/stats?client_id={client_id}"
+                  req = urllib.request.Request(url)
+                  req.add_header("Accept", "application/json")
+                  resp = urllib.request.urlopen(req, timeout=15)
+                  d = json.loads(resp.read())
+
+                  total_mins = d.get("total_mins", 0)
+                  h, m = divmod(total_mins, 60)
+
+                  lines = [f"> 🎬 **{h}h {m}m** total watched across all services\n>"]
+
+                  for category in ("movies", "tv", "anime"):
+                      cat = d.get(category)
+                      if not cat:
+                          continue
+                      total_cat = cat.get("total_mins", 0)
+                      ch, cm = divmod(total_cat, 60)
+                      completed = cat.get("completed", {}) or {}
+                      completed_count = completed.get("count", 0)
+                      completed_mins = completed.get("mins", 0)
+                      label = category.capitalize()
+
+                      if completed_count:
+                          lines.append(f"> 🎥 **{label}:** {completed_count} completed ({ch}h {cm}m)")
+
+                      watching = cat.get("watching", {}) or {}
+                      watching_count = watching.get("count", 0)
+                      if watching_count:
+                          ep_count = watching.get("watched_episodes_count", 0)
+                          lines.append(f"> 📺 **Watching:** {watching_count} {label.lower()} ({ep_count} eps)")
+
+                  last_week = d.get("watched_last_week", {}) or {}
+                  lw_mins = last_week.get("total_mins", 0)
+                  if lw_mins:
+                      lh, lm = divmod(lw_mins, 60)
+                      lines.append(f">\n> 📅 **Last week:** {lh}h {lm}m")
+
+                  stats_md = "\n".join(lines)
+
+              except Exception as e:
+                  stats_md = f"> Simkl stats unavailable (error: {e})"
+
+          readme_path = "README.md"
+          with open(readme_path) as f:
+              content = f.read()
+
+          new_block = f"<!--START_SIMKL-->\n{stats_md}\n<!--END_SIMKL-->"
+
+          if "<!--START_SIMKL-->" in content:
+              content = re.sub(
+                  r"<!--START_SIMKL-->.*?<!--END_SIMKL-->",
+                  new_block,
+                  content,
+                  flags=re.DOTALL,
+              )
+          else:
+              content += f"\n\n## JustRated\n\n{new_block}\n"
+
+          with open(readme_path, "w") as f:
+              f.write(content)
+
+          print("README updated with Simkl stats")
+          PYEOF
+
+      - name: Commit changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          git diff --staged --quiet || git commit -m "Update Simkl stats"
+          git push
