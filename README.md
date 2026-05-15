@@ -69,12 +69,6 @@ public final class Shubham implements JavaDeveloper, AnimeEnjoyer, NightCoder {
   <img alt="Linux" height="36" src="https://www.svgrepo.com/show/448236/linux.svg" />
 </p>
 
-## GitHubStats
-
-<!--START_SECTION:waka-->
-*Stats will auto-populate once the GitHub Action runs (needs WakaTime + GH_TOKEN setup).*
-<!--END_SECTION:waka-->
-
 ## just-played
 
 [![Last.fm](https://lastfm-recently-played.vercel.app/api?user=Shubham_jha&count=1&width=400)](https://www.last.fm/user/Shubham_jha)
@@ -84,6 +78,20 @@ public final class Shubham implements JavaDeveloper, AnimeEnjoyer, NightCoder {
 <!--START_SIMKL-->
 *Set `SIMKL_CLIENT_ID` secret to show Simkl stats.*
 <!--END_SIMKL-->
+
+## GithubStats
+
+<!--START_GITHUB_STATS-->
+
+| **shubhamj010 @ github** | |
+| :--- | :--- |
+| 📂 **Repos** | 16 (pub) / 0 (priv) |
+| ⭐ **Stars** | 12 received |
+| 🌟 **Starred** | 1 repositories |
+| 🚀 **Last Commit** | youtube-music-scrobbler |
+| 📅 **Updated** | 2026-05-16 04:51 |
+
+<!--END_GITHUB_STATS-->
 
 ## MySocials
 
