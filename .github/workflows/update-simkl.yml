@@ -62,7 +62,6 @@ jobs:
                           title = item.get("title")
                           rating = item.get("ratings", {}).get("simkl", {}).get("rating")
                           
-                          lines.append(f"🎬 **justPlayed**")
                           lines.append(f"**Name:** {title}")
                           
                           if rating:

@@ -47,19 +47,19 @@ public final class Shubham implements JavaDeveloper, AnimeEnjoyer, NightCoder {
   <img alt="Linux" height="36" src="https://www.svgrepo.com/show/448236/linux.svg" />
 </p>
 
-## 🎧 Music & 🎬 Movies
+## 🎬 justPlayed
 
 <table width="100%">
   <tr>
-    <td width="400" align="center">
+    <td width="50%" align="center">
       <a href="https://www.last.fm/user/Shubham_jha">
         <img src="https://lastfm-recently-played.vercel.app/api?user=Shubham_jha&count=1&width=400" alt="Last.fm" />
       </a>
     </td>
-    <td align="left">
+    <td width="50%" align="left">
       <!--START_SIMKL-->
-
-<!--END_SIMKL-->
+      **Name:** Fetching...<br>**Rating:** ⭐⭐⭐ (out of 10 / 0 stars)
+      <!--END_SIMKL-->
       <br>
       <a href="https://simkl.com/2218813/?utm_source=twitter&utm_medium=StatsAll&utm_campaign=Share#stats"><img alt="Simkl" height="20" src="https://cdn.simpleicons.org/simkl/ffffff" /></a>&nbsp;&nbsp;
       <a href="https://anilist.co/user/ShubhamJha/"><img alt="AniList" height="20" src="https://cdn.simpleicons.org/anilist/02A9FF" /></a>&nbsp;&nbsp;
