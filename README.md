@@ -89,8 +89,8 @@ public final class Shubham implements JavaDeveloper, AnimeEnjoyer, NightCoder {
     </td>
     <td align="left">
       <!--START_SIMKL-->
-      *Set `SIMKL_CLIENT_ID` secret to show Simkl stats.*
-      <!--END_SIMKL-->
+🎬 **7250h 18m** total watched
+<!--END_SIMKL-->
       <br>
       <a href="https://simkl.com/2218813/?utm_source=twitter&utm_medium=StatsAll&utm_campaign=Share#stats"><img alt="Simkl" height="20" src="https://cdn.simpleicons.org/simkl/ffffff" /></a>&nbsp;&nbsp;
       <a href="https://anilist.co/user/ShubhamJha/"><img alt="AniList" height="20" src="https://cdn.simpleicons.org/anilist/02A9FF" /></a>&nbsp;&nbsp;
