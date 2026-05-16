@@ -82,10 +82,10 @@ async function genImage(octokit: Octokit, outDir = "out") {
   const palette = colors.palette.map(hexToRgb);
   const fontSize = 16;
 
-  const fontPath = join(__dirname, "..", "fonts", "ff-tisa-web-pro.ttf");
+  const fontPath = join(__dirname, "..", "fonts", "JetBrainsMono-Bold.ttf");
   let fontRegistered = false;
   try {
-    GlobalFonts.registerFromPath(fontPath, "Mono");
+    GlobalFonts.registerFromPath(fontPath, "JetBrainsMono");
     fontRegistered = true;
   } catch {
     console.warn("  custom font not found, using system default");
@@ -100,7 +100,7 @@ async function genImage(octokit: Octokit, outDir = "out") {
     ctx.fillStyle = `rgb(${bgColor[0]}, ${bgColor[1]}, ${bgColor[2]})`;
     ctx.fillRect(0, 0, canvasWidth, canvasHeight);
 
-    const fontFace = fontRegistered ? "16px Mono" : "16px monospace";
+    const fontFace = fontRegistered ? "bold 16px JetBrainsMono" : "bold 16px monospace";
     ctx.font = fontFace;
 
     const lines = fetch.split("\n");
