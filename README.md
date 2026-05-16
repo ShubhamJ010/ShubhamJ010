@@ -81,5 +81,5 @@ public final class Shubham implements JavaDeveloper, AnimeEnjoyer, NightCoder {
 <!--END_GITHUB_STATS-->
 
 
-<p align="center"><img src="assets/arrow.png" alt="arrow" /></p>
+<p align="center"><img src="assets/arrow.svg" alt="arrow" height="20" /></p>
 <p align="center">𐌔💖𐌍</p>
