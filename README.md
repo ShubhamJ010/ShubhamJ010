@@ -116,5 +116,8 @@ public final class Shubham implements JavaDeveloper, AnimeEnjoyer, NightCoder {
 ## MySocials
 
 <p style="display: flex; justify-content: center; align-items: center; gap: 20px; flex-wrap: wrap;">
+  <a href="https://x.com/shubham_j010"><img alt="Twitter" height="28" src="https://cdn.simpleicons.org/x/000000" /></a>
+  <a href="https://www.reddit.com/user/Shubham_Jha/"><img alt="Reddit" height="28" src="https://www.svgrepo.com/show/452094/reddit.svg" /></a>
+  <a href="https://discordapp.com/users/283568690514100225/"><img alt="Discord" height="28" src="https://cdn.simpleicons.org/discord/5865F2" /></a>
   <a href="https://www.instagram.com/shubham.j010/"><img alt="Instagram" height="28" src="https://cdn.simpleicons.org/instagram/E4405F" /></a>
 </p>
