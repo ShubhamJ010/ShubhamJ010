@@ -1,4 +1,15 @@
-## Hi there <a href=""><img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="5%"></a>, I'm Shubham Jha!
+<table width="100%">
+  <tr>
+    <td align="left">
+      <h2>Hi there <a href=""><img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="5%"></a>, I'm Shubham Jha!</h2>
+    </td>
+    <td align="right">
+      <a href="https://x.com/shubham_j010"><img alt="Twitter" height="20" src="https://cdn.simpleicons.org/x/000000" /></a>&nbsp;&nbsp;
+      <a href="https://www.reddit.com/user/Shubham_Jha/"><img alt="Reddit" height="20" src="https://www.svgrepo.com/show/452094/reddit.svg" /></a>&nbsp;&nbsp;
+      <a href="https://discordapp.com/users/283568690514100225/"><img alt="Discord" height="20" src="https://cdn.simpleicons.org/discord/5865F2" /></a>
+    </td>
+  </tr>
+</table>
 
 <a href="https://flowcv.com/resume/cqqqb67qrh" target="_blank">
   <img src="assets/ sj.png" alt="Shubham Jha">
@@ -43,9 +54,7 @@ public final class Shubham implements JavaDeveloper, AnimeEnjoyer, NightCoder {
   <img alt="Python" height="36" src="https://www.svgrepo.com/show/452091/python.svg" />
   <img alt="GitHub" height="36" src="https://www.svgrepo.com/show/475654/github-color.svg" />
   <img alt="Android" height="36" src="https://www.svgrepo.com/show/475631/android-color.svg" />
-  <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="36" height="44" viewBox="0 0 814 1000" style="vertical-align: middle;">
-    <path d="M788.1 340.9c-5.8 4.5-108.2 62.2-108.2 190.5 0 148.4 130.3 200.9 134.2 202.2-.6 3.2-20.7 71.9-68.7 141.9-42.8 61.6-87.5 123.1-155.5 123.1s-85.5-39.5-164-39.5c-76.5 0-103.7 40.8-165.9 40.8s-105.6-57-155.5-127C46.7 790.7 0 663 0 541.8c0-194.4 126.4-297.5 250.8-297.5 66.1 0 121.2 43.4 162.7 43.4 39.5 0 101.1-46 176.3-46 28.5 0 130.9 2.6 198.3 99.2zm-234-181.5c31.1-36.9 53.1-88.1 53.1-139.3 0-7.1-.6-14.3-1.9-20.1-50.6 1.9-110.8 33.7-147.1 75.8-28.5 32.4-55.1 83.6-55.1 135.5 0 7.8 1.3 15.6 1.9 18.1 3.2.6 8.4 1.3 13.6 1.3 45.4 0 102.5-30.4 135.5-71.3z"/>
-  </svg>
+  <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" height="36" viewBox="0 0 814 1000" style="vertical-align: middle;"><path d="M788.1 340.9c-5.8 4.5-108.2 62.2-108.2 190.5 0 148.4 130.3 200.9 134.2 202.2-.6 3.2-20.7 71.9-68.7 141.9-42.8 61.6-87.5 123.1-155.5 123.1s-85.5-39.5-164-39.5c-76.5 0-103.7 40.8-165.9 40.8s-105.6-57-155.5-127C46.7 790.7 0 663 0 541.8c0-194.4 126.4-297.5 250.8-297.5 66.1 0 121.2 43.4 162.7 43.4 39.5 0 101.1-46 176.3-46 28.5 0 130.9 2.6 198.3 99.2zm-234-181.5c31.1-36.9 53.1-88.1 53.1-139.3 0-7.1-.6-14.3-1.9-20.1-50.6 1.9-110.8 33.7-147.1 75.8-28.5 32.4-55.1 83.6-55.1 135.5 0 7.8 1.3 15.6 1.9 18.1 3.2.6 8.4 1.3 13.6 1.3 45.4 0 102.5-30.4 135.5-71.3z"/></svg>
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 70" width="50" height="44" style="vertical-align: middle;">
     <path d="M71.09 20.74c-.16-.17-.33-.34-.5-.5s-.33-.34-.5-.5-.33-.34-.5-.5-.33-.34-.5-.5-.33-.34-.5-.5-.33-.34-.5-.5-.33-.34-.5-.5A26.46 26.46 0 0 1 75.5 35.7c0 16.57-16.82 30.05-37.5 30.05-11.58 0-21.94-4.23-28.83-10.86l.5.5.5.5.5.5.5.5.5.5.5.5.5.5C19.55 65.3 30.14 69.75 42 69.75c20.68 0 37.5-13.48 37.5-30 0-7.06-3.04-13.75-8.41-19.01Z"/>
     <path d="M73 35.7c0 15.21-15.67 27.54-35 27.54S3 50.91 3 35.7C3 26.27 9 17.94 18.22 13S33.18 3 38 3s8.94 4.13 19.78 10C67 17.94 73 26.27 73 35.7Z" style="fill:#fbf0df"/>
@@ -69,15 +78,26 @@ public final class Shubham implements JavaDeveloper, AnimeEnjoyer, NightCoder {
   <img alt="Linux" height="36" src="https://www.svgrepo.com/show/448236/linux.svg" />
 </p>
 
-## just-played
+## 🎧 Music & 🎬 Movies
 
-[![Last.fm](https://lastfm-recently-played.vercel.app/api?user=Shubham_jha&count=1&width=400)](https://www.last.fm/user/Shubham_jha)
-
-## justWatched
-
-<!--START_SIMKL-->
-*Set `SIMKL_CLIENT_ID` secret to show Simkl stats.*
-<!--END_SIMKL-->
+<table width="100%">
+  <tr>
+    <td width="400" align="center">
+      <a href="https://www.last.fm/user/Shubham_jha">
+        <img src="https://lastfm-recently-played.vercel.app/api?user=Shubham_jha&count=1&width=400" alt="Last.fm" />
+      </a>
+    </td>
+    <td align="left">
+      <!--START_SIMKL-->
+      *Set `SIMKL_CLIENT_ID` secret to show Simkl stats.*
+      <!--END_SIMKL-->
+      <br>
+      <a href="https://simkl.com/2218813/?utm_source=twitter&utm_medium=StatsAll&utm_campaign=Share#stats"><img alt="Simkl" height="20" src="https://cdn.simpleicons.org/simkl/ffffff" /></a>&nbsp;&nbsp;
+      <a href="https://anilist.co/user/ShubhamJha/"><img alt="AniList" height="20" src="https://cdn.simpleicons.org/anilist/02A9FF" /></a>&nbsp;&nbsp;
+      <a href="https://myanimelist.net/profile/SHUBHAM_jha"><img alt="MyAnimeList" height="20" src="https://cdn.myanimelist.net/images/favicon.ico" /></a>
+    </td>
+  </tr>
+</table>
 
 ## GithubStats
 
@@ -96,68 +116,5 @@ public final class Shubham implements JavaDeveloper, AnimeEnjoyer, NightCoder {
 ## MySocials
 
 <p style="display: flex; justify-content: center; align-items: center; gap: 20px; flex-wrap: wrap;">
-  <a href="https://github.com/shubhamj010"><img alt="GitHub" height="28" src="https://www.svgrepo.com/show/475654/github-color.svg" /></a>
-  <a href="https://x.com/shubham_j010"><svg viewBox="0 0 256 209" width="28" height="28" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid"><path d="M256 25.45c-9.42 4.177-19.542 7-30.166 8.27 10.845-6.5 19.172-16.793 23.093-29.057a105.183 105.183 0 0 1-33.351 12.745C205.995 7.201 192.346.822 177.239.822c-29.006 0-52.523 23.516-52.523 52.52 0 4.117.465 8.125 1.36 11.97-43.65-2.191-82.35-23.1-108.255-54.876-4.52 7.757-7.11 16.78-7.11 26.404 0 18.222 9.273 34.297 23.365 43.716a52.312 52.312 0 0 1-23.79-6.57c-.003.22-.003.44-.003.661 0 25.447 18.104 46.675 42.13 51.5a52.592 52.592 0 0 1-23.718.9c6.683 20.866 26.08 36.05 49.062 36.475-17.975 14.086-40.622 22.483-65.228 22.483-4.24 0-8.42-.249-12.529-.734 23.243 14.902 50.85 23.597 80.51 23.597 96.607 0 149.434-80.031 149.434-149.435 0-2.278-.05-4.543-.152-6.795A106.748 106.748 0 0 0 256 25.45" fill="#55acee"/></svg></a>
-  <a href="https://www.reddit.com/user/Shubham_Jha/"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 216 216" width="28" height="28">
-    <defs>
-        <radialGradient id="r-snoo-radial" cx="169.75" cy="92.19" r="50.98" fx="169.75" fy="92.19" gradientTransform="matrix(1 0 0 .87 0 11.64)" gradientUnits="userSpaceOnUse">
-            <stop offset="0" stop-color="#feffff"/>
-            <stop offset=".4" stop-color="#feffff"/>
-            <stop offset=".51" stop-color="#f9fcfc"/>
-            <stop offset=".62" stop-color="#edf3f5"/>
-            <stop offset=".7" stop-color="#dee9ec"/>
-            <stop offset=".72" stop-color="#d8e4e8"/>
-            <stop offset=".76" stop-color="#ccd8df"/>
-            <stop offset=".8" stop-color="#c8d5dd"/>
-            <stop offset=".83" stop-color="#ccd6de"/>
-            <stop offset=".85" stop-color="#d8dbe2"/>
-            <stop offset=".88" stop-color="#ede3e9"/>
-            <stop offset=".9" stop-color="#ffebef"/>
-        </radialGradient>
-        <radialGradient xlink:href="#r-snoo-radial" id="r-snoo-radial-2" cx="47.31" r="50.98" fx="47.31"/>
-        <radialGradient xlink:href="#r-snoo-radial" id="r-snoo-radial-3" cx="109.61" cy="85.59" r="153.78" fx="109.61" fy="85.59" gradientTransform="matrix(1 0 0 .7 0 25.56)"/>
-        <radialGradient id="r-snoo-radial-4" cx="-6.01" cy="64.68" r="12.85" fx="-6.01" fy="64.68" gradientTransform="matrix(1.07 0 0 1.55 81.08 27.26)" gradientUnits="userSpaceOnUse">
-            <stop offset="0" stop-color="#f60"/>
-            <stop offset=".5" stop-color="#ff4500"/>
-            <stop offset=".7" stop-color="#fc4301"/>
-            <stop offset=".82" stop-color="#f43f07"/>
-            <stop offset=".92" stop-color="#e53812"/>
-            <stop offset="1" stop-color="#d4301f"/>
-        </radialGradient>
-        <radialGradient xlink:href="#r-snoo-radial-4" id="r-snoo-radial-5" cx="-73.55" cy="64.68" r="12.85" fx="-73.55" fy="64.68" gradientTransform="matrix(-1.07 0 0 1.55 62.87 27.26)"/>
-        <radialGradient id="r-snoo-radial-6" cx="107.93" cy="166.96" r="45.3" fx="107.93" fy="166.96" gradientTransform="matrix(1 0 0 .66 0 57.4)" gradientUnits="userSpaceOnUse">
-            <stop offset="0" stop-color="#172e35"/>
-            <stop offset=".29" stop-color="#0e1c21"/>
-            <stop offset=".73" stop-color="#030708"/>
-            <stop offset="1"/>
-        </radialGradient>
-        <radialGradient xlink:href="#r-snoo-radial" id="r-snoo-radial-7" cx="147.88" cy="32.94" r="39.77" fx="147.88" fy="32.94" gradientTransform="matrix(1 0 0 .98 0 .54)"/>
-        <radialGradient id="r-snoo-radial-8" cx="131.31" cy="73.08" r="32.6" fx="131.31" fy="73.08" gradientUnits="userSpaceOnUse">
-            <stop offset=".48" stop-color="#7a9299"/>
-            <stop offset=".67" stop-color="#172e35"/>
-            <stop offset=".75"/>
-            <stop offset=".82" stop-color="#172e35"/>
-        </radialGradient>
-        <style>.r-snoo-cls-11{stroke-width:0;fill:#ffc49c}</style>
-    </defs>
-    <path fill="#ff4500" stroke-width="0" d="M108 0C48.35 0 0 48.35 0 108c0 29.82 12.09 56.82 31.63 76.37l-20.57 20.57C6.98 209.02 9.87 216 15.64 216H108c59.65 0 108-48.35 108-108S167.65 0 108 0Z"/>
-    <circle cx="169.22" cy="106.98" r="25.22" fill="url(#r-snoo-radial)" stroke-width="0"/>
-    <circle cx="46.78" cy="106.98" r="25.22" fill="url(#r-snoo-radial-2)" stroke-width="0"/>
-    <ellipse cx="108.06" cy="128.64" fill="url(#r-snoo-radial-3)" stroke-width="0" rx="72" ry="54"/>
-    <path fill="url(#r-snoo-radial-4)" stroke-width="0" d="M86.78 123.48c-.42 9.08-6.49 12.38-13.56 12.38s-12.46-4.93-12.04-14.01c.42-9.08 6.49-15.02 13.56-15.02s12.46 7.58 12.04 16.66Z"/>
-    <path fill="url(#r-snoo-radial-5)" stroke-width="0" d="M129.35 123.48c.42 9.08 6.49 12.38 13.56 12.38s12.46-4.93 12.04-14.01c-.42-9.08-6.49-15.02-13.56-15.02s-12.46 7.58-12.04 16.66Z"/>
-    <ellipse cx="79.63" cy="116.37" class="r-snoo-cls-11" rx="2.8" ry="3.05"/>
-    <ellipse cx="146.21" cy="116.37" class="r-snoo-cls-11" rx="2.8" ry="3.05"/>
-    <path fill="url(#r-snoo-radial-6)" stroke-width="0" d="M108.06 142.92c-8.76 0-17.16.43-24.92 1.22-1.33.13-2.17 1.51-1.65 2.74 4.35 10.39 14.61 17.69 26.57 17.69s22.23-7.3 26.57-17.69c.52-1.23-.33-2.61-1.65-2.74-7.77-.79-16.16-1.22-24.92-1.22Z"/>
-    <circle cx="147.49" cy="49.43" r="17.87" fill="url(#r-snoo-radial-7)" stroke-width="0"/>
-    <path fill="url(#r-snoo-radial-8)" stroke-width="0" d="M107.8 76.92c-2.14 0-3.87-.89-3.87-2.27 0-16.01 13.03-29.04 29.04-29.04 2.14 0 3.87 1.73 3.87 3.87s-1.73 3.87-3.87 3.87c-11.74 0-21.29 9.55-21.29 21.29 0 1.38-1.73 2.27-3.87 2.27Z"/>
-    <path fill="#842123" stroke-width="0" d="M62.82 122.65c.39-8.56 6.08-14.16 12.69-14.16 6.26 0 11.1 6.39 11.28 14.33.17-8.88-5.13-15.99-12.05-15.99s-13.14 6.05-13.56 15.2c-.42 9.15 4.97 13.83 12.04 13.83h.52c-6.44-.16-11.3-4.79-10.91-13.2Zm90.48 0c-.39-8.56-6.08-14.16-12.69-14.16-6.26 0-11.1 6.39-11.28 14.33-.17-8.88 5.13-15.99 12.05-15.99 7.07 0 13.14 6.05 13.56 15.2.42 9.15-4.97 13.83-12.04 13.83h-.52c6.44-.16 11.3-4.79 10.91-13.2Z"/>
-</svg></a>
-  <a href="https://www.linkedin.com/in/shubham-jha-2742b5167/"><img alt="LinkedIn" height="28" src="https://www.svgrepo.com/show/469190/linkedin.svg" /></a>
-  <a href="https://www.instagram.com/shubham.j010/"><img alt="Instagram" height="28" src="https://www.svgrepo.com/show/452229/instagram-1.svg" /></a>
-  <a href="https://discordapp.com/users/283568690514100225/"><img alt="Discord" height="28" src="https://www.svgrepo.com/show/353655/discord-icon.svg" /></a>
-  <a href="https://anilist.co/user/ShubhamJha/"><img alt="AniList" height="28" src="https://anilist.co/img/icons/icon.svg" /></a>
-  <a href="https://simkl.com/2218813/?utm_source=twitter&utm_medium=StatsAll&utm_campaign=Share#stats"><img alt="Simkl" height="28" src="https://cdn.simpleicons.org/simkl/ffffff" /></a>
-  <a href="https://myanimelist.net/profile/SHUBHAM_jha"><img alt="MyAnimeList" height="28" src="https://cdn.myanimelist.net/images/favicon.ico" /></a>
+  <a href="https://www.instagram.com/shubham.j010/"><img alt="Instagram" height="28" src="https://cdn.simpleicons.org/instagram/E4405F" /></a>
 </p>
-

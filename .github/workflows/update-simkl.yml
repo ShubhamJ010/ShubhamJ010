@@ -1,6 +1,9 @@
 name: update-simkl
 
 on:
+  push:
+    branches:
+      - main
   schedule:
     - cron: '0 12 1 * *'
   workflow_dispatch:
@@ -23,50 +26,53 @@ jobs:
           stats_md = ""
 
           if not client_id:
-              stats_md = "> Set `SIMKL_CLIENT_ID` secret to show Simkl stats."
+              stats_md = "*Set `SIMKL_CLIENT_ID` secret to show Simkl stats.*"
           else:
               try:
-                  url = f"https://api.simkl.com/users/{user_id}/stats?client_id={client_id}"
-                  req = urllib.request.Request(url)
-                  req.add_header("Accept", "application/json")
-                  resp = urllib.request.urlopen(req, timeout=15)
-                  d = json.loads(resp.read())
+                  # 1. Fetch Stats
+                  url_stats = f"https://api.simkl.com/users/{user_id}/stats?client_id={client_id}"
+                  req_stats = urllib.request.Request(url_stats)
+                  req_stats.add_header("Accept", "application/json")
+                  resp_stats = urllib.request.urlopen(req_stats, timeout=15)
+                  d = json.loads(resp_stats.read())
 
                   total_mins = d.get("total_mins", 0)
                   h, m = divmod(total_mins, 60)
+                  lines = [f"🎬 **{h}h {m}m** total watched"]
 
-                  lines = [f"> 🎬 **{h}h {m}m** total watched across all services\n>"]
-
-                  for category in ("movies", "tv", "anime"):
-                      cat = d.get(category)
-                      if not cat:
+                  # 2. Fetch Last Completed
+                  last_items = []
+                  for cat in ["movies", "tv", "anime"]:
+                      try:
+                          url_cat = f"https://api.simkl.com/users/{user_id}/watchlist/{cat}/completed?client_id={client_id}&extended=full"
+                          req_cat = urllib.request.Request(url_cat)
+                          req_cat.add_header("Accept", "application/json")
+                          resp_cat = urllib.request.urlopen(req_cat, timeout=15)
+                          watchlist = json.loads(resp_cat.read())
+                          if watchlist:
+                              latest = max(watchlist, key=lambda x: x.get("last_watched_at") or "")
+                              last_items.append(latest)
+                      except:
                           continue
-                      total_cat = cat.get("total_mins", 0)
-                      ch, cm = divmod(total_cat, 60)
-                      completed = cat.get("completed", {}) or {}
-                      completed_count = completed.get("count", 0)
-                      completed_mins = completed.get("mins", 0)
-                      label = category.capitalize()
+                  
+                  if last_items:
+                      latest_overall = max(last_items, key=lambda x: x.get("last_watched_at") or "")
+                      item = latest_overall.get("movie") or latest_overall.get("show")
+                      if item:
+                          title = item.get("title")
+                          rating = item.get("ratings", {}).get("simkl", {}).get("rating")
+                          
+                          lines.append(f"🎬 **justPlayed**")
+                          lines.append(f"**Name:** {title}")
+                          
+                          if rating:
+                              stars = "⭐" * int(round(float(rating)))
+                              lines.append(f"**Rating:** {stars} ({rating}/10)")
 
-                      if completed_count:
-                          lines.append(f"> 🎥 **{label}:** {completed_count} completed ({ch}h {cm}m)")
-
-                      watching = cat.get("watching", {}) or {}
-                      watching_count = watching.get("count", 0)
-                      if watching_count:
-                          ep_count = watching.get("watched_episodes_count", 0)
-                          lines.append(f"> 📺 **Watching:** {watching_count} {label.lower()} ({ep_count} eps)")
-
-                  last_week = d.get("watched_last_week", {}) or {}
-                  lw_mins = last_week.get("total_mins", 0)
-                  if lw_mins:
-                      lh, lm = divmod(lw_mins, 60)
-                      lines.append(f">\n> 📅 **Last week:** {lh}h {lm}m")
-
-                  stats_md = "\n".join(lines)
+                  stats_md = "<br>".join(lines)
 
               except Exception as e:
-                  stats_md = f"> Simkl stats unavailable (error: {e})"
+                  stats_md = f"Simkl stats unavailable (error: {e})"
 
           readme_path = "README.md"
           with open(readme_path) as f:
@@ -82,7 +88,7 @@ jobs:
                   flags=re.DOTALL,
               )
           else:
-              content += f"\n\n\n<!--START_SIMKL-->\n{stats_md}\n<!--END_SIMKL-->\n"
+              content += f"\n\n\n{new_block}\n"
 
           with open(readme_path, "w") as f:
               f.write(content)
