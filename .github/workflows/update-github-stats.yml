@@ -4,9 +4,8 @@ on:
   push:
     branches:
       - main
-      - feat/readmefetch-stats
   schedule:
-    - cron: '0 */24 * * *'
+    - cron: '0 0 1 * *'
   workflow_dispatch:
 
 jobs:
