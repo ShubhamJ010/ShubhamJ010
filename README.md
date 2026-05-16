@@ -47,26 +47,13 @@ public final class Shubham implements JavaDeveloper, AnimeEnjoyer, NightCoder {
   <img alt="Linux" height="36" src="https://www.svgrepo.com/show/448236/linux.svg" />
 </p>
 
-## 🎬 justPlayed
+## 🎧 Music
 
-<table width="100%">
-  <tr>
-    <td width="50%" align="center">
-      <a href="https://www.last.fm/user/Shubham_jha">
-        <img src="https://lastfm-recently-played.vercel.app/api?user=Shubham_jha&count=1&width=400" alt="Last.fm" />
-      </a>
-    </td>
-    <td width="50%" align="left">
-<!--START_SIMKL-->
-<b>Name:</b> Fetching...<br><b>Rating:</b> ⭐⭐⭐ (out of 10 / 0 stars)
-<!--END_SIMKL-->
-      <br>
-      <a href="https://simkl.com/2218813/?utm_source=twitter&utm_medium=StatsAll&utm_campaign=Share#stats"><img alt="Simkl" height="20" src="https://cdn.simpleicons.org/simkl/ffffff" /></a>&nbsp;&nbsp;
-      <a href="https://anilist.co/user/ShubhamJha/"><img alt="AniList" height="20" src="https://cdn.simpleicons.org/anilist/02A9FF" /></a>&nbsp;&nbsp;
-      <a href="https://myanimelist.net/profile/SHUBHAM_jha"><img alt="MyAnimeList" height="20" src="https://cdn.myanimelist.net/images/favicon.ico" /></a>
-    </td>
-  </tr>
-</table>
+<p align="center">
+  <a href="https://www.last.fm/user/Shubham_jha">
+    <img src="https://lastfm-recently-played.vercel.app/api?user=Shubham_jha&count=1&width=400" alt="Last.fm" />
+  </a>
+</p>
 
 ## GithubStats
 
@@ -89,4 +76,6 @@ public final class Shubham implements JavaDeveloper, AnimeEnjoyer, NightCoder {
   <a href="https://www.reddit.com/user/Shubham_Jha/"><img alt="Reddit" height="28" src="https://www.svgrepo.com/show/452094/reddit.svg" /></a>
   <a href="https://discordapp.com/users/283568690514100225/"><img alt="Discord" height="28" src="https://cdn.simpleicons.org/discord/5865F2" /></a>
   <a href="https://www.instagram.com/shubham.j010/"><img alt="Instagram" height="28" src="https://cdn.simpleicons.org/instagram/E4405F" /></a>
+  <a href="https://anilist.co/user/ShubhamJha/"><img alt="AniList" height="28" src="https://cdn.simpleicons.org/anilist/02A9FF" /></a>
+  <a href="https://myanimelist.net/profile/SHUBHAM_jha"><img alt="MyAnimeList" height="28" src="https://cdn.myanimelist.net/images/favicon.ico" /></a>
 </p>
