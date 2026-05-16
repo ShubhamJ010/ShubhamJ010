@@ -1,6 +1,6 @@
 <table width="100%">
 <tr>
-<td width="1%" nowrap><h2>Hi there <a href="https://github.com/shubhamj010"><img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="5%"></a>, I'm Shubham Jha!</h2></td>
+<td><h2>Hi there <a href="https://github.com/shubhamj010"><img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="5%"></a>, I'm Shubham Jha!</h2></td>
 <td align="right">
   <a href="https://x.com/shubham_j010"><img alt="Twitter" height="18" src="https://www.svgrepo.com/show/475689/twitter-color.svg" /></a>&emsp;
   <a href="https://www.reddit.com/user/Shubham_Jha/"><img alt="Reddit" height="18" src="https://www.svgrepo.com/show/452094/reddit.svg" /></a>&emsp;
