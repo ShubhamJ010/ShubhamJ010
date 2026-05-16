@@ -139,15 +139,12 @@ async function main() {
   const asciiW = 450;
   const textMargin = 60;
 
-  // ASCII art on the left — use palette colors cycling through
+  // ASCII art on the left — single color per line (original structure)
   let y = 10;
   for (const line of lines) {
     const asciiPart = line.slice(0, 50);
-    for (let c = 0; c < asciiPart.length; c++) {
-      const pIdx = c % palette.length;
-      ctx.fillStyle = rgbStr(palette[pIdx]);
-      ctx.fillText(asciiPart[c], 10 + c * 9.6, y);
-    }
+    ctx.fillStyle = rgbStr(vl);
+    ctx.fillText(asciiPart, 10, y);
     y += lineH;
   }
 

@@ -110,13 +110,9 @@ async function genImage(octokit: Octokit, outDir = "out") {
     const lineSpacing = fontSize + 4;
 
     let yOffset = 10;
-    const charWidth = ctx.measureText("A").width;
     for (const asciiLine of asciiLines) {
-      for (let c = 0; c < asciiLine.length; c++) {
-        const pIdx = c % palette.length;
-        ctx.fillStyle = `rgb(${palette[pIdx][0]}, ${palette[pIdx][1]}, ${palette[pIdx][2]})`;
-        ctx.fillText(asciiLine[c], 10 + c * charWidth, yOffset);
-      }
+      ctx.fillStyle = `rgb(${valueColor[0]}, ${valueColor[1]}, ${valueColor[2]})`;
+      ctx.fillText(asciiLine, 10, yOffset);
       yOffset += lineSpacing;
     }
 
