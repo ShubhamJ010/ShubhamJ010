@@ -16,7 +16,7 @@
 
 <img src="assets/frieren.gif" alt="frieren" width="40" style="border-radius: 4px;">
 
-<font face="JetBrains Mono"><b>Java . TypeScript . Bash.</b></font>
+<font face="JetBrains Mono"><b>Java ∘ TypeScript ∘ Bash.</b></font>
 
 <p align="right">
   <a href="https://x.com/shubham_j010"><img alt="Twitter" height="18" src="https://www.svgrepo.com/show/475689/twitter-color.svg" /></a>&emsp;
