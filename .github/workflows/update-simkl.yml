@@ -66,8 +66,9 @@ jobs:
                           lines.append(f"**Name:** {title}")
                           
                           if rating:
-                              stars = "⭐" * int(round(float(rating)))
-                              lines.append(f"**Rating:** {stars} ({rating}/10)")
+                              rating_val = int(round(float(rating)))
+                              stars = "⭐" * rating_val
+                              lines.append(f"**Rating:** {stars} (out of 10 / {rating_val} stars)")
 
                   stats_md = "<br>".join(lines)
 
