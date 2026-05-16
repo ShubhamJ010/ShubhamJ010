@@ -38,7 +38,7 @@ jobs:
 
                   total_mins = d.get("total_mins", 0)
                   h, m = divmod(total_mins, 60)
-                  lines = [f"🎬 **{h}h {m}m** total watched"]
+                  lines = []
 
                   # 2. Fetch Last Completed
                   last_items = []
