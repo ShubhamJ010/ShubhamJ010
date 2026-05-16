@@ -14,18 +14,19 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Setup Python
-        uses: actions/setup-python@v4
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v2
         with:
-          python-version: '3.10'
+          bun-version: latest
 
       - name: Install dependencies
-        run: pip install -r readmefetch/requirements.txt
+        run: bun install
+        working-directory: readmefetch
 
       - name: Generate neofetch stats
         env:
           GH_STATS_TOKEN: ${{ secrets.GH_STATS_TOKEN }}
-        run: python readmefetch/main.py
+        run: bun run readmefetch/main.ts
 
       - name: Commit and push changes
         env:

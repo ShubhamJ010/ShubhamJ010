@@ -1,0 +1,16 @@
+{
+  "name": "readmefetch",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "bun run main.ts"
+  },
+  "dependencies": {
+    "@napi-rs/canvas": "^0.1.65",
+    "@octokit/rest": "^21.0.0"
+  },
+  "devDependencies": {
+    "@types/bun": "^1.2.0",
+    "typescript": "^5.7.0"
+  }
+}
