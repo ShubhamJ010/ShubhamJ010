@@ -79,6 +79,7 @@ async function genImage(octokit: Octokit, outDir = "out") {
   const bgColor = hexToRgb(colors.background);
   const textColor = hexToRgb(colors.foreground);
   const valueColor = hexToRgb(colors.value);
+  const palette = colors.palette.map(hexToRgb);
   const fontSize = 16;
 
   const fontPath = join(__dirname, "..", "fonts", "ff-tisa-web-pro.ttf");
@@ -109,9 +110,13 @@ async function genImage(octokit: Octokit, outDir = "out") {
     const lineSpacing = fontSize + 4;
 
     let yOffset = 10;
+    const charWidth = ctx.measureText("A").width;
     for (const asciiLine of asciiLines) {
-      ctx.fillStyle = `rgb(${valueColor[0]}, ${valueColor[1]}, ${valueColor[2]})`;
-      ctx.fillText(asciiLine, 10, yOffset);
+      for (let c = 0; c < asciiLine.length; c++) {
+        const pIdx = c % palette.length;
+        ctx.fillStyle = `rgb(${palette[pIdx][0]}, ${palette[pIdx][1]}, ${palette[pIdx][2]})`;
+        ctx.fillText(asciiLine[c], 10 + c * charWidth, yOffset);
+      }
       yOffset += lineSpacing;
     }
 
@@ -195,6 +200,21 @@ async function genImage(octokit: Octokit, outDir = "out") {
         yOffset += lineSpacing;
       }
     }
+
+    const blockSize = 20;
+    const gap = 3;
+    const px = canvasWidth - 8 * (blockSize + gap) - 10;
+    ctx.fillStyle = `rgb(${valueColor[0]}, ${valueColor[1]}, ${valueColor[2]})`;
+    ctx.fillText(`Palette [${colors.name}]:`, px, yOffset);
+    yOffset += 6;
+    for (let row = 0; row < 2; row++) {
+      for (let col = 0; col < 8; col++) {
+        const idx = row * 8 + col;
+        ctx.fillStyle = `rgb(${palette[idx][0]}, ${palette[idx][1]}, ${palette[idx][2]})`;
+        ctx.fillRect(px + col * (blockSize + gap), yOffset + row * (blockSize + gap), blockSize, blockSize);
+      }
+    }
+    yOffset += 2 * (blockSize + gap) + 20;
 
     if (yOffset > canvasHeight) {
       return render(canvasWidth, yOffset + 20);
