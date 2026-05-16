@@ -5,11 +5,13 @@
 </a>
 <p align="center"><font face="Comic Sans MS">click image for resume</font></p>
 
-<p style="display: flex; justify-content: space-evenly; align-items: center; flex-wrap: wrap;">
-  <img src="https://komarev.com/ghpvc/?username=shubhamj010" alt="Visitors" />
-  <a href="https://github.com/sindresorhus/awesome"><img src="https://badges.frapsoft.com/os/v1/open-source.svg?v=102" alt="Open Source Love" /></a>
-  <a href="https://in.linkedin.com/in/shubhamj010?trk=profile-badge"><img src="https://img.shields.io/badge/LinkedIn-Shubham%20Jha-blue?style=flat-square&logo=linkedin" alt="LinkedIn Badge" /></a>
-</p>
+<table align="center" width="100%">
+  <tr>
+    <td align="center"><img src="https://komarev.com/ghpvc/?username=shubhamj010" alt="Visitors" /></td>
+    <td align="center"><a href="https://github.com/sindresorhus/awesome"><img src="https://badges.frapsoft.com/os/v1/open-source.svg?v=102" alt="Open Source Love" /></a></td>
+    <td align="center"><a href="https://in.linkedin.com/in/shubhamj010?trk=profile-badge"><img src="https://img.shields.io/badge/LinkedIn-Shubham%20Jha-blue?style=flat-square&logo=linkedin" alt="LinkedIn Badge" /></a></td>
+  </tr>
+</table>
 
 
 <img src="assets/frieren.gif" alt="frieren" width="40" style="border-radius: 4px;">
