@@ -44,19 +44,27 @@ def get_github_stats(username, token=None):
     else:
         total_starred_by_user = len(starred_resp.json())
 
-    # Get last pushed repo
+    # Get last pushed repo and its last commit
     sorted_repos_url = f'https://api.github.com/users/{username}/repos?sort=pushed&direction=desc&per_page=1'
     last_repo_resp = requests.get(sorted_repos_url, headers=headers).json()
     last_repo_name = last_repo_resp[0]['name'] if last_repo_resp else "N/A"
     last_repo_url = last_repo_resp[0]['html_url'] if last_repo_resp else "#"
     
+    last_commit_message = "N/A"
+    if last_repo_resp:
+        commits_url = f"https://api.github.com/repos/{username}/{last_repo_name}/commits?per_page=1"
+        commits_resp = requests.get(commits_url, headers=headers).json()
+        if commits_resp and isinstance(commits_resp, list):
+            last_commit_message = commits_resp[0]['commit']['message'].split('\n')[0]
+
     return {
         "public_repos": public_repos,
         "private_repos": private_repos,
         "stars_received": stars_received,
         "total_starred_by_user": total_starred_by_user,
         "last_repo_name": last_repo_name,
-        "last_repo_url": last_repo_url
+        "last_repo_url": last_repo_url,
+        "last_commit_message": last_commit_message
     }
 
 def update_readme(stats):
@@ -76,7 +84,7 @@ def update_readme(stats):
 | 📂 **Repos** | {stats['public_repos']} (pub) / {stats['private_repos']} (priv) |
 | ⭐ **Stars** | {stats['stars_received']} received |
 | 🌟 **Starred** | {stats['total_starred_by_user']} repositories |
-| 🚀 **Last Commit** | {stats['last_repo_name']} |
+| 🚀 **Last Commit** | [{stats['last_commit_message']}]({stats['last_repo_url']}) |
 | 📅 **Updated** | {now} |
 """
 
