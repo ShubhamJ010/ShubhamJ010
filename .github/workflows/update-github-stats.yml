@@ -25,12 +25,12 @@ jobs:
 
       - name: Generate neofetch stats
         env:
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          GH_STATS_TOKEN: ${{ secrets.GH_STATS_TOKEN }}
         run: python readmefetch/main.py
 
       - name: Commit and push changes
         env:
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          GH_STATS_TOKEN: ${{ secrets.GH_STATS_TOKEN }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"

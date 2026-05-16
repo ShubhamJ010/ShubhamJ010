@@ -8,9 +8,9 @@ from src.gen_readme import generate_fetch, generate_readme, gen_image
 def main():
     try:
         load_dotenv()
-        token = os.getenv("GH_TOKEN")
+        token = os.getenv("GH_STATS_TOKEN")
         if not token:
-            raise ValueError("GH_TOKEN environment variable not set")
+            raise ValueError("GH_STATS_TOKEN environment variable not set")
 
         script_dir = os.path.dirname(os.path.abspath(__file__))
         os.chdir(script_dir)
