@@ -37,5 +37,4 @@ jobs:
           git add README.md -f out/fetch.png
           git diff --quiet && git diff --staged --quiet || \
             (git commit -m "Update GitHub stats" && \
-             git pull --rebase origin main && \
-             git push https://x-access-token:${{ secrets.GH_TOKEN }}@github.com/${{ github.repository }}.git)
+             git push "https://x-access-token:${{ secrets.GH_STATS_TOKEN }}@github.com/${{ github.repository }}.git" HEAD:${{ github.ref_name }})
