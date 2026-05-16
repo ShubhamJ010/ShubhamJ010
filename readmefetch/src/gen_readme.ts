@@ -71,7 +71,7 @@ async function generateFetch(octokit: Octokit): Promise<string> {
 
 async function genImage(octokit: Octokit, outDir = "out") {
   const width = 1200;
-  const initialHeight = 550;
+  const initialHeight = 650;
   const asciiWidth = 450;
   const textMargin = 60;
 
@@ -109,14 +109,14 @@ async function genImage(octokit: Octokit, outDir = "out") {
 
     const lineSpacing = fontSize + 4;
 
-    let yOffset = 10;
+    let yOffset = 25;
     for (const asciiLine of asciiLines) {
       ctx.fillStyle = `rgb(${valueColor[0]}, ${valueColor[1]}, ${valueColor[2]})`;
       ctx.fillText(asciiLine, 10, yOffset);
       yOffset += lineSpacing;
     }
 
-    yOffset = 10;
+    yOffset = 25;
     const xText = asciiWidth + textMargin;
     const maxTextWidth = canvasWidth - asciiWidth - textMargin * 2;
 

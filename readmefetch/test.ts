@@ -140,7 +140,7 @@ async function main() {
   const textMargin = 60;
 
   // ASCII art on the left — single color per line (original structure)
-  let y = 10;
+  let y = 25;
   for (const line of lines) {
     const asciiPart = line.slice(0, 50);
     ctx.fillStyle = rgbStr(vl);
@@ -149,7 +149,7 @@ async function main() {
   }
 
   // Stats on the right
-  y = 10;
+  y = 25;
   const xText = asciiW + textMargin;
   const maxTextW = canvasW - asciiW - textMargin * 2;
 
