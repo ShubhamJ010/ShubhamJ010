@@ -3,7 +3,7 @@
 <a href="https://flowcv.com/resume/cqqqb67qrh" target="_blank">
   <img src="assets/ sj.png" alt="Shubham Jha">
 </a>
-<p style="font-family: 'Comic Sans MS', 'Comic Sans', cursive; font-size: 12px; margin-top: 2px; text-align: center;">click image for resume</p>
+<p align="center"><font face="Comic Sans MS">click image for resume</font></p>
 
 <p style="display: flex; justify-content: space-evenly; align-items: center; flex-wrap: wrap;">
   <img src="https://komarev.com/ghpvc/?username=shubhamj010" alt="Visitors" />
@@ -14,7 +14,7 @@
 
 <img src="assets/frieren.gif" alt="frieren" width="40" style="border-radius: 4px;">
 
-<span style="font-family: 'Fira Code', 'JetBrains Mono', 'Comic Code', monospace; font-weight: bold;">Java . TypeScript . Bash.</span>
+<font face="JetBrains Mono"><b>Java . TypeScript . Bash.</b></font>
 
 ```java
 public final class Shubham implements JavaDeveloper, AnimeEnjoyer, NightCoder {
