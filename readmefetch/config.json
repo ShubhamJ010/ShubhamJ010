@@ -1,0 +1,24 @@
+{
+    "display_stats": [
+        "username",
+        "bio",
+        "location",
+        "followers",
+        "following",
+        "public_repos",
+        "public_gists",
+        "total_stars",
+        "bytes_of_code",
+        "created_at",
+        "updated_at",
+        "languages",
+        "total_commits",
+        "total_issues",
+        "total_prs"
+    ],
+    "additional_info": "Java  TypeScript  Anime  Night Code",
+    "preferred_color": "lightblue",
+    "max_languages": 5,
+    "append_automatic": false,
+    "exclude_orgainzations": true
+}

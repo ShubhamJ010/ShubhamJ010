@@ -4,32 +4,38 @@ on:
   push:
     branches:
       - main
+      - feat/readmefetch-stats
   schedule:
-    - cron: '0 0 * * *' # Daily at midnight
+    - cron: '0 */24 * * *'
   workflow_dispatch:
 
 jobs:
-  update:
+  build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
 
-      - name: Set up Python
+      - name: Setup Python
         uses: actions/setup-python@v4
         with:
-          python-version: '3.x'
+          python-version: '3.10'
 
       - name: Install dependencies
-        run: pip install requests
+        run: pip install -r readmefetch/requirements.txt
 
-      - name: Update GitHub stats
+      - name: Generate neofetch stats
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: python src/utils/github_stats.py
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+        run: python readmefetch/main.py
 
-      - name: Commit changes
+      - name: Commit and push changes
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add README.md
-          git diff --staged --quiet || (git commit -m "Update GitHub stats" && git pull --rebase origin main && git push)
+          git add README.md -f out/fetch.png
+          git diff --quiet && git diff --staged --quiet || \
+            (git commit -m "Update GitHub stats" && \
+             git pull --rebase origin main && \
+             git push https://x-access-token:${{ secrets.GH_TOKEN }}@github.com/${{ github.repository }}.git)
