@@ -64,8 +64,8 @@ public final class Shubham implements JavaDeveloper, AnimeEnjoyer, NightCoder {
 | 📂 **Repos** | 16 (pub) / 0 (priv) |
 | ⭐ **Stars** | 12 received |
 | 🌟 **Starred** | 1 repositories |
-| 🚀 **Last Commit** | [Merge branch 'main' of https://github.com/ShubhamJ010/ShubhamJ010](https://github.com/ShubhamJ010/ShubhamJ010) |
-| 📅 **Updated** | 2026-05-16 00:29 |
+| 🚀 **Last Commit** | [Update GitHub stats](https://github.com/ShubhamJ010/ShubhamJ010) |
+| 📅 **Updated** | 2026-05-16 02:36 |
 
 <!--END_GITHUB_STATS-->
 
