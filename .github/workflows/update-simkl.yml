@@ -62,12 +62,12 @@ jobs:
                           title = item.get("title")
                           rating = item.get("ratings", {}).get("simkl", {}).get("rating")
                           
-                          lines.append(f"**Name:** {title}")
+                          lines.append(f"<b>Name:</b> {title}")
                           
                           if rating:
                               rating_val = int(round(float(rating)))
                               stars = "⭐" * rating_val
-                              lines.append(f"**Rating:** {stars} (out of 10 / {rating_val} stars)")
+                              lines.append(f"<b>Rating:</b> {stars} (out of 10 / {rating_val} stars)")
 
                   stats_md = "<br>".join(lines)
 

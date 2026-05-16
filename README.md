@@ -57,8 +57,8 @@ public final class Shubham implements JavaDeveloper, AnimeEnjoyer, NightCoder {
       </a>
     </td>
     <td width="50%" align="left">
-      <!--START_SIMKL-->
-
+<!--START_SIMKL-->
+<b>Name:</b> Fetching...<br><b>Rating:</b> ⭐⭐⭐ (out of 10 / 0 stars)
 <!--END_SIMKL-->
       <br>
       <a href="https://simkl.com/2218813/?utm_source=twitter&utm_medium=StatsAll&utm_campaign=Share#stats"><img alt="Simkl" height="20" src="https://cdn.simpleicons.org/simkl/ffffff" /></a>&nbsp;&nbsp;
