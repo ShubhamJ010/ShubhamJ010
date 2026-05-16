@@ -3,7 +3,7 @@
 <a href="https://flowcv.com/resume/cqqqb67qrh" target="_blank">
   <img src="assets/ sj.png" alt="Shubham Jha">
 </a>
-<p align="center"><font face="Comic Sans MS">click image for resume</font></p>
+<p align="center"><font face="Comic Sans MS">click ascii for resume</font></p>
 
 <table align="center" width="100%">
   <tr>
@@ -56,10 +56,12 @@ public final class Shubham implements JavaDeveloper, AnimeEnjoyer, NightCoder {
   <img alt="Linux" height="36" src="https://www.svgrepo.com/show/448236/linux.svg" />
 </p>
 
+<p align="right"><img src="assets/mythikore-anime-girl.gif" alt="anime-girl" height="50" style="border-radius: 4px;"></p>
+
 ## VibingTo
 
 <p align="center">
-  <a href="https://www.last.fm/user/Shubham_jha"><img alt="Last.fm" height="28" src="https://cdn.simpleicons.org/lastdotfm/red" /></a>&emsp;<a href="https://anilist.co/user/ShubhamJha/"><img alt="AniList" height="28" src="https://cdn.simpleicons.org/anilist/02A9FF" /></a>&emsp;<a href="https://myanimelist.net/profile/SHUBHAM_jha"><img alt="MyAnimeList" height="28" src="https://cdn.myanimelist.net/images/favicon.ico" /></a>&emsp;<a href="https://simkl.com/2218813/stats/"><img alt="Simkl" height="28" src="https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/simkl.svg" /></a>
+  <a href="https://www.last.fm/user/Shubham_jha"><img alt="Last.fm" height="28" src="https://cdn.simpleicons.org/lastdotfm/red" /></a>&emsp;<img src="assets/chainsaw-man-sozai.gif" alt="chainsaw-man" width="28" style="border-radius: 4px;">&emsp;<a href="https://anilist.co/user/ShubhamJha/"><img alt="AniList" height="28" src="https://cdn.simpleicons.org/anilist/02A9FF" /></a>&emsp;<a href="https://myanimelist.net/profile/SHUBHAM_jha"><img alt="MyAnimeList" height="28" src="https://cdn.myanimelist.net/images/favicon.ico" /></a>&emsp;<a href="https://simkl.com/2218813/stats/"><img alt="Simkl" height="28" src="https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/simkl.svg" /></a>
 </p>
 
 <p align="center">
