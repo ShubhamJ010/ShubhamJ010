@@ -81,3 +81,6 @@ public final class Shubham implements JavaDeveloper, AnimeEnjoyer, NightCoder {
   <a href="https://anilist.co/user/ShubhamJha/"><img alt="AniList" height="28" src="https://cdn.simpleicons.org/anilist/02A9FF" /></a>
   <a href="https://myanimelist.net/profile/SHUBHAM_jha"><img alt="MyAnimeList" height="28" src="https://cdn.myanimelist.net/images/favicon.ico" /></a>
 </p>
+
+<br>
+<p align="center">∙∙·▫▫ᵒᴼᵒ▫ₒₒ▫ᵒᴼⓈ💖Ⓝᴼᵒ▫ₒₒ▫ᵒᴼᵒ▫▫·∙∙</p>
