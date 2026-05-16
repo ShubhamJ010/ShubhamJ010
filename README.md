@@ -1,4 +1,14 @@
-## Hi there <a href="https://github.com/shubhamj010"><img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="5%"></a>, I'm Shubham Jha!
+<table width="100%">
+<tr>
+<td><h2>Hi there <a href="https://github.com/shubhamj010"><img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="5%"></a>, I'm Shubham Jha!</h2></td>
+<td align="right">
+  <a href="https://x.com/shubham_j010"><img alt="Twitter" height="18" src="https://cdn.simpleicons.org/x/000000" /></a>&emsp;
+  <a href="https://www.reddit.com/user/Shubham_Jha/"><img alt="Reddit" height="18" src="https://www.svgrepo.com/show/452094/reddit.svg" /></a>&emsp;
+  <a href="https://discordapp.com/users/283568690514100225/"><img alt="Discord" height="18" src="https://cdn.simpleicons.org/discord/5865F2" /></a>&emsp;
+  <a href="https://www.instagram.com/shubham.j010/"><img alt="Instagram" height="18" src="https://cdn.simpleicons.org/instagram/E4405F" /></a>
+</td>
+</tr>
+</table>
 
 <a href="https://flowcv.com/resume/cqqqb67qrh" target="_blank">
   <img src="assets/ sj.png" alt="Shubham Jha">
@@ -49,7 +59,11 @@ public final class Shubham implements JavaDeveloper, AnimeEnjoyer, NightCoder {
   <img alt="Linux" height="36" src="https://www.svgrepo.com/show/448236/linux.svg" />
 </p>
 
-## 🎧 Music
+## VibingTo
+
+<p align="center">
+  <a href="https://www.last.fm/user/Shubham_jha"><img alt="Last.fm" height="28" src="https://cdn.simpleicons.org/lastdotfm/red" /></a>&emsp;<a href="https://anilist.co/user/ShubhamJha/"><img alt="AniList" height="28" src="https://cdn.simpleicons.org/anilist/02A9FF" /></a>&emsp;<a href="https://myanimelist.net/profile/SHUBHAM_jha"><img alt="MyAnimeList" height="28" src="https://cdn.myanimelist.net/images/favicon.ico" /></a>&emsp;<a href="https://simkl.com/2218813/stats/"><img alt="Simkl" height="28" src="https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/simkl.svg" /></a>
+</p>
 
 <p align="center">
   <a href="https://www.last.fm/user/Shubham_jha">
@@ -71,16 +85,6 @@ public final class Shubham implements JavaDeveloper, AnimeEnjoyer, NightCoder {
 
 <!--END_GITHUB_STATS-->
 
-## MySocials
 
-<p style="display: flex; justify-content: center; align-items: center; gap: 20px; flex-wrap: wrap;">
-  <a href="https://x.com/shubham_j010"><img alt="Twitter" height="28" src="https://cdn.simpleicons.org/x/000000" /></a>
-  <a href="https://www.reddit.com/user/Shubham_Jha/"><img alt="Reddit" height="28" src="https://www.svgrepo.com/show/452094/reddit.svg" /></a>
-  <a href="https://discordapp.com/users/283568690514100225/"><img alt="Discord" height="28" src="https://cdn.simpleicons.org/discord/5865F2" /></a>
-  <a href="https://www.instagram.com/shubham.j010/"><img alt="Instagram" height="28" src="https://cdn.simpleicons.org/instagram/E4405F" /></a>
-  <a href="https://anilist.co/user/ShubhamJha/"><img alt="AniList" height="28" src="https://cdn.simpleicons.org/anilist/02A9FF" /></a>
-  <a href="https://myanimelist.net/profile/SHUBHAM_jha"><img alt="MyAnimeList" height="28" src="https://cdn.myanimelist.net/images/favicon.ico" /></a>
-</p>
-
-<br>
-<p align="center">∙∙·▫▫ᵒᴼᵒ▫ₒₒ▫ᵒᴼⓈ💖Ⓝᴼᵒ▫ₒₒ▫ᵒᴼᵒ▫▫·∙∙</p>
+<p align="center"><img src="assets/arrow.png" alt="arrow" /></p>
+<p align="center">𐌔💖𐌍</p>
