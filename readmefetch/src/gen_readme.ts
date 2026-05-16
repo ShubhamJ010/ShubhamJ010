@@ -17,26 +17,27 @@ interface Config {
   exclude_orgainzations: boolean;
 }
 
+interface Colors {
+  name: string;
+  background: string;
+  foreground: string;
+  value: string;
+  palette: string[];
+}
+
 function loadConfig(): Config {
   const configPath = join(__dirname, "..", "config.json");
   return JSON.parse(readFileSync(configPath, "utf-8"));
 }
 
-const COLOR_MAP: Record<string, [number, number, number]> = {
-  red: [255, 0, 0],
-  green: [0, 128, 0],
-  blue: [0, 0, 255],
-  yellow: [255, 255, 0],
-  purple: [128, 0, 128],
-  orange: [255, 165, 0],
-  pink: [255, 192, 203],
-  white: [255, 255, 255],
-  lightblue: [173, 216, 230],
-};
+function loadColors(): Colors {
+  const colorsPath = join(__dirname, "..", "colors.json");
+  return JSON.parse(readFileSync(colorsPath, "utf-8"));
+}
 
-function returnPreferredColor(): [number, number, number] {
-  const config = loadConfig();
-  return COLOR_MAP[config.preferred_color] ?? COLOR_MAP.lightblue;
+function hexToRgb(hex: string): [number, number, number] {
+  const val = parseInt(hex.replace("#", ""), 16);
+  return [(val >> 16) & 255, (val >> 8) & 255, val & 255];
 }
 
 async function generateFetch(octokit: Octokit): Promise<string> {
@@ -74,29 +75,19 @@ async function genImage(octokit: Octokit, outDir = "out") {
   const asciiWidth = 450;
   const textMargin = 60;
 
-  const bgColor = [12, 17, 22] as const;
-  const valueColor = returnPreferredColor();
-  const textColor: [number, number, number] = [255, 255, 255];
+  const colors = loadColors();
+  const bgColor = hexToRgb(colors.background);
+  const textColor = hexToRgb(colors.foreground);
+  const valueColor = hexToRgb(colors.value);
   const fontSize = 16;
 
-  const fontPaths = [
-    "/usr/share/fonts/truetype/dejavu/DejaVuSansMono.ttf",
-    "/usr/share/fonts/truetype/ubuntu/UbuntuMono-R.ttf",
-    "/usr/share/fonts/liberation-mono/LiberationMono-Regular.ttf",
-    "/System/Library/Fonts/Menlo.ttc",
-    "/System/Library/Fonts/Andale Mono.ttf",
-    "/Library/Fonts/Andale Mono.ttf",
-  ];
-
+  const fontPath = join(__dirname, "..", "fonts", "ff-tisa-web-pro.ttf");
   let fontRegistered = false;
-  for (const fp of fontPaths) {
-    try {
-      GlobalFonts.registerFromPath(fp, "Mono");
-      fontRegistered = true;
-      break;
-    } catch {
-      continue;
-    }
+  try {
+    GlobalFonts.registerFromPath(fontPath, "Mono");
+    fontRegistered = true;
+  } catch {
+    console.warn("  custom font not found, using system default");
   }
 
   const fetch = await generateFetch(octokit);

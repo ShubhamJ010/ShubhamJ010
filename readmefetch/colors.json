@@ -1,0 +1,24 @@
+{
+  "name": "sakura-mochi",
+  "background": "#0b0d11",
+  "foreground": "#f0b7ca",
+  "value": "#f23888",
+  "palette": [
+    "#0b0d11",
+    "#f23888",
+    "#5aa15d",
+    "#d7be96",
+    "#67dd82",
+    "#f0b7ca",
+    "#6f9485",
+    "#d8c6cc",
+    "#4a5d46",
+    "#ff6aa7",
+    "#86bf86",
+    "#e6d3b4",
+    "#8bf0a1",
+    "#ffd0dc",
+    "#8bb0a4",
+    "#fff1f6"
+  ]
+}
