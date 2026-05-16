@@ -1,8 +1,8 @@
 <table width="100%">
 <tr>
-<td><h2>Hi there <a href="https://github.com/shubhamj010"><img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="5%"></a>, I'm Shubham Jha!</h2></td>
+<td width="1%" nowrap><h2>Hi there <a href="https://github.com/shubhamj010"><img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="5%"></a>, I'm Shubham Jha!</h2></td>
 <td align="right">
-  <a href="https://x.com/shubham_j010"><img alt="Twitter" height="18" src="https://cdn.simpleicons.org/x/000000" /></a>&emsp;
+  <a href="https://x.com/shubham_j010"><img alt="Twitter" height="18" src="https://www.svgrepo.com/show/475689/twitter-color.svg" /></a>&emsp;
   <a href="https://www.reddit.com/user/Shubham_Jha/"><img alt="Reddit" height="18" src="https://www.svgrepo.com/show/452094/reddit.svg" /></a>&emsp;
   <a href="https://discordapp.com/users/283568690514100225/"><img alt="Discord" height="18" src="https://cdn.simpleicons.org/discord/5865F2" /></a>&emsp;
   <a href="https://www.instagram.com/shubham.j010/"><img alt="Instagram" height="18" src="https://cdn.simpleicons.org/instagram/E4405F" /></a>
