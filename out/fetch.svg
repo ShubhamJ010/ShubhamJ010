@@ -17,18 +17,19 @@
         50% { opacity: 0.4; }
       }
       @keyframes colorCycle {
-        0% { stroke: #0b0d11; }
-        14% { stroke: #f23888; }
-        28% { stroke: #5aa15d; }
-        42% { stroke: #d7be96; }
-        56% { stroke: #67dd82; }
-        70% { stroke: #f0b7ca; }
-        84% { stroke: #6f9485; }
-        100% { stroke: #0b0d11; }
+        0% { stroke: #f23888; }
+        12.5% { stroke: #5aa15d; }
+        25% { stroke: #d7be96; }
+        37.5% { stroke: #67dd82; }
+        50% { stroke: #f0b7ca; }
+        62.5% { stroke: #6f9485; }
+        75% { stroke: #d8c6cc; }
+        87.5% { stroke: #4a5d46; }
+        100% { stroke: #f23888; }
       }
       .stat-card rect {
         transition: stroke-width 0.3s ease, filter 0.3s ease;
-        animation: colorCycle 20s linear infinite;
+        animation: colorCycle 20s steps(1) infinite;
       }
       .stat-card:hover rect {
         stroke: #f23888;
@@ -81,7 +82,7 @@
         <g class="stat-card" id="stat-5" style="animation: fadeInUp 0.8s ease-out 0.75s both;">
           <rect x="258" y="168" width="180" height="90" rx="10" fill="#0C1116" stroke="#f0b7ca" stroke-width="1.5"/>
           <text x="348" y="196" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="14" font-weight="bold" fill="#f23888" text-anchor="middle">Commits</text>
-          <text x="348" y="230" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="28" font-weight="bold" fill="#f0b7ca" text-anchor="middle">355</text>
+          <text x="348" y="230" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="28" font-weight="bold" fill="#f0b7ca" text-anchor="middle">357</text>
         </g>
       
 
@@ -116,14 +117,14 @@
         <g class="stat-card" id="stat-10" style="animation: fadeInUp 0.8s ease-out 1.5s both;">
           <rect x="466" y="286" width="180" height="90" rx="10" fill="#0C1116" stroke="#86bf86" stroke-width="1.5"/>
           <text x="556" y="314" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="14" font-weight="bold" fill="#f23888" text-anchor="middle">Streaks</text>
-          <text x="556" y="348" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="28" font-weight="bold" fill="#f0b7ca" text-anchor="middle">62 days</text>
+          <text x="556" y="348" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="28" font-weight="bold" fill="#f0b7ca" text-anchor="middle">196 days</text>
         </g>
       
 
         <g class="stat-card" id="stat-11" style="animation: fadeInUp 0.8s ease-out 1.65s both;">
           <rect x="674" y="286" width="180" height="90" rx="10" fill="#0C1116" stroke="#e6d3b4" stroke-width="1.5"/>
           <text x="764" y="314" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="14" font-weight="bold" fill="#f23888" text-anchor="middle">Rank</text>
-          <text x="764" y="348" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="28" font-weight="bold" fill="#f0b7ca" text-anchor="middle">4,642</text>
+          <text x="764" y="348" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="28" font-weight="bold" fill="#f0b7ca" text-anchor="middle">2,597</text>
         </g>
       
   </g>
