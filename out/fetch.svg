@@ -105,14 +105,14 @@
         <g class="stat-card" id="stat-10" style="animation: fadeInUp 0.8s ease-out 1.5s both;">
           <rect x="466" y="286" width="180" height="90" rx="10" fill="#0C1116" stroke="#86bf86" stroke-width="1.5"/>
           <text x="556" y="314" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="14" font-weight="bold" fill="#f23888" text-anchor="middle">Streaks</text>
-          <text x="556" y="348" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="28" font-weight="bold" fill="#f0b7ca" text-anchor="middle">207 days</text>
+          <text x="556" y="348" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="28" font-weight="bold" fill="#f0b7ca" text-anchor="middle">154 days</text>
         </g>
       
 
         <g class="stat-card" id="stat-11" style="animation: fadeInUp 0.8s ease-out 1.65s both;">
           <rect x="674" y="286" width="180" height="90" rx="10" fill="#0C1116" stroke="#e6d3b4" stroke-width="1.5"/>
           <text x="764" y="314" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="14" font-weight="bold" fill="#f23888" text-anchor="middle">Rank</text>
-          <text x="764" y="348" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="28" font-weight="bold" fill="#f0b7ca" text-anchor="middle">5,793</text>
+          <text x="764" y="348" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="28" font-weight="bold" fill="#f0b7ca" text-anchor="middle">5,282</text>
         </g>
       
   </g>
