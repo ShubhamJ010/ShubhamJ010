@@ -1,0 +1,516 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="904" height="466" viewBox="0 0 904 466" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      @font-face {
+        font-family: 'JetBrains Mono';
+        src: url('fonts/JetBrainsMono-Bold.ttf') format('truetype');
+        font-weight: bold;
+        font-style: normal;
+      }
+      @keyframes fadeInUp {
+        0% { opacity: 0; transform: translateY(15px); }
+        100% { opacity: 1; transform: translateY(0); }
+      }
+      @keyframes pulse {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0.4; }
+      }
+      .stat-card rect {
+        transition: stroke 0.3s ease, stroke-width 0.3s ease, filter 0.3s ease;
+      }
+      .stat-card:hover rect {
+        stroke: #f23888;
+        stroke-width: 2.5;
+        filter: drop-shadow(0 0 8px #f23888);
+      }
+      .live-indicator {
+        animation: pulse 1.2s ease-in-out infinite;
+      }
+    </style>
+  </defs>
+  <rect width="100%" height="100%" fill="#0C1116"/>
+  <g>
+    
+        <g class="stat-card" id="stat-0">
+          <rect x="50" y="50" width="180" height="90" rx="10" fill="#0C1116" stroke="#0b0d11" stroke-width="1.5" style="animation: fadeInUp 0.8s ease-out 0s both;"/>
+          <text x="140" y="78" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="14" font-weight="bold" fill="#f23888" text-anchor="middle">Followers</text>
+          <text x="140" y="112" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="28" font-weight="bold" fill="#f0b7ca" text-anchor="middle" id="stat-0-value">0</text>
+        </g>
+      
+
+        <script type="application/ecmascript"><![CDATA[
+          (function() {
+            const el = document.getElementById("stat-0-value");
+            if (!el) return;
+            const target = 11;
+            const suffix = "";
+            const duration = 2181.9846540925478;
+            const startDelay = 800;
+            let startTime = null;
+
+            function easeOutQuart(t) {
+              return 1 - Math.pow(1 - t, 4);
+            }
+
+            function animate(currentTime) {
+              if (!startTime) startTime = currentTime + startDelay;
+              const elapsed = currentTime - startTime;
+              if (elapsed < 0) {
+                requestAnimationFrame(animate);
+                return;
+              }
+              const progress = Math.min(elapsed / duration, 1);
+              const eased = easeOutQuart(progress);
+              const current = Math.floor(eased * target);
+              el.textContent = current.toLocaleString() + suffix;
+              if (progress < 1) {
+                requestAnimationFrame(animate);
+              } else {
+                el.textContent = target.toLocaleString() + suffix;
+              }
+            }
+            requestAnimationFrame(animate);
+          })();
+        ]]></script>
+      
+
+        <g class="stat-card" id="stat-1">
+          <rect x="258" y="50" width="180" height="90" rx="10" fill="#0C1116" stroke="#f23888" stroke-width="1.5" style="animation: fadeInUp 0.8s ease-out 0.15s both;"/>
+          <text x="348" y="78" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="14" font-weight="bold" fill="#f23888" text-anchor="middle">Following</text>
+          <text x="348" y="112" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="28" font-weight="bold" fill="#f0b7ca" text-anchor="middle" id="stat-1-value">0</text>
+        </g>
+      
+
+        <script type="application/ecmascript"><![CDATA[
+          (function() {
+            const el = document.getElementById("stat-1-value");
+            if (!el) return;
+            const target = 79;
+            const suffix = "";
+            const duration = 2360.13601771668;
+            const startDelay = 950.0000000000001;
+            let startTime = null;
+
+            function easeOutQuart(t) {
+              return 1 - Math.pow(1 - t, 4);
+            }
+
+            function animate(currentTime) {
+              if (!startTime) startTime = currentTime + startDelay;
+              const elapsed = currentTime - startTime;
+              if (elapsed < 0) {
+                requestAnimationFrame(animate);
+                return;
+              }
+              const progress = Math.min(elapsed / duration, 1);
+              const eased = easeOutQuart(progress);
+              const current = Math.floor(eased * target);
+              el.textContent = current.toLocaleString() + suffix;
+              if (progress < 1) {
+                requestAnimationFrame(animate);
+              } else {
+                el.textContent = target.toLocaleString() + suffix;
+              }
+            }
+            requestAnimationFrame(animate);
+          })();
+        ]]></script>
+      
+
+        <g class="stat-card" id="stat-2">
+          <rect x="466" y="50" width="180" height="90" rx="10" fill="#0C1116" stroke="#5aa15d" stroke-width="1.5" style="animation: fadeInUp 0.8s ease-out 0.3s both;"/>
+          <text x="556" y="78" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="14" font-weight="bold" fill="#f23888" text-anchor="middle">Repos</text>
+          <text x="556" y="112" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="28" font-weight="bold" fill="#f0b7ca" text-anchor="middle" id="stat-2-value">0</text>
+        </g>
+      
+
+        <script type="application/ecmascript"><![CDATA[
+          (function() {
+            const el = document.getElementById("stat-2-value");
+            if (!el) return;
+            const target = 16;
+            const suffix = "";
+            const duration = 1794.4452714003148;
+            const startDelay = 1100;
+            let startTime = null;
+
+            function easeOutQuart(t) {
+              return 1 - Math.pow(1 - t, 4);
+            }
+
+            function animate(currentTime) {
+              if (!startTime) startTime = currentTime + startDelay;
+              const elapsed = currentTime - startTime;
+              if (elapsed < 0) {
+                requestAnimationFrame(animate);
+                return;
+              }
+              const progress = Math.min(elapsed / duration, 1);
+              const eased = easeOutQuart(progress);
+              const current = Math.floor(eased * target);
+              el.textContent = current.toLocaleString() + suffix;
+              if (progress < 1) {
+                requestAnimationFrame(animate);
+              } else {
+                el.textContent = target.toLocaleString() + suffix;
+              }
+            }
+            requestAnimationFrame(animate);
+          })();
+        ]]></script>
+      
+
+        <g class="stat-card" id="stat-3">
+          <rect x="674" y="50" width="180" height="90" rx="10" fill="#0C1116" stroke="#d7be96" stroke-width="1.5" style="animation: fadeInUp 0.8s ease-out 0.44999999999999996s both;"/>
+          <text x="764" y="78" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="14" font-weight="bold" fill="#f23888" text-anchor="middle">Stars</text>
+          <text x="764" y="112" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="28" font-weight="bold" fill="#f0b7ca" text-anchor="middle" id="stat-3-value">0</text>
+        </g>
+      
+
+        <script type="application/ecmascript"><![CDATA[
+          (function() {
+            const el = document.getElementById("stat-3-value");
+            if (!el) return;
+            const target = 16;
+            const suffix = "";
+            const duration = 1550.4649782085553;
+            const startDelay = 1250;
+            let startTime = null;
+
+            function easeOutQuart(t) {
+              return 1 - Math.pow(1 - t, 4);
+            }
+
+            function animate(currentTime) {
+              if (!startTime) startTime = currentTime + startDelay;
+              const elapsed = currentTime - startTime;
+              if (elapsed < 0) {
+                requestAnimationFrame(animate);
+                return;
+              }
+              const progress = Math.min(elapsed / duration, 1);
+              const eased = easeOutQuart(progress);
+              const current = Math.floor(eased * target);
+              el.textContent = current.toLocaleString() + suffix;
+              if (progress < 1) {
+                requestAnimationFrame(animate);
+              } else {
+                el.textContent = target.toLocaleString() + suffix;
+              }
+            }
+            requestAnimationFrame(animate);
+          })();
+        ]]></script>
+      
+
+        <g class="stat-card" style="animation: fadeInUp 0.8s ease-out 0.6s both;">
+          <rect x="50" y="168" width="180" height="90" rx="10" fill="#0C1116" stroke="#67dd82" stroke-width="1.5"/>
+          <text x="140" y="196" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="14" font-weight="bold" fill="#f23888" text-anchor="middle">Location</text>
+          <text x="140" y="230" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="22" font-weight="bold" fill="#f0b7ca" text-anchor="middle">India</text>
+        </g>
+      
+
+        <g class="stat-card" id="stat-5">
+          <rect x="258" y="168" width="180" height="90" rx="10" fill="#0C1116" stroke="#f0b7ca" stroke-width="1.5" style="animation: fadeInUp 0.8s ease-out 0.75s both;"/>
+          <text x="348" y="196" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="14" font-weight="bold" fill="#f23888" text-anchor="middle">Commits</text>
+          <text x="348" y="230" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="28" font-weight="bold" fill="#f0b7ca" text-anchor="middle" id="stat-5-value">0</text>
+        </g>
+      
+
+        <script type="application/ecmascript"><![CDATA[
+          (function() {
+            const el = document.getElementById("stat-5-value");
+            if (!el) return;
+            const target = 337;
+            const suffix = "";
+            const duration = 1746.8836112216068;
+            const startDelay = 1550;
+            let startTime = null;
+
+            function easeOutQuart(t) {
+              return 1 - Math.pow(1 - t, 4);
+            }
+
+            function animate(currentTime) {
+              if (!startTime) startTime = currentTime + startDelay;
+              const elapsed = currentTime - startTime;
+              if (elapsed < 0) {
+                requestAnimationFrame(animate);
+                return;
+              }
+              const progress = Math.min(elapsed / duration, 1);
+              const eased = easeOutQuart(progress);
+              const current = Math.floor(eased * target);
+              el.textContent = current.toLocaleString() + suffix;
+              if (progress < 1) {
+                requestAnimationFrame(animate);
+              } else {
+                el.textContent = target.toLocaleString() + suffix;
+              }
+            }
+            requestAnimationFrame(animate);
+          })();
+        ]]></script>
+      
+
+        <g class="stat-card" id="stat-6">
+          <rect x="466" y="168" width="180" height="90" rx="10" fill="#0C1116" stroke="#6f9485" stroke-width="1.5" style="animation: fadeInUp 0.8s ease-out 0.8999999999999999s both;"/>
+          <text x="556" y="196" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="14" font-weight="bold" fill="#f23888" text-anchor="middle">Issues</text>
+          <text x="556" y="230" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="28" font-weight="bold" fill="#f0b7ca" text-anchor="middle" id="stat-6-value">0</text>
+        </g>
+      
+
+        <script type="application/ecmascript"><![CDATA[
+          (function() {
+            const el = document.getElementById("stat-6-value");
+            if (!el) return;
+            const target = 0;
+            const suffix = "";
+            const duration = 2113.392989952108;
+            const startDelay = 1700;
+            let startTime = null;
+
+            function easeOutQuart(t) {
+              return 1 - Math.pow(1 - t, 4);
+            }
+
+            function animate(currentTime) {
+              if (!startTime) startTime = currentTime + startDelay;
+              const elapsed = currentTime - startTime;
+              if (elapsed < 0) {
+                requestAnimationFrame(animate);
+                return;
+              }
+              const progress = Math.min(elapsed / duration, 1);
+              const eased = easeOutQuart(progress);
+              const current = Math.floor(eased * target);
+              el.textContent = current.toLocaleString() + suffix;
+              if (progress < 1) {
+                requestAnimationFrame(animate);
+              } else {
+                el.textContent = target.toLocaleString() + suffix;
+              }
+            }
+            requestAnimationFrame(animate);
+          })();
+        ]]></script>
+      
+
+        <g class="stat-card" id="stat-7">
+          <rect x="674" y="168" width="180" height="90" rx="10" fill="#0C1116" stroke="#d8c6cc" stroke-width="1.5" style="animation: fadeInUp 0.8s ease-out 1.05s both;"/>
+          <text x="764" y="196" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="14" font-weight="bold" fill="#f23888" text-anchor="middle">PRs</text>
+          <text x="764" y="230" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="28" font-weight="bold" fill="#f0b7ca" text-anchor="middle" id="stat-7-value">0</text>
+        </g>
+      
+
+        <script type="application/ecmascript"><![CDATA[
+          (function() {
+            const el = document.getElementById("stat-7-value");
+            if (!el) return;
+            const target = 0;
+            const suffix = "";
+            const duration = 1774.2887181358155;
+            const startDelay = 1850;
+            let startTime = null;
+
+            function easeOutQuart(t) {
+              return 1 - Math.pow(1 - t, 4);
+            }
+
+            function animate(currentTime) {
+              if (!startTime) startTime = currentTime + startDelay;
+              const elapsed = currentTime - startTime;
+              if (elapsed < 0) {
+                requestAnimationFrame(animate);
+                return;
+              }
+              const progress = Math.min(elapsed / duration, 1);
+              const eased = easeOutQuart(progress);
+              const current = Math.floor(eased * target);
+              el.textContent = current.toLocaleString() + suffix;
+              if (progress < 1) {
+                requestAnimationFrame(animate);
+              } else {
+                el.textContent = target.toLocaleString() + suffix;
+              }
+            }
+            requestAnimationFrame(animate);
+          })();
+        ]]></script>
+      
+
+        <g class="stat-card" id="stat-8">
+          <rect x="50" y="286" width="180" height="90" rx="10" fill="#0C1116" stroke="#4a5d46" stroke-width="1.5" style="animation: fadeInUp 0.8s ease-out 1.2s both;"/>
+          <text x="140" y="314" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="14" font-weight="bold" fill="#f23888" text-anchor="middle">Gists</text>
+          <text x="140" y="348" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="28" font-weight="bold" fill="#f0b7ca" text-anchor="middle" id="stat-8-value">0</text>
+        </g>
+      
+
+        <script type="application/ecmascript"><![CDATA[
+          (function() {
+            const el = document.getElementById("stat-8-value");
+            if (!el) return;
+            const target = 4;
+            const suffix = "";
+            const duration = 1744.154387287276;
+            const startDelay = 2000;
+            let startTime = null;
+
+            function easeOutQuart(t) {
+              return 1 - Math.pow(1 - t, 4);
+            }
+
+            function animate(currentTime) {
+              if (!startTime) startTime = currentTime + startDelay;
+              const elapsed = currentTime - startTime;
+              if (elapsed < 0) {
+                requestAnimationFrame(animate);
+                return;
+              }
+              const progress = Math.min(elapsed / duration, 1);
+              const eased = easeOutQuart(progress);
+              const current = Math.floor(eased * target);
+              el.textContent = current.toLocaleString() + suffix;
+              if (progress < 1) {
+                requestAnimationFrame(animate);
+              } else {
+                el.textContent = target.toLocaleString() + suffix;
+              }
+            }
+            requestAnimationFrame(animate);
+          })();
+        ]]></script>
+      
+
+        <g class="stat-card" id="stat-9">
+          <rect x="258" y="286" width="180" height="90" rx="10" fill="#0C1116" stroke="#ff6aa7" stroke-width="1.5" style="animation: fadeInUp 0.8s ease-out 1.3499999999999999s both;"/>
+          <text x="348" y="314" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="14" font-weight="bold" fill="#f23888" text-anchor="middle">Contribs</text>
+          <text x="348" y="348" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="28" font-weight="bold" fill="#f0b7ca" text-anchor="middle" id="stat-9-value">0</text>
+        </g>
+      
+
+        <script type="application/ecmascript"><![CDATA[
+          (function() {
+            const el = document.getElementById("stat-9-value");
+            if (!el) return;
+            const target = 12984;
+            const suffix = "";
+            const duration = 1933.8727841413495;
+            const startDelay = 2150;
+            let startTime = null;
+
+            function easeOutQuart(t) {
+              return 1 - Math.pow(1 - t, 4);
+            }
+
+            function animate(currentTime) {
+              if (!startTime) startTime = currentTime + startDelay;
+              const elapsed = currentTime - startTime;
+              if (elapsed < 0) {
+                requestAnimationFrame(animate);
+                return;
+              }
+              const progress = Math.min(elapsed / duration, 1);
+              const eased = easeOutQuart(progress);
+              const current = Math.floor(eased * target);
+              el.textContent = current.toLocaleString() + suffix;
+              if (progress < 1) {
+                requestAnimationFrame(animate);
+              } else {
+                el.textContent = target.toLocaleString() + suffix;
+              }
+            }
+            requestAnimationFrame(animate);
+          })();
+        ]]></script>
+      
+
+        <g class="stat-card" id="stat-10">
+          <rect x="466" y="286" width="180" height="90" rx="10" fill="#0C1116" stroke="#86bf86" stroke-width="1.5" style="animation: fadeInUp 0.8s ease-out 1.5s both;"/>
+          <text x="556" y="314" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="14" font-weight="bold" fill="#f23888" text-anchor="middle">Streaks</text>
+          <text x="556" y="348" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="28" font-weight="bold" fill="#f0b7ca" text-anchor="middle" id="stat-10-value">0 days</text>
+        </g>
+      
+
+        <script type="application/ecmascript"><![CDATA[
+          (function() {
+            const el = document.getElementById("stat-10-value");
+            if (!el) return;
+            const target = 237;
+            const suffix = " days";
+            const duration = 2369.900935172597;
+            const startDelay = 2300;
+            let startTime = null;
+
+            function easeOutQuart(t) {
+              return 1 - Math.pow(1 - t, 4);
+            }
+
+            function animate(currentTime) {
+              if (!startTime) startTime = currentTime + startDelay;
+              const elapsed = currentTime - startTime;
+              if (elapsed < 0) {
+                requestAnimationFrame(animate);
+                return;
+              }
+              const progress = Math.min(elapsed / duration, 1);
+              const eased = easeOutQuart(progress);
+              const current = Math.floor(eased * target);
+              el.textContent = current.toLocaleString() + suffix;
+              if (progress < 1) {
+                requestAnimationFrame(animate);
+              } else {
+                el.textContent = target.toLocaleString() + suffix;
+              }
+            }
+            requestAnimationFrame(animate);
+          })();
+        ]]></script>
+      
+
+        <g class="stat-card" id="stat-11">
+          <rect x="674" y="286" width="180" height="90" rx="10" fill="#0C1116" stroke="#e6d3b4" stroke-width="1.5" style="animation: fadeInUp 0.8s ease-out 1.65s both;"/>
+          <text x="764" y="314" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="14" font-weight="bold" fill="#f23888" text-anchor="middle">Rank</text>
+          <text x="764" y="348" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="28" font-weight="bold" fill="#f0b7ca" text-anchor="middle" id="stat-11-value">0</text>
+        </g>
+      
+
+        <script type="application/ecmascript"><![CDATA[
+          (function() {
+            const el = document.getElementById("stat-11-value");
+            if (!el) return;
+            const target = 1588;
+            const suffix = "";
+            const duration = 2471.00564408101;
+            const startDelay = 2450;
+            let startTime = null;
+
+            function easeOutQuart(t) {
+              return 1 - Math.pow(1 - t, 4);
+            }
+
+            function animate(currentTime) {
+              if (!startTime) startTime = currentTime + startDelay;
+              const elapsed = currentTime - startTime;
+              if (elapsed < 0) {
+                requestAnimationFrame(animate);
+                return;
+              }
+              const progress = Math.min(elapsed / duration, 1);
+              const eased = easeOutQuart(progress);
+              const current = Math.floor(eased * target);
+              el.textContent = current.toLocaleString() + suffix;
+              if (progress < 1) {
+                requestAnimationFrame(animate);
+              } else {
+                el.textContent = target.toLocaleString() + suffix;
+              }
+            }
+            requestAnimationFrame(animate);
+          })();
+        ]]></script>
+      
+  </g>
+  <text x="874" y="448" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="11" fill="#f23888" text-anchor="end" class="live-indicator">● LIVE</text>
+</svg>
