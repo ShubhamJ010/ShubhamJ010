@@ -6,7 +6,6 @@
     "start": "bun run main.ts"
   },
   "dependencies": {
-    "@napi-rs/canvas": "^0.1.65",
     "@octokit/rest": "^21.0.0"
   },
   "devDependencies": {
