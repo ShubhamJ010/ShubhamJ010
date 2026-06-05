@@ -112,49 +112,13 @@ async function genImage(octokit: Octokit, outDir = "out"): Promise<void> {
     const paletteColor = palette[i % palette.length];
 
     if (isNumber) {
+      const formattedValue = targetValue.toLocaleString() + suffix;
       svgParts.push(`
-        <g class="stat-card" id="${cardId}">
-          <rect x="${x}" y="${y}" width="${cardWidth}" height="${cardHeight}" rx="10" fill="${bgColor}" stroke="${paletteColor}" stroke-width="1.5" style="animation: fadeInUp ${fadeInDuration}s ease-out ${delay}s both;"/>
+        <g class="stat-card" id="${cardId}" style="animation: fadeInUp ${fadeInDuration}s ease-out ${delay}s both;">
+          <rect x="${x}" y="${y}" width="${cardWidth}" height="${cardHeight}" rx="10" fill="${bgColor}" stroke="${paletteColor}" stroke-width="1.5"/>
           <text x="${x + cardWidth / 2}" y="${y + 28}" font-family="${fontFamily}" font-size="${fontSize}" font-weight="bold" fill="${valueColor}" text-anchor="middle">${escapeXml(stat.label)}</text>
-          <text x="${x + cardWidth / 2}" y="${y + 62}" font-family="${fontFamily}" font-size="28" font-weight="bold" fill="${textColor}" text-anchor="middle" id="${cardId}-value">0${suffix}</text>
+          <text x="${x + cardWidth / 2}" y="${y + 62}" font-family="${fontFamily}" font-size="28" font-weight="bold" fill="${textColor}" text-anchor="middle">${escapeXml(formattedValue)}</text>
         </g>
-      `);
-
-      svgParts.push(`
-        <script type="application/ecmascript"><![CDATA[
-          (function() {
-            const el = document.getElementById("${cardId}-value");
-            if (!el) return;
-            const target = ${targetValue};
-            const suffix = "${suffix}";
-            const duration = ${countUpDuration * 1000};
-            const startDelay = ${countUpDelay * 1000};
-            let startTime = null;
-
-            function easeOutQuart(t) {
-              return 1 - Math.pow(1 - t, 4);
-            }
-
-            function animate(currentTime) {
-              if (!startTime) startTime = currentTime + startDelay;
-              const elapsed = currentTime - startTime;
-              if (elapsed < 0) {
-                requestAnimationFrame(animate);
-                return;
-              }
-              const progress = Math.min(elapsed / duration, 1);
-              const eased = easeOutQuart(progress);
-              const current = Math.floor(eased * target);
-              el.textContent = current.toLocaleString() + suffix;
-              if (progress < 1) {
-                requestAnimationFrame(animate);
-              } else {
-                el.textContent = target.toLocaleString() + suffix;
-              }
-            }
-            requestAnimationFrame(animate);
-          })();
-        ]]></script>
       `);
     } else {
       svgParts.push(`
