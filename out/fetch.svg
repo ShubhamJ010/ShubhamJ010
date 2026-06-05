@@ -45,7 +45,7 @@
             if (!el) return;
             const target = 11;
             const suffix = "";
-            const duration = 2181.9846540925478;
+            const duration = 1565.4325170661248;
             const startDelay = 800;
             let startTime = null;
 
@@ -88,7 +88,7 @@
             if (!el) return;
             const target = 79;
             const suffix = "";
-            const duration = 2360.13601771668;
+            const duration = 2118.786824569372;
             const startDelay = 950.0000000000001;
             let startTime = null;
 
@@ -131,7 +131,7 @@
             if (!el) return;
             const target = 16;
             const suffix = "";
-            const duration = 1794.4452714003148;
+            const duration = 1822.8351755001354;
             const startDelay = 1100;
             let startTime = null;
 
@@ -174,7 +174,7 @@
             if (!el) return;
             const target = 16;
             const suffix = "";
-            const duration = 1550.4649782085553;
+            const duration = 1813.9740615057224;
             const startDelay = 1250;
             let startTime = null;
 
@@ -222,9 +222,9 @@
           (function() {
             const el = document.getElementById("stat-5-value");
             if (!el) return;
-            const target = 337;
+            const target = 344;
             const suffix = "";
-            const duration = 1746.8836112216068;
+            const duration = 1603.692418997691;
             const startDelay = 1550;
             let startTime = null;
 
@@ -267,7 +267,7 @@
             if (!el) return;
             const target = 0;
             const suffix = "";
-            const duration = 2113.392989952108;
+            const duration = 1753.019766628787;
             const startDelay = 1700;
             let startTime = null;
 
@@ -310,7 +310,7 @@
             if (!el) return;
             const target = 0;
             const suffix = "";
-            const duration = 1774.2887181358155;
+            const duration = 2140.977116616803;
             const startDelay = 1850;
             let startTime = null;
 
@@ -353,7 +353,7 @@
             if (!el) return;
             const target = 4;
             const suffix = "";
-            const duration = 1744.154387287276;
+            const duration = 2029.2624473875057;
             const startDelay = 2000;
             let startTime = null;
 
@@ -396,7 +396,7 @@
             if (!el) return;
             const target = 12984;
             const suffix = "";
-            const duration = 1933.8727841413495;
+            const duration = 1598.8009222705732;
             const startDelay = 2150;
             let startTime = null;
 
@@ -437,9 +437,9 @@
           (function() {
             const el = document.getElementById("stat-10-value");
             if (!el) return;
-            const target = 237;
+            const target = 239;
             const suffix = " days";
-            const duration = 2369.900935172597;
+            const duration = 2438.9528075230546;
             const startDelay = 2300;
             let startTime = null;
 
@@ -480,9 +480,9 @@
           (function() {
             const el = document.getElementById("stat-11-value");
             if (!el) return;
-            const target = 1588;
+            const target = 2063;
             const suffix = "";
-            const duration = 2471.00564408101;
+            const duration = 2011.308846336977;
             const startDelay = 2450;
             let startTime = null;
 
