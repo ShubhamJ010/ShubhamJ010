@@ -76,7 +76,7 @@ public final class Shubham implements JavaDeveloper, AnimeEnjoyer, NightCoder {
 <!--START_GITHUB_STATS-->
 
 <p align="center">
-  <img src="out/fetch.png" alt="Github Fetch" width="700">
+  <img src="out/fetch.svg" alt="Github Stats" width="100%">
 </p>
 
 <!--END_GITHUB_STATS-->
