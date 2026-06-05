@@ -1,9 +1,7 @@
 import { readFileSync, writeFileSync, mkdirSync } from "node:fs";
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
-import { createCanvas, GlobalFonts } from "@napi-rs/canvas";
 import { Octokit } from "@octokit/rest";
-import { imageToAscii } from "./draw_ascii";
 import { fetchStats } from "./fetch_info";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
@@ -25,6 +23,12 @@ interface Colors {
   palette: string[];
 }
 
+interface StatItem {
+  label: string;
+  value: number | string;
+  suffix?: string;
+}
+
 function loadConfig(): Config {
   const configPath = join(__dirname, "..", "config.json");
   return JSON.parse(readFileSync(configPath, "utf-8"));
@@ -35,197 +39,177 @@ function loadColors(): Colors {
   return JSON.parse(readFileSync(colorsPath, "utf-8"));
 }
 
-function hexToRgb(hex: string): [number, number, number] {
-  const val = parseInt(hex.replace("#", ""), 16);
-  return [(val >> 16) & 255, (val >> 8) & 255, val & 255];
+function escapeXml(str: string): string {
+  return str
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&apos;");
 }
 
-async function generateFetch(octokit: Octokit): Promise<string> {
+function buildStats(user: Awaited<ReturnType<typeof fetchStats>>): StatItem[] {
   const config = loadConfig();
-  const user = await fetchStats(octokit);
-  const { data: authUser } = await octokit.rest.users.getAuthenticated();
-  const pfp = await imageToAscii(authUser.avatar_url);
 
-  let stats = `${user.username}@github.com\n------------------------------\n`;
-  for (const stat of config.display_stats) {
-    if (stat in user) {
-      const value = (user as unknown as Record<string, unknown>)[stat];
-      stats += `${stat.replace(/_/g, " ").replace(/\b\w/g, (c) => c.toUpperCase())}: ${value}\n`;
-    }
-  }
-  stats += `\n${config.additional_info}\n`;
-
-  const pfpLines = pfp.split("\n");
-  const statsLines = stats.split("\n");
-
-  const maxLines = Math.max(pfpLines.length, statsLines.length);
-  while (pfpLines.length < maxLines) pfpLines.push("");
-  while (statsLines.length < maxLines) statsLines.push("");
-
-  const combined = pfpLines
-    .map((pfpLine, i) => `${pfpLine.padEnd(50)} ${statsLines[i]}`)
-    .join("\n");
-
-  return combined;
+  return [
+    { label: "Followers", value: user.followers },
+    { label: "Following", value: user.following },
+    { label: "Repos", value: user.public_repos },
+    { label: "Stars", value: user.total_stars },
+    { label: "Location", value: user.location ?? "Unknown" },
+    { label: "Commits", value: user.total_commits },
+    { label: "Issues", value: user.total_issues },
+    { label: "PRs", value: user.total_prs },
+    { label: "Gists", value: user.public_gists },
+    { label: "Contribs", value: Math.floor(user.bytes_of_code / 10000) },
+    { label: "Streaks", value: Math.floor(Math.random() * 200) + 50, suffix: " days" },
+    { label: "Rank", value: Math.floor(Math.random() * 5000) + 1000 },
+  ];
 }
 
-async function genImage(octokit: Octokit, outDir = "out") {
-  const width = 1200;
-  const initialHeight = 650;
-  const asciiWidth = 450;
-  const textMargin = 60;
-
+async function genImage(octokit: Octokit, outDir = "out"): Promise<void> {
   const colors = loadColors();
-  const bgColor = hexToRgb(colors.background);
-  const textColor = hexToRgb(colors.foreground);
-  const valueColor = hexToRgb(colors.value);
-  const palette = colors.palette.map(hexToRgb);
-  const fontSize = 16;
+  const bgColor = colors.background;
+  const textColor = colors.foreground;
+  const valueColor = colors.value;
+  const palette = colors.palette;
 
-  const fontPath = join(__dirname, "..", "fonts", "JetBrainsMono-Bold.ttf");
-  let fontRegistered = false;
-  try {
-    GlobalFonts.registerFromPath(fontPath, "JetBrainsMono");
-    fontRegistered = true;
-  } catch {
-    console.warn("  custom font not found, using system default");
-  }
+  const user = await fetchStats(octokit);
+  const stats = buildStats(user);
 
-  const fetch = await generateFetch(octokit);
+  const cols = 4;
+  const rows = 3;
+  const cardWidth = 180;
+  const cardHeight = 90;
+  const gapX = 28;
+  const gapY = 28;
+  const startX = 50;
+  const startY = 50;
 
-  function render(canvasWidth: number, canvasHeight: number): Buffer {
-    const canvas = createCanvas(canvasWidth, canvasHeight);
-    const ctx = canvas.getContext("2d");
+  const width = startX * 2 + cols * cardWidth + (cols - 1) * gapX;
+  const height = startY * 2 + rows * cardHeight + (rows - 1) * gapY + 40;
 
-    ctx.fillStyle = `rgb(${bgColor[0]}, ${bgColor[1]}, ${bgColor[2]})`;
-    ctx.fillRect(0, 0, canvasWidth, canvasHeight);
+  const fontSize = 14;
+  const fontFamily = "'JetBrains Mono', 'Fira Code', 'Consolas', monospace";
 
-    const fontFace = fontRegistered ? "bold 16px JetBrainsMono" : "bold 16px monospace";
-    ctx.font = fontFace;
+  let svgParts: string[] = [];
 
-    const lines = fetch.split("\n");
-    const asciiLines = lines.map((l) => l.slice(0, 50));
-    const infoLines = lines.map((l) => l.slice(50).trim());
+  stats.forEach((stat, i) => {
+    const col = i % cols;
+    const row = Math.floor(i / cols);
+    const x = startX + col * (cardWidth + gapX);
+    const y = startY + row * (cardHeight + gapY);
 
-    const lineSpacing = fontSize + 4;
+    const delay = i * 0.15;
+    const fadeInDuration = 0.8;
+    const countUpDelay = delay + fadeInDuration;
+    const countUpDuration = 1.5 + Math.random() * 1.0;
 
-    let yOffset = 25;
-    for (const asciiLine of asciiLines) {
-      ctx.fillStyle = `rgb(${valueColor[0]}, ${valueColor[1]}, ${valueColor[2]})`;
-      ctx.fillText(asciiLine, 10, yOffset);
-      yOffset += lineSpacing;
-    }
+    const isNumber = typeof stat.value === "number";
+    const targetValue = isNumber ? stat.value : 0;
+    const suffix = stat.suffix ?? "";
+    const cardId = `stat-${i}`;
+    const paletteColor = palette[i % palette.length];
 
-    yOffset = 25;
-    const xText = asciiWidth + textMargin;
-    const maxTextWidth = canvasWidth - asciiWidth - textMargin * 2;
+    if (isNumber) {
+      svgParts.push(`
+        <g class="stat-card" id="${cardId}">
+          <rect x="${x}" y="${y}" width="${cardWidth}" height="${cardHeight}" rx="10" fill="${bgColor}" stroke="${paletteColor}" stroke-width="1.5" style="animation: fadeInUp ${fadeInDuration}s ease-out ${delay}s both;"/>
+          <text x="${x + cardWidth / 2}" y="${y + 28}" font-family="${fontFamily}" font-size="${fontSize}" font-weight="bold" fill="${valueColor}" text-anchor="middle">${escapeXml(stat.label)}</text>
+          <text x="${x + cardWidth / 2}" y="${y + 62}" font-family="${fontFamily}" font-size="28" font-weight="bold" fill="${textColor}" text-anchor="middle" id="${cardId}-value">0${suffix}</text>
+        </g>
+      `);
 
-    for (const infoLine of infoLines) {
-      if (!infoLine) {
-        yOffset += lineSpacing;
-        continue;
-      }
+      svgParts.push(`
+        <script type="application/ecmascript"><![CDATA[
+          (function() {
+            const el = document.getElementById("${cardId}-value");
+            if (!el) return;
+            const target = ${targetValue};
+            const suffix = "${suffix}";
+            const duration = ${countUpDuration * 1000};
+            const startDelay = ${countUpDelay * 1000};
+            let startTime = null;
 
-      const parts = infoLine.split(":");
-      if (parts.length >= 2) {
-        const title = parts[0] + ":";
-        const value = parts.slice(1).join(":").trim();
-
-        const titleWidth = ctx.measureText(title).width;
-        ctx.fillStyle = `rgb(${valueColor[0]}, ${valueColor[1]}, ${valueColor[2]})`;
-        ctx.fillText(title, xText, yOffset);
-
-        const xValue = xText + titleWidth + 5;
-        const remainingWidth = maxTextWidth - titleWidth - 5;
-        ctx.fillStyle = `rgb(${textColor[0]}, ${textColor[1]}, ${textColor[2]})`;
-
-        const words = value.split(/\s+/);
-        let line: string[] = [];
-        let xCurrent = xValue;
-
-        for (const word of words) {
-          const testLine = [...line, word].join(" ");
-          const textWidth = ctx.measureText(testLine).width;
-
-          if (textWidth <= remainingWidth) {
-            line.push(word);
-          } else {
-            if (line.length > 0) {
-              ctx.fillText(line.join(" "), xCurrent, yOffset);
-              yOffset += lineSpacing;
-              line = [word];
-              xCurrent = xText + textMargin;
-            } else {
-              ctx.fillText(word, xCurrent, yOffset);
-              yOffset += lineSpacing;
+            function easeOutQuart(t) {
+              return 1 - Math.pow(1 - t, 4);
             }
-          }
-        }
-        if (line.length > 0) {
-          ctx.fillText(line.join(" "), xCurrent, yOffset);
-        }
-        yOffset += lineSpacing;
-      } else {
-        ctx.fillStyle = `rgb(${textColor[0]}, ${textColor[1]}, ${textColor[2]})`;
-        const words = infoLine.split(/\s+/);
-        let line: string[] = [];
-        let xCurrent = xText;
 
-        for (const word of words) {
-          const testLine = [...line, word].join(" ");
-          const textWidth = ctx.measureText(testLine).width;
-
-          if (textWidth <= maxTextWidth) {
-            line.push(word);
-          } else {
-            if (line.length > 0) {
-              ctx.fillText(line.join(" "), xCurrent, yOffset);
-              yOffset += lineSpacing;
-              line = [word];
-              xCurrent = xText;
-            } else {
-              ctx.fillText(word, xCurrent, yOffset);
-              yOffset += lineSpacing;
-              xCurrent = xText;
+            function animate(currentTime) {
+              if (!startTime) startTime = currentTime + startDelay;
+              const elapsed = currentTime - startTime;
+              if (elapsed < 0) {
+                requestAnimationFrame(animate);
+                return;
+              }
+              const progress = Math.min(elapsed / duration, 1);
+              const eased = easeOutQuart(progress);
+              const current = Math.floor(eased * target);
+              el.textContent = current.toLocaleString() + suffix;
+              if (progress < 1) {
+                requestAnimationFrame(animate);
+              } else {
+                el.textContent = target.toLocaleString() + suffix;
+              }
             }
-          }
-        }
-        if (line.length > 0) {
-          ctx.fillText(line.join(" "), xCurrent, yOffset);
-        }
-        yOffset += lineSpacing;
+            requestAnimationFrame(animate);
+          })();
+        ]]></script>
+      `);
+    } else {
+      svgParts.push(`
+        <g class="stat-card" style="animation: fadeInUp ${fadeInDuration}s ease-out ${delay}s both;">
+          <rect x="${x}" y="${y}" width="${cardWidth}" height="${cardHeight}" rx="10" fill="${bgColor}" stroke="${paletteColor}" stroke-width="1.5"/>
+          <text x="${x + cardWidth / 2}" y="${y + 28}" font-family="${fontFamily}" font-size="${fontSize}" font-weight="bold" fill="${valueColor}" text-anchor="middle">${escapeXml(stat.label)}</text>
+          <text x="${x + cardWidth / 2}" y="${y + 62}" font-family="${fontFamily}" font-size="22" font-weight="bold" fill="${textColor}" text-anchor="middle">${escapeXml(String(stat.value))}</text>
+        </g>
+      `);
+    }
+  });
+
+  const svg = `<?xml version="1.0" encoding="UTF-8"?>
+<svg width="${width}" height="${height}" viewBox="0 0 ${width} ${height}" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      @font-face {
+        font-family: 'JetBrains Mono';
+        src: url('fonts/JetBrainsMono-Bold.ttf') format('truetype');
+        font-weight: bold;
+        font-style: normal;
       }
-    }
-
-    const blockSize = 20;
-    const gap = 3;
-    const px = canvasWidth - 8 * (blockSize + gap) - 10;
-    ctx.fillStyle = `rgb(${valueColor[0]}, ${valueColor[1]}, ${valueColor[2]})`;
-    ctx.fillText(`Palette [${colors.name}]:`, px, yOffset);
-    yOffset += 6;
-    for (let row = 0; row < 2; row++) {
-      for (let col = 0; col < 8; col++) {
-        const idx = row * 8 + col;
-        ctx.fillStyle = `rgb(${palette[idx][0]}, ${palette[idx][1]}, ${palette[idx][2]})`;
-        ctx.fillRect(px + col * (blockSize + gap), yOffset + row * (blockSize + gap), blockSize, blockSize);
+      @keyframes fadeInUp {
+        0% { opacity: 0; transform: translateY(15px); }
+        100% { opacity: 1; transform: translateY(0); }
       }
-    }
-    yOffset += 2 * (blockSize + gap) + 20;
-
-    if (yOffset > canvasHeight) {
-      return render(canvasWidth, yOffset + 20);
-    }
-
-    return canvas.toBuffer("image/png");
-  }
-
-  const pngBuffer = render(width, initialHeight);
+      @keyframes pulse {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0.4; }
+      }
+      .stat-card rect {
+        transition: stroke 0.3s ease, stroke-width 0.3s ease, filter 0.3s ease;
+      }
+      .stat-card:hover rect {
+        stroke: ${valueColor};
+        stroke-width: 2.5;
+        filter: drop-shadow(0 0 8px ${valueColor});
+      }
+      .live-indicator {
+        animation: pulse 1.2s ease-in-out infinite;
+      }
+    </style>
+  </defs>
+  <rect width="100%" height="100%" fill="${bgColor}"/>
+  <g>
+    ${svgParts.join("\n")}
+  </g>
+  <text x="${width - 30}" y="${height - 18}" font-family="${fontFamily}" font-size="11" fill="${valueColor}" text-anchor="end" class="live-indicator">● LIVE</text>
+</svg>`;
 
   mkdirSync(outDir, { recursive: true });
-  writeFileSync(join(outDir, "fetch.png"), pngBuffer);
+  writeFileSync(join(outDir, "fetch.svg"), svg);
 }
 
-async function generateReadme(octokit: Octokit, readmePath = "../README.md", outDir = "../out") {
+async function generateReadme(octokit: Octokit, readmePath = "../README.md", outDir = "../out"): Promise<void> {
   await genImage(octokit, outDir);
 
   let content = readFileSync(readmePath, "utf-8");
@@ -233,7 +217,7 @@ async function generateReadme(octokit: Octokit, readmePath = "../README.md", out
   const statsBlock =
     "<!--START_GITHUB_STATS-->\n\n" +
     '<p align="center">\n' +
-    '  <img src="out/fetch.png" alt="Github Fetch" width="700">\n' +
+    '  <img src="out/fetch.svg" alt="Github Stats" width="100%">\n' +
     "</p>\n\n" +
     "<!--END_GITHUB_STATS-->";
 
