@@ -150,18 +150,19 @@ async function genImage(octokit: Octokit, outDir = "out"): Promise<void> {
         50% { opacity: 0.4; }
       }
       @keyframes colorCycle {
-        0% { stroke: ${palette[0]}; }
-        14% { stroke: ${palette[1]}; }
-        28% { stroke: ${palette[2]}; }
-        42% { stroke: ${palette[3]}; }
-        56% { stroke: ${palette[4]}; }
-        70% { stroke: ${palette[5]}; }
-        84% { stroke: ${palette[6]}; }
-        100% { stroke: ${palette[0]}; }
+        0% { stroke: ${palette[1]}; }
+        12.5% { stroke: ${palette[2]}; }
+        25% { stroke: ${palette[3]}; }
+        37.5% { stroke: ${palette[4]}; }
+        50% { stroke: ${palette[5]}; }
+        62.5% { stroke: ${palette[6]}; }
+        75% { stroke: ${palette[7]}; }
+        87.5% { stroke: ${palette[8]}; }
+        100% { stroke: ${palette[1]}; }
       }
       .stat-card rect {
         transition: stroke-width 0.3s ease, filter 0.3s ease;
-        animation: colorCycle 20s linear infinite;
+        animation: colorCycle 20s steps(1) infinite;
       }
       .stat-card:hover rect {
         stroke: ${valueColor};
