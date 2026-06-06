@@ -23,7 +23,7 @@ const GAP_Y = 28;
 const START_X = 50;
 const START_Y = 50;
 
-function buildSvgHeader(width: number, height: number, bgColor: string): string {
+function buildSvgHeader(width: number, height: number, bgColor: string, extraDefs: string): string {
   return `<?xml version="1.0" encoding="UTF-8"?>
 <svg width="${width}" height="${height}" viewBox="0 0 ${width} ${height}" xmlns="http://www.w3.org/2000/svg">
   <defs>
@@ -42,6 +42,7 @@ function buildSvgHeader(width: number, height: number, bgColor: string): string 
         filter: drop-shadow(0 0 8px currentColor);
       }
     </style>
+    ${extraDefs}
   </defs>
   <rect width="100%" height="100%" fill="${bgColor}"/>
   <g>`;
@@ -60,19 +61,23 @@ function renderNumberCard(
   bgColor: string,
   valueColor: string,
   index: number,
-): string {
+): { cardSvg: string; clipDefs: string } {
   const cx = x + CARD_WIDTH / 2;
   const labelY = y + 28;
   const valY = y + 62;
   const rollDuration = 4.0;
   const rollDelay = index * 0.12;
 
-  return `
+  const roll = digitRollAnimate(Number(stat.value), rollDelay, rollDuration, cx, valY, index);
+
+  const cardSvg = `
         <g class="stat-card" id="stat-${index}">
           <rect x="${x}" y="${y}" width="${CARD_WIDTH}" height="${CARD_HEIGHT}" rx="10" fill="${bgColor}" stroke="${paletteColor}" stroke-width="1.5"/>
           <text x="${cx}" y="${labelY}" font-family="${FONT_FAMILY}" font-size="${FONT_SIZE}" font-weight="bold" fill="${valueColor}" text-anchor="middle">${escapeXml(stat.label)}</text>
-          ${digitRollAnimate(Number(stat.value), rollDelay, rollDuration, cx, valY, index)}
+          ${roll.body}
         </g>`;
+
+  return { cardSvg, clipDefs: roll.clips };
 }
 
 function renderStringCard(
@@ -96,8 +101,10 @@ function renderStringCard(
         </g>`;
 }
 
-function renderStatCards(stats: StatItem[], bgColor: string, textColor: string, valueColor: string, palette: string[]): string {
-  return stats.map((stat, i) => {
+function renderStatCards(stats: StatItem[], bgColor: string, textColor: string, valueColor: string, palette: string[]): { cards: string; allClipDefs: string } {
+  const allClipDefs: string[] = [];
+
+  const cards = stats.map((stat, i) => {
     const col = i % COLS;
     const row = Math.floor(i / COLS);
     const x = START_X + col * (CARD_WIDTH + GAP_X);
@@ -106,10 +113,14 @@ function renderStatCards(stats: StatItem[], bgColor: string, textColor: string, 
     const isNumber = typeof stat.value === "number";
 
     if (isNumber) {
-      return renderNumberCard(stat, x, y, paletteColor, bgColor, valueColor, i);
+      const result = renderNumberCard(stat, x, y, paletteColor, bgColor, valueColor, i);
+      allClipDefs.push(result.clipDefs);
+      return result.cardSvg;
     }
     return renderStringCard(stat, x, y, paletteColor, bgColor, textColor, valueColor);
   }).join("\n");
+
+  return { cards, allClipDefs: allClipDefs.join("\n") };
 }
 
 /**
@@ -128,8 +139,8 @@ export async function genImage(octokit: Octokit, outDir = "out"): Promise<void> 
   const width = START_X * 2 + COLS * CARD_WIDTH + (COLS - 1) * GAP_X;
   const height = START_Y * 2 + ROWS * CARD_HEIGHT + (ROWS - 1) * GAP_Y + 40;
 
-  const header = buildSvgHeader(width, height, bgColor);
-  const cards = renderStatCards(stats, bgColor, textColor, valueColor, palette);
+  const { cards, allClipDefs } = renderStatCards(stats, bgColor, textColor, valueColor, palette);
+  const header = buildSvgHeader(width, height, bgColor, allClipDefs);
   const footer = buildSvgFooter();
 
   const svg = `${header}
