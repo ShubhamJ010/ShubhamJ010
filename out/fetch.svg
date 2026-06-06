@@ -8,125 +8,628 @@
         font-weight: bold;
         font-style: normal;
       }
-      @keyframes fadeInUp {
-        0% { opacity: 0; transform: translateY(15px); }
-        100% { opacity: 1; transform: translateY(0); }
-      }
-      @keyframes pulse {
-        0%, 100% { opacity: 1; }
-        50% { opacity: 0.4; }
-      }
-      @keyframes colorCycle {
-        0% { stroke: #f23888; }
-        12.5% { stroke: #5aa15d; }
-        25% { stroke: #d7be96; }
-        37.5% { stroke: #67dd82; }
-        50% { stroke: #f0b7ca; }
-        62.5% { stroke: #6f9485; }
-        75% { stroke: #d8c6cc; }
-        87.5% { stroke: #4a5d46; }
-        100% { stroke: #f23888; }
-      }
       .stat-card rect {
         transition: stroke-width 0.3s ease, filter 0.3s ease;
-        animation: colorCycle 20s steps(1) infinite;
       }
       .stat-card:hover rect {
-        stroke: #f23888;
         stroke-width: 2.5;
-        filter: drop-shadow(0 0 8px #f23888);
-      }
-      .live-indicator {
-        animation: pulse 1.2s ease-in-out infinite;
+        filter: drop-shadow(0 0 8px currentColor);
       }
     </style>
   </defs>
   <rect width="100%" height="100%" fill="#0C1116"/>
   <g>
     
-        <g class="stat-card" id="stat-0" style="animation: fadeInUp 0.8s ease-out 0s both;">
+        <g class="stat-card" id="stat-0">
           <rect x="50" y="50" width="180" height="90" rx="10" fill="#0C1116" stroke="#0b0d11" stroke-width="1.5"/>
           <text x="140" y="78" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="14" font-weight="bold" fill="#f23888" text-anchor="middle">Followers</text>
-          <text x="140" y="112" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="28" font-weight="bold" fill="#f0b7ca" text-anchor="middle">11</text>
+          
+        <text x="120" y="112" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="28" font-weight="bold" fill="#f0b7ca">
+            <animate attributeName="opacity" values="1; 0" keyTimes="0.0000; 0.5000" begin="0s" dur="4s" fill="freeze" calcMode="discrete"/>
+            0
+          </text>
+        <text x="120" y="112" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="28" font-weight="bold" fill="#f0b7ca">
+            <animate attributeName="opacity" values="0; 1" keyTimes="0.0000; 0.5000" begin="0s" dur="4s" fill="freeze" calcMode="discrete"/>
+            1
+          </text>
+        
+        <text x="140" y="112" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="28" font-weight="bold" fill="#f0b7ca">
+            <animate attributeName="opacity" values="1; 0" keyTimes="0.0000; 0.5000" begin="0s" dur="4s" fill="freeze" calcMode="discrete"/>
+            0
+          </text>
+        <text x="140" y="112" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="28" font-weight="bold" fill="#f0b7ca">
+            <animate attributeName="opacity" values="0; 1" keyTimes="0.0000; 0.5000" begin="0s" dur="4s" fill="freeze" calcMode="discrete"/>
+            1
+          </text>
         </g>
-      
 
-        <g class="stat-card" id="stat-1" style="animation: fadeInUp 0.8s ease-out 0.15s both;">
+        <g class="stat-card" id="stat-1">
           <rect x="258" y="50" width="180" height="90" rx="10" fill="#0C1116" stroke="#f23888" stroke-width="1.5"/>
           <text x="348" y="78" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="14" font-weight="bold" fill="#f23888" text-anchor="middle">Following</text>
-          <text x="348" y="112" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="28" font-weight="bold" fill="#f0b7ca" text-anchor="middle">79</text>
+          
+        <text x="328" y="112" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="28" font-weight="bold" fill="#f0b7ca">
+            <animate attributeName="opacity" values="1; 0; 0; 0; 0; 0; 0; 0" keyTimes="0.0000; 0.1250; 0.2500; 0.3750; 0.5000; 0.6250; 0.7500; 0.8750" begin="0.12s" dur="4s" fill="freeze" calcMode="discrete"/>
+            0
+          </text>
+        <text x="328" y="112" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="28" font-weight="bold" fill="#f0b7ca">
+            <animate attributeName="opacity" values="0; 1; 0; 0; 0; 0; 0; 0" keyTimes="0.0000; 0.1250; 0.2500; 0.3750; 0.5000; 0.6250; 0.7500; 0.8750" begin="0.12s" dur="4s" fill="freeze" calcMode="discrete"/>
+            1
+          </text>
+        <text x="328" y="112" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="28" font-weight="bold" fill="#f0b7ca">
+            <animate attributeName="opacity" values="0; 0; 1; 0; 0; 0; 0; 0" keyTimes="0.0000; 0.1250; 0.2500; 0.3750; 0.5000; 0.6250; 0.7500; 0.8750" begin="0.12s" dur="4s" fill="freeze" calcMode="discrete"/>
+            2
+          </text>
+        <text x="328" y="112" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="28" font-weight="bold" fill="#f0b7ca">
+            <animate attributeName="opacity" values="0; 0; 0; 1; 0; 0; 0; 0" keyTimes="0.0000; 0.1250; 0.2500; 0.3750; 0.5000; 0.6250; 0.7500; 0.8750" begin="0.12s" dur="4s" fill="freeze" calcMode="discrete"/>
+            3
+          </text>
+        <text x="328" y="112" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="28" font-weight="bold" fill="#f0b7ca">
+            <animate attributeName="opacity" values="0; 0; 0; 0; 1; 0; 0; 0" keyTimes="0.0000; 0.1250; 0.2500; 0.3750; 0.5000; 0.6250; 0.7500; 0.8750" begin="0.12s" dur="4s" fill="freeze" calcMode="discrete"/>
+            4
+          </text>
+        <text x="328" y="112" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="28" font-weight="bold" fill="#f0b7ca">
+            <animate attributeName="opacity" values="0; 0; 0; 0; 0; 1; 0; 0" keyTimes="0.0000; 0.1250; 0.2500; 0.3750; 0.5000; 0.6250; 0.7500; 0.8750" begin="0.12s" dur="4s" fill="freeze" calcMode="discrete"/>
+            5
+          </text>
+        <text x="328" y="112" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="28" font-weight="bold" fill="#f0b7ca">
+            <animate attributeName="opacity" values="0; 0; 0; 0; 0; 0; 1; 0" keyTimes="0.0000; 0.1250; 0.2500; 0.3750; 0.5000; 0.6250; 0.7500; 0.8750" begin="0.12s" dur="4s" fill="freeze" calcMode="discrete"/>
+            6
+          </text>
+        <text x="328" y="112" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="28" font-weight="bold" fill="#f0b7ca">
+            <animate attributeName="opacity" values="0; 0; 0; 0; 0; 0; 0; 1" keyTimes="0.0000; 0.1250; 0.2500; 0.3750; 0.5000; 0.6250; 0.7500; 0.8750" begin="0.12s" dur="4s" fill="freeze" calcMode="discrete"/>
+            7
+          </text>
+        
+        <text x="348" y="112" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="28" font-weight="bold" fill="#f0b7ca">
+            <animate attributeName="opacity" values="1; 0; 0; 0; 0; 0; 0; 0; 0; 0" keyTimes="0.0000; 0.1000; 0.2000; 0.3000; 0.4000; 0.5000; 0.6000; 0.7000; 0.8000; 0.9000" begin="0.12s" dur="4s" fill="freeze" calcMode="discrete"/>
+            0
+          </text>
+        <text x="348" y="112" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="28" font-weight="bold" fill="#f0b7ca">
+            <animate attributeName="opacity" values="0; 1; 0; 0; 0; 0; 0; 0; 0; 0" keyTimes="0.0000; 0.1000; 0.2000; 0.3000; 0.4000; 0.5000; 0.6000; 0.7000; 0.8000; 0.9000" begin="0.12s" dur="4s" fill="freeze" calcMode="discrete"/>
+            1
+          </text>
+        <text x="348" y="112" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="28" font-weight="bold" fill="#f0b7ca">
+            <animate attributeName="opacity" values="0; 0; 1; 0; 0; 0; 0; 0; 0; 0" keyTimes="0.0000; 0.1000; 0.2000; 0.3000; 0.4000; 0.5000; 0.6000; 0.7000; 0.8000; 0.9000" begin="0.12s" dur="4s" fill="freeze" calcMode="discrete"/>
+            2
+          </text>
+        <text x="348" y="112" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="28" font-weight="bold" fill="#f0b7ca">
+            <animate attributeName="opacity" values="0; 0; 0; 1; 0; 0; 0; 0; 0; 0" keyTimes="0.0000; 0.1000; 0.2000; 0.3000; 0.4000; 0.5000; 0.6000; 0.7000; 0.8000; 0.9000" begin="0.12s" dur="4s" fill="freeze" calcMode="discrete"/>
+            3
+          </text>
+        <text x="348" y="112" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="28" font-weight="bold" fill="#f0b7ca">
+            <animate attributeName="opacity" values="0; 0; 0; 0; 1; 0; 0; 0; 0; 0" keyTimes="0.0000; 0.1000; 0.2000; 0.3000; 0.4000; 0.5000; 0.6000; 0.7000; 0.8000; 0.9000" begin="0.12s" dur="4s" fill="freeze" calcMode="discrete"/>
+            4
+          </text>
+        <text x="348" y="112" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="28" font-weight="bold" fill="#f0b7ca">
+            <animate attributeName="opacity" values="0; 0; 0; 0; 0; 1; 0; 0; 0; 0" keyTimes="0.0000; 0.1000; 0.2000; 0.3000; 0.4000; 0.5000; 0.6000; 0.7000; 0.8000; 0.9000" begin="0.12s" dur="4s" fill="freeze" calcMode="discrete"/>
+            5
+          </text>
+        <text x="348" y="112" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="28" font-weight="bold" fill="#f0b7ca">
+            <animate attributeName="opacity" values="0; 0; 0; 0; 0; 0; 1; 0; 0; 0" keyTimes="0.0000; 0.1000; 0.2000; 0.3000; 0.4000; 0.5000; 0.6000; 0.7000; 0.8000; 0.9000" begin="0.12s" dur="4s" fill="freeze" calcMode="discrete"/>
+            6
+          </text>
+        <text x="348" y="112" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="28" font-weight="bold" fill="#f0b7ca">
+            <animate attributeName="opacity" values="0; 0; 0; 0; 0; 0; 0; 1; 0; 0" keyTimes="0.0000; 0.1000; 0.2000; 0.3000; 0.4000; 0.5000; 0.6000; 0.7000; 0.8000; 0.9000" begin="0.12s" dur="4s" fill="freeze" calcMode="discrete"/>
+            7
+          </text>
+        <text x="348" y="112" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="28" font-weight="bold" fill="#f0b7ca">
+            <animate attributeName="opacity" values="0; 0; 0; 0; 0; 0; 0; 0; 1; 0" keyTimes="0.0000; 0.1000; 0.2000; 0.3000; 0.4000; 0.5000; 0.6000; 0.7000; 0.8000; 0.9000" begin="0.12s" dur="4s" fill="freeze" calcMode="discrete"/>
+            8
+          </text>
+        <text x="348" y="112" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="28" font-weight="bold" fill="#f0b7ca">
+            <animate attributeName="opacity" values="0; 0; 0; 0; 0; 0; 0; 0; 0; 1" keyTimes="0.0000; 0.1000; 0.2000; 0.3000; 0.4000; 0.5000; 0.6000; 0.7000; 0.8000; 0.9000" begin="0.12s" dur="4s" fill="freeze" calcMode="discrete"/>
+            9
+          </text>
         </g>
-      
 
-        <g class="stat-card" id="stat-2" style="animation: fadeInUp 0.8s ease-out 0.3s both;">
+        <g class="stat-card" id="stat-2">
           <rect x="466" y="50" width="180" height="90" rx="10" fill="#0C1116" stroke="#5aa15d" stroke-width="1.5"/>
           <text x="556" y="78" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="14" font-weight="bold" fill="#f23888" text-anchor="middle">Repos</text>
-          <text x="556" y="112" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="28" font-weight="bold" fill="#f0b7ca" text-anchor="middle">16</text>
+          
+        <text x="536" y="112" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="28" font-weight="bold" fill="#f0b7ca">
+            <animate attributeName="opacity" values="1; 0" keyTimes="0.0000; 0.5000" begin="0.24s" dur="4s" fill="freeze" calcMode="discrete"/>
+            0
+          </text>
+        <text x="536" y="112" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="28" font-weight="bold" fill="#f0b7ca">
+            <animate attributeName="opacity" values="0; 1" keyTimes="0.0000; 0.5000" begin="0.24s" dur="4s" fill="freeze" calcMode="discrete"/>
+            1
+          </text>
+        
+        <text x="556" y="112" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="28" font-weight="bold" fill="#f0b7ca">
+            <animate attributeName="opacity" values="1; 0; 0; 0; 0; 0; 0" keyTimes="0.0000; 0.1429; 0.2857; 0.4286; 0.5714; 0.7143; 0.8571" begin="0.24s" dur="4s" fill="freeze" calcMode="discrete"/>
+            0
+          </text>
+        <text x="556" y="112" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="28" font-weight="bold" fill="#f0b7ca">
+            <animate attributeName="opacity" values="0; 1; 0; 0; 0; 0; 0" keyTimes="0.0000; 0.1429; 0.2857; 0.4286; 0.5714; 0.7143; 0.8571" begin="0.24s" dur="4s" fill="freeze" calcMode="discrete"/>
+            1
+          </text>
+        <text x="556" y="112" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="28" font-weight="bold" fill="#f0b7ca">
+            <animate attributeName="opacity" values="0; 0; 1; 0; 0; 0; 0" keyTimes="0.0000; 0.1429; 0.2857; 0.4286; 0.5714; 0.7143; 0.8571" begin="0.24s" dur="4s" fill="freeze" calcMode="discrete"/>
+            2
+          </text>
+        <text x="556" y="112" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="28" font-weight="bold" fill="#f0b7ca">
+            <animate attributeName="opacity" values="0; 0; 0; 1; 0; 0; 0" keyTimes="0.0000; 0.1429; 0.2857; 0.4286; 0.5714; 0.7143; 0.8571" begin="0.24s" dur="4s" fill="freeze" calcMode="discrete"/>
+            3
+          </text>
+        <text x="556" y="112" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="28" font-weight="bold" fill="#f0b7ca">
+            <animate attributeName="opacity" values="0; 0; 0; 0; 1; 0; 0" keyTimes="0.0000; 0.1429; 0.2857; 0.4286; 0.5714; 0.7143; 0.8571" begin="0.24s" dur="4s" fill="freeze" calcMode="discrete"/>
+            4
+          </text>
+        <text x="556" y="112" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="28" font-weight="bold" fill="#f0b7ca">
+            <animate attributeName="opacity" values="0; 0; 0; 0; 0; 1; 0" keyTimes="0.0000; 0.1429; 0.2857; 0.4286; 0.5714; 0.7143; 0.8571" begin="0.24s" dur="4s" fill="freeze" calcMode="discrete"/>
+            5
+          </text>
+        <text x="556" y="112" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="28" font-weight="bold" fill="#f0b7ca">
+            <animate attributeName="opacity" values="0; 0; 0; 0; 0; 0; 1" keyTimes="0.0000; 0.1429; 0.2857; 0.4286; 0.5714; 0.7143; 0.8571" begin="0.24s" dur="4s" fill="freeze" calcMode="discrete"/>
+            6
+          </text>
         </g>
-      
 
-        <g class="stat-card" id="stat-3" style="animation: fadeInUp 0.8s ease-out 0.44999999999999996s both;">
+        <g class="stat-card" id="stat-3">
           <rect x="674" y="50" width="180" height="90" rx="10" fill="#0C1116" stroke="#d7be96" stroke-width="1.5"/>
           <text x="764" y="78" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="14" font-weight="bold" fill="#f23888" text-anchor="middle">Stars</text>
-          <text x="764" y="112" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="28" font-weight="bold" fill="#f0b7ca" text-anchor="middle">16</text>
+          
+        <text x="744" y="112" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="28" font-weight="bold" fill="#f0b7ca">
+            <animate attributeName="opacity" values="1; 0" keyTimes="0.0000; 0.5000" begin="0.36s" dur="4s" fill="freeze" calcMode="discrete"/>
+            0
+          </text>
+        <text x="744" y="112" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="28" font-weight="bold" fill="#f0b7ca">
+            <animate attributeName="opacity" values="0; 1" keyTimes="0.0000; 0.5000" begin="0.36s" dur="4s" fill="freeze" calcMode="discrete"/>
+            1
+          </text>
+        
+        <text x="764" y="112" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="28" font-weight="bold" fill="#f0b7ca">
+            <animate attributeName="opacity" values="1; 0; 0; 0; 0; 0; 0" keyTimes="0.0000; 0.1429; 0.2857; 0.4286; 0.5714; 0.7143; 0.8571" begin="0.36s" dur="4s" fill="freeze" calcMode="discrete"/>
+            0
+          </text>
+        <text x="764" y="112" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="28" font-weight="bold" fill="#f0b7ca">
+            <animate attributeName="opacity" values="0; 1; 0; 0; 0; 0; 0" keyTimes="0.0000; 0.1429; 0.2857; 0.4286; 0.5714; 0.7143; 0.8571" begin="0.36s" dur="4s" fill="freeze" calcMode="discrete"/>
+            1
+          </text>
+        <text x="764" y="112" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="28" font-weight="bold" fill="#f0b7ca">
+            <animate attributeName="opacity" values="0; 0; 1; 0; 0; 0; 0" keyTimes="0.0000; 0.1429; 0.2857; 0.4286; 0.5714; 0.7143; 0.8571" begin="0.36s" dur="4s" fill="freeze" calcMode="discrete"/>
+            2
+          </text>
+        <text x="764" y="112" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="28" font-weight="bold" fill="#f0b7ca">
+            <animate attributeName="opacity" values="0; 0; 0; 1; 0; 0; 0" keyTimes="0.0000; 0.1429; 0.2857; 0.4286; 0.5714; 0.7143; 0.8571" begin="0.36s" dur="4s" fill="freeze" calcMode="discrete"/>
+            3
+          </text>
+        <text x="764" y="112" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="28" font-weight="bold" fill="#f0b7ca">
+            <animate attributeName="opacity" values="0; 0; 0; 0; 1; 0; 0" keyTimes="0.0000; 0.1429; 0.2857; 0.4286; 0.5714; 0.7143; 0.8571" begin="0.36s" dur="4s" fill="freeze" calcMode="discrete"/>
+            4
+          </text>
+        <text x="764" y="112" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="28" font-weight="bold" fill="#f0b7ca">
+            <animate attributeName="opacity" values="0; 0; 0; 0; 0; 1; 0" keyTimes="0.0000; 0.1429; 0.2857; 0.4286; 0.5714; 0.7143; 0.8571" begin="0.36s" dur="4s" fill="freeze" calcMode="discrete"/>
+            5
+          </text>
+        <text x="764" y="112" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="28" font-weight="bold" fill="#f0b7ca">
+            <animate attributeName="opacity" values="0; 0; 0; 0; 0; 0; 1" keyTimes="0.0000; 0.1429; 0.2857; 0.4286; 0.5714; 0.7143; 0.8571" begin="0.36s" dur="4s" fill="freeze" calcMode="discrete"/>
+            6
+          </text>
         </g>
-      
 
-        <g class="stat-card" style="animation: fadeInUp 0.8s ease-out 0.6s both;">
+        <g class="stat-card">
           <rect x="50" y="168" width="180" height="90" rx="10" fill="#0C1116" stroke="#67dd82" stroke-width="1.5"/>
           <text x="140" y="196" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="14" font-weight="bold" fill="#f23888" text-anchor="middle">Location</text>
           <text x="140" y="230" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="22" font-weight="bold" fill="#f0b7ca" text-anchor="middle">India</text>
         </g>
-      
 
-        <g class="stat-card" id="stat-5" style="animation: fadeInUp 0.8s ease-out 0.75s both;">
+        <g class="stat-card" id="stat-5">
           <rect x="258" y="168" width="180" height="90" rx="10" fill="#0C1116" stroke="#f0b7ca" stroke-width="1.5"/>
           <text x="348" y="196" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="14" font-weight="bold" fill="#f23888" text-anchor="middle">Commits</text>
-          <text x="348" y="230" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="28" font-weight="bold" fill="#f0b7ca" text-anchor="middle">358</text>
+          
+        <text x="318" y="230" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="28" font-weight="bold" fill="#f0b7ca">
+            <animate attributeName="opacity" values="1; 0; 0; 0" keyTimes="0.0000; 0.2500; 0.5000; 0.7500" begin="0.6s" dur="4s" fill="freeze" calcMode="discrete"/>
+            0
+          </text>
+        <text x="318" y="230" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="28" font-weight="bold" fill="#f0b7ca">
+            <animate attributeName="opacity" values="0; 1; 0; 0" keyTimes="0.0000; 0.2500; 0.5000; 0.7500" begin="0.6s" dur="4s" fill="freeze" calcMode="discrete"/>
+            1
+          </text>
+        <text x="318" y="230" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="28" font-weight="bold" fill="#f0b7ca">
+            <animate attributeName="opacity" values="0; 0; 1; 0" keyTimes="0.0000; 0.2500; 0.5000; 0.7500" begin="0.6s" dur="4s" fill="freeze" calcMode="discrete"/>
+            2
+          </text>
+        <text x="318" y="230" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="28" font-weight="bold" fill="#f0b7ca">
+            <animate attributeName="opacity" values="0; 0; 0; 1" keyTimes="0.0000; 0.2500; 0.5000; 0.7500" begin="0.6s" dur="4s" fill="freeze" calcMode="discrete"/>
+            3
+          </text>
+        
+        <text x="338" y="230" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="28" font-weight="bold" fill="#f0b7ca">
+            <animate attributeName="opacity" values="1; 0; 0; 0; 0; 0" keyTimes="0.0000; 0.1667; 0.3333; 0.5000; 0.6667; 0.8333" begin="0.6s" dur="4s" fill="freeze" calcMode="discrete"/>
+            0
+          </text>
+        <text x="338" y="230" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="28" font-weight="bold" fill="#f0b7ca">
+            <animate attributeName="opacity" values="0; 1; 0; 0; 0; 0" keyTimes="0.0000; 0.1667; 0.3333; 0.5000; 0.6667; 0.8333" begin="0.6s" dur="4s" fill="freeze" calcMode="discrete"/>
+            1
+          </text>
+        <text x="338" y="230" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="28" font-weight="bold" fill="#f0b7ca">
+            <animate attributeName="opacity" values="0; 0; 1; 0; 0; 0" keyTimes="0.0000; 0.1667; 0.3333; 0.5000; 0.6667; 0.8333" begin="0.6s" dur="4s" fill="freeze" calcMode="discrete"/>
+            2
+          </text>
+        <text x="338" y="230" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="28" font-weight="bold" fill="#f0b7ca">
+            <animate attributeName="opacity" values="0; 0; 0; 1; 0; 0" keyTimes="0.0000; 0.1667; 0.3333; 0.5000; 0.6667; 0.8333" begin="0.6s" dur="4s" fill="freeze" calcMode="discrete"/>
+            3
+          </text>
+        <text x="338" y="230" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="28" font-weight="bold" fill="#f0b7ca">
+            <animate attributeName="opacity" values="0; 0; 0; 0; 1; 0" keyTimes="0.0000; 0.1667; 0.3333; 0.5000; 0.6667; 0.8333" begin="0.6s" dur="4s" fill="freeze" calcMode="discrete"/>
+            4
+          </text>
+        <text x="338" y="230" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="28" font-weight="bold" fill="#f0b7ca">
+            <animate attributeName="opacity" values="0; 0; 0; 0; 0; 1" keyTimes="0.0000; 0.1667; 0.3333; 0.5000; 0.6667; 0.8333" begin="0.6s" dur="4s" fill="freeze" calcMode="discrete"/>
+            5
+          </text>
+        
+        <text x="358" y="230" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="28" font-weight="bold" fill="#f0b7ca">
+            <animate attributeName="opacity" values="1; 0; 0; 0; 0; 0; 0; 0; 0; 0" keyTimes="0.0000; 0.1000; 0.2000; 0.3000; 0.4000; 0.5000; 0.6000; 0.7000; 0.8000; 0.9000" begin="0.6s" dur="4s" fill="freeze" calcMode="discrete"/>
+            0
+          </text>
+        <text x="358" y="230" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="28" font-weight="bold" fill="#f0b7ca">
+            <animate attributeName="opacity" values="0; 1; 0; 0; 0; 0; 0; 0; 0; 0" keyTimes="0.0000; 0.1000; 0.2000; 0.3000; 0.4000; 0.5000; 0.6000; 0.7000; 0.8000; 0.9000" begin="0.6s" dur="4s" fill="freeze" calcMode="discrete"/>
+            1
+          </text>
+        <text x="358" y="230" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="28" font-weight="bold" fill="#f0b7ca">
+            <animate attributeName="opacity" values="0; 0; 1; 0; 0; 0; 0; 0; 0; 0" keyTimes="0.0000; 0.1000; 0.2000; 0.3000; 0.4000; 0.5000; 0.6000; 0.7000; 0.8000; 0.9000" begin="0.6s" dur="4s" fill="freeze" calcMode="discrete"/>
+            2
+          </text>
+        <text x="358" y="230" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="28" font-weight="bold" fill="#f0b7ca">
+            <animate attributeName="opacity" values="0; 0; 0; 1; 0; 0; 0; 0; 0; 0" keyTimes="0.0000; 0.1000; 0.2000; 0.3000; 0.4000; 0.5000; 0.6000; 0.7000; 0.8000; 0.9000" begin="0.6s" dur="4s" fill="freeze" calcMode="discrete"/>
+            3
+          </text>
+        <text x="358" y="230" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="28" font-weight="bold" fill="#f0b7ca">
+            <animate attributeName="opacity" values="0; 0; 0; 0; 1; 0; 0; 0; 0; 0" keyTimes="0.0000; 0.1000; 0.2000; 0.3000; 0.4000; 0.5000; 0.6000; 0.7000; 0.8000; 0.9000" begin="0.6s" dur="4s" fill="freeze" calcMode="discrete"/>
+            4
+          </text>
+        <text x="358" y="230" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="28" font-weight="bold" fill="#f0b7ca">
+            <animate attributeName="opacity" values="0; 0; 0; 0; 0; 1; 0; 0; 0; 0" keyTimes="0.0000; 0.1000; 0.2000; 0.3000; 0.4000; 0.5000; 0.6000; 0.7000; 0.8000; 0.9000" begin="0.6s" dur="4s" fill="freeze" calcMode="discrete"/>
+            5
+          </text>
+        <text x="358" y="230" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="28" font-weight="bold" fill="#f0b7ca">
+            <animate attributeName="opacity" values="0; 0; 0; 0; 0; 0; 1; 0; 0; 0" keyTimes="0.0000; 0.1000; 0.2000; 0.3000; 0.4000; 0.5000; 0.6000; 0.7000; 0.8000; 0.9000" begin="0.6s" dur="4s" fill="freeze" calcMode="discrete"/>
+            6
+          </text>
+        <text x="358" y="230" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="28" font-weight="bold" fill="#f0b7ca">
+            <animate attributeName="opacity" values="0; 0; 0; 0; 0; 0; 0; 1; 0; 0" keyTimes="0.0000; 0.1000; 0.2000; 0.3000; 0.4000; 0.5000; 0.6000; 0.7000; 0.8000; 0.9000" begin="0.6s" dur="4s" fill="freeze" calcMode="discrete"/>
+            7
+          </text>
+        <text x="358" y="230" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="28" font-weight="bold" fill="#f0b7ca">
+            <animate attributeName="opacity" values="0; 0; 0; 0; 0; 0; 0; 0; 1; 0" keyTimes="0.0000; 0.1000; 0.2000; 0.3000; 0.4000; 0.5000; 0.6000; 0.7000; 0.8000; 0.9000" begin="0.6s" dur="4s" fill="freeze" calcMode="discrete"/>
+            8
+          </text>
+        <text x="358" y="230" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="28" font-weight="bold" fill="#f0b7ca">
+            <animate attributeName="opacity" values="0; 0; 0; 0; 0; 0; 0; 0; 0; 1" keyTimes="0.0000; 0.1000; 0.2000; 0.3000; 0.4000; 0.5000; 0.6000; 0.7000; 0.8000; 0.9000" begin="0.6s" dur="4s" fill="freeze" calcMode="discrete"/>
+            9
+          </text>
         </g>
-      
 
-        <g class="stat-card" id="stat-6" style="animation: fadeInUp 0.8s ease-out 0.8999999999999999s both;">
+        <g class="stat-card" id="stat-6">
           <rect x="466" y="168" width="180" height="90" rx="10" fill="#0C1116" stroke="#6f9485" stroke-width="1.5"/>
           <text x="556" y="196" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="14" font-weight="bold" fill="#f23888" text-anchor="middle">Issues</text>
-          <text x="556" y="230" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="28" font-weight="bold" fill="#f0b7ca" text-anchor="middle">0</text>
+          
+        <text x="546" y="230" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="28" font-weight="bold" fill="#f0b7ca">
+            <animate attributeName="opacity" values="1" keyTimes="0.0000" begin="0.72s" dur="4s" fill="freeze" calcMode="discrete"/>
+            0
+          </text>
         </g>
-      
 
-        <g class="stat-card" id="stat-7" style="animation: fadeInUp 0.8s ease-out 1.05s both;">
+        <g class="stat-card" id="stat-7">
           <rect x="674" y="168" width="180" height="90" rx="10" fill="#0C1116" stroke="#d8c6cc" stroke-width="1.5"/>
           <text x="764" y="196" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="14" font-weight="bold" fill="#f23888" text-anchor="middle">PRs</text>
-          <text x="764" y="230" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="28" font-weight="bold" fill="#f0b7ca" text-anchor="middle">0</text>
+          
+        <text x="754" y="230" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="28" font-weight="bold" fill="#f0b7ca">
+            <animate attributeName="opacity" values="1" keyTimes="0.0000" begin="0.84s" dur="4s" fill="freeze" calcMode="discrete"/>
+            0
+          </text>
         </g>
-      
 
-        <g class="stat-card" id="stat-8" style="animation: fadeInUp 0.8s ease-out 1.2s both;">
+        <g class="stat-card" id="stat-8">
           <rect x="50" y="286" width="180" height="90" rx="10" fill="#0C1116" stroke="#4a5d46" stroke-width="1.5"/>
           <text x="140" y="314" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="14" font-weight="bold" fill="#f23888" text-anchor="middle">Gists</text>
-          <text x="140" y="348" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="28" font-weight="bold" fill="#f0b7ca" text-anchor="middle">4</text>
+          
+        <text x="130" y="348" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="28" font-weight="bold" fill="#f0b7ca">
+            <animate attributeName="opacity" values="1; 0; 0; 0; 0" keyTimes="0.0000; 0.2000; 0.4000; 0.6000; 0.8000" begin="0.96s" dur="4s" fill="freeze" calcMode="discrete"/>
+            0
+          </text>
+        <text x="130" y="348" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="28" font-weight="bold" fill="#f0b7ca">
+            <animate attributeName="opacity" values="0; 1; 0; 0; 0" keyTimes="0.0000; 0.2000; 0.4000; 0.6000; 0.8000" begin="0.96s" dur="4s" fill="freeze" calcMode="discrete"/>
+            1
+          </text>
+        <text x="130" y="348" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="28" font-weight="bold" fill="#f0b7ca">
+            <animate attributeName="opacity" values="0; 0; 1; 0; 0" keyTimes="0.0000; 0.2000; 0.4000; 0.6000; 0.8000" begin="0.96s" dur="4s" fill="freeze" calcMode="discrete"/>
+            2
+          </text>
+        <text x="130" y="348" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="28" font-weight="bold" fill="#f0b7ca">
+            <animate attributeName="opacity" values="0; 0; 0; 1; 0" keyTimes="0.0000; 0.2000; 0.4000; 0.6000; 0.8000" begin="0.96s" dur="4s" fill="freeze" calcMode="discrete"/>
+            3
+          </text>
+        <text x="130" y="348" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="28" font-weight="bold" fill="#f0b7ca">
+            <animate attributeName="opacity" values="0; 0; 0; 0; 1" keyTimes="0.0000; 0.2000; 0.4000; 0.6000; 0.8000" begin="0.96s" dur="4s" fill="freeze" calcMode="discrete"/>
+            4
+          </text>
         </g>
-      
 
-        <g class="stat-card" id="stat-9" style="animation: fadeInUp 0.8s ease-out 1.3499999999999999s both;">
+        <g class="stat-card" id="stat-9">
           <rect x="258" y="286" width="180" height="90" rx="10" fill="#0C1116" stroke="#ff6aa7" stroke-width="1.5"/>
           <text x="348" y="314" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="14" font-weight="bold" fill="#f23888" text-anchor="middle">Contribs</text>
-          <text x="348" y="348" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="28" font-weight="bold" fill="#f0b7ca" text-anchor="middle">12,983</text>
+          
+        <text x="288" y="348" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="28" font-weight="bold" fill="#f0b7ca">
+            <animate attributeName="opacity" values="1; 0" keyTimes="0.0000; 0.5000" begin="1.08s" dur="4s" fill="freeze" calcMode="discrete"/>
+            0
+          </text>
+        <text x="288" y="348" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="28" font-weight="bold" fill="#f0b7ca">
+            <animate attributeName="opacity" values="0; 1" keyTimes="0.0000; 0.5000" begin="1.08s" dur="4s" fill="freeze" calcMode="discrete"/>
+            1
+          </text>
+        
+        <text x="308" y="348" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="28" font-weight="bold" fill="#f0b7ca">
+            <animate attributeName="opacity" values="1; 0; 0" keyTimes="0.0000; 0.3333; 0.6667" begin="1.08s" dur="4s" fill="freeze" calcMode="discrete"/>
+            0
+          </text>
+        <text x="308" y="348" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="28" font-weight="bold" fill="#f0b7ca">
+            <animate attributeName="opacity" values="0; 1; 0" keyTimes="0.0000; 0.3333; 0.6667" begin="1.08s" dur="4s" fill="freeze" calcMode="discrete"/>
+            1
+          </text>
+        <text x="308" y="348" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="28" font-weight="bold" fill="#f0b7ca">
+            <animate attributeName="opacity" values="0; 0; 1" keyTimes="0.0000; 0.3333; 0.6667" begin="1.08s" dur="4s" fill="freeze" calcMode="discrete"/>
+            2
+          </text>
+        <text x="328" y="348" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="28" font-weight="bold" fill="#f0b7ca">,</text>
+        
+        <text x="348" y="348" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="28" font-weight="bold" fill="#f0b7ca">
+            <animate attributeName="opacity" values="1; 0; 0; 0; 0; 0; 0; 0; 0; 0" keyTimes="0.0000; 0.1000; 0.2000; 0.3000; 0.4000; 0.5000; 0.6000; 0.7000; 0.8000; 0.9000" begin="1.08s" dur="4s" fill="freeze" calcMode="discrete"/>
+            0
+          </text>
+        <text x="348" y="348" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="28" font-weight="bold" fill="#f0b7ca">
+            <animate attributeName="opacity" values="0; 1; 0; 0; 0; 0; 0; 0; 0; 0" keyTimes="0.0000; 0.1000; 0.2000; 0.3000; 0.4000; 0.5000; 0.6000; 0.7000; 0.8000; 0.9000" begin="1.08s" dur="4s" fill="freeze" calcMode="discrete"/>
+            1
+          </text>
+        <text x="348" y="348" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="28" font-weight="bold" fill="#f0b7ca">
+            <animate attributeName="opacity" values="0; 0; 1; 0; 0; 0; 0; 0; 0; 0" keyTimes="0.0000; 0.1000; 0.2000; 0.3000; 0.4000; 0.5000; 0.6000; 0.7000; 0.8000; 0.9000" begin="1.08s" dur="4s" fill="freeze" calcMode="discrete"/>
+            2
+          </text>
+        <text x="348" y="348" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="28" font-weight="bold" fill="#f0b7ca">
+            <animate attributeName="opacity" values="0; 0; 0; 1; 0; 0; 0; 0; 0; 0" keyTimes="0.0000; 0.1000; 0.2000; 0.3000; 0.4000; 0.5000; 0.6000; 0.7000; 0.8000; 0.9000" begin="1.08s" dur="4s" fill="freeze" calcMode="discrete"/>
+            3
+          </text>
+        <text x="348" y="348" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="28" font-weight="bold" fill="#f0b7ca">
+            <animate attributeName="opacity" values="0; 0; 0; 0; 1; 0; 0; 0; 0; 0" keyTimes="0.0000; 0.1000; 0.2000; 0.3000; 0.4000; 0.5000; 0.6000; 0.7000; 0.8000; 0.9000" begin="1.08s" dur="4s" fill="freeze" calcMode="discrete"/>
+            4
+          </text>
+        <text x="348" y="348" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="28" font-weight="bold" fill="#f0b7ca">
+            <animate attributeName="opacity" values="0; 0; 0; 0; 0; 1; 0; 0; 0; 0" keyTimes="0.0000; 0.1000; 0.2000; 0.3000; 0.4000; 0.5000; 0.6000; 0.7000; 0.8000; 0.9000" begin="1.08s" dur="4s" fill="freeze" calcMode="discrete"/>
+            5
+          </text>
+        <text x="348" y="348" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="28" font-weight="bold" fill="#f0b7ca">
+            <animate attributeName="opacity" values="0; 0; 0; 0; 0; 0; 1; 0; 0; 0" keyTimes="0.0000; 0.1000; 0.2000; 0.3000; 0.4000; 0.5000; 0.6000; 0.7000; 0.8000; 0.9000" begin="1.08s" dur="4s" fill="freeze" calcMode="discrete"/>
+            6
+          </text>
+        <text x="348" y="348" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="28" font-weight="bold" fill="#f0b7ca">
+            <animate attributeName="opacity" values="0; 0; 0; 0; 0; 0; 0; 1; 0; 0" keyTimes="0.0000; 0.1000; 0.2000; 0.3000; 0.4000; 0.5000; 0.6000; 0.7000; 0.8000; 0.9000" begin="1.08s" dur="4s" fill="freeze" calcMode="discrete"/>
+            7
+          </text>
+        <text x="348" y="348" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="28" font-weight="bold" fill="#f0b7ca">
+            <animate attributeName="opacity" values="0; 0; 0; 0; 0; 0; 0; 0; 1; 0" keyTimes="0.0000; 0.1000; 0.2000; 0.3000; 0.4000; 0.5000; 0.6000; 0.7000; 0.8000; 0.9000" begin="1.08s" dur="4s" fill="freeze" calcMode="discrete"/>
+            8
+          </text>
+        <text x="348" y="348" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="28" font-weight="bold" fill="#f0b7ca">
+            <animate attributeName="opacity" values="0; 0; 0; 0; 0; 0; 0; 0; 0; 1" keyTimes="0.0000; 0.1000; 0.2000; 0.3000; 0.4000; 0.5000; 0.6000; 0.7000; 0.8000; 0.9000" begin="1.08s" dur="4s" fill="freeze" calcMode="discrete"/>
+            9
+          </text>
+        
+        <text x="368" y="348" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="28" font-weight="bold" fill="#f0b7ca">
+            <animate attributeName="opacity" values="1; 0; 0; 0; 0; 0; 0; 0; 0" keyTimes="0.0000; 0.1111; 0.2222; 0.3333; 0.4444; 0.5556; 0.6667; 0.7778; 0.8889" begin="1.08s" dur="4s" fill="freeze" calcMode="discrete"/>
+            0
+          </text>
+        <text x="368" y="348" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="28" font-weight="bold" fill="#f0b7ca">
+            <animate attributeName="opacity" values="0; 1; 0; 0; 0; 0; 0; 0; 0" keyTimes="0.0000; 0.1111; 0.2222; 0.3333; 0.4444; 0.5556; 0.6667; 0.7778; 0.8889" begin="1.08s" dur="4s" fill="freeze" calcMode="discrete"/>
+            1
+          </text>
+        <text x="368" y="348" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="28" font-weight="bold" fill="#f0b7ca">
+            <animate attributeName="opacity" values="0; 0; 1; 0; 0; 0; 0; 0; 0" keyTimes="0.0000; 0.1111; 0.2222; 0.3333; 0.4444; 0.5556; 0.6667; 0.7778; 0.8889" begin="1.08s" dur="4s" fill="freeze" calcMode="discrete"/>
+            2
+          </text>
+        <text x="368" y="348" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="28" font-weight="bold" fill="#f0b7ca">
+            <animate attributeName="opacity" values="0; 0; 0; 1; 0; 0; 0; 0; 0" keyTimes="0.0000; 0.1111; 0.2222; 0.3333; 0.4444; 0.5556; 0.6667; 0.7778; 0.8889" begin="1.08s" dur="4s" fill="freeze" calcMode="discrete"/>
+            3
+          </text>
+        <text x="368" y="348" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="28" font-weight="bold" fill="#f0b7ca">
+            <animate attributeName="opacity" values="0; 0; 0; 0; 1; 0; 0; 0; 0" keyTimes="0.0000; 0.1111; 0.2222; 0.3333; 0.4444; 0.5556; 0.6667; 0.7778; 0.8889" begin="1.08s" dur="4s" fill="freeze" calcMode="discrete"/>
+            4
+          </text>
+        <text x="368" y="348" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="28" font-weight="bold" fill="#f0b7ca">
+            <animate attributeName="opacity" values="0; 0; 0; 0; 0; 1; 0; 0; 0" keyTimes="0.0000; 0.1111; 0.2222; 0.3333; 0.4444; 0.5556; 0.6667; 0.7778; 0.8889" begin="1.08s" dur="4s" fill="freeze" calcMode="discrete"/>
+            5
+          </text>
+        <text x="368" y="348" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="28" font-weight="bold" fill="#f0b7ca">
+            <animate attributeName="opacity" values="0; 0; 0; 0; 0; 0; 1; 0; 0" keyTimes="0.0000; 0.1111; 0.2222; 0.3333; 0.4444; 0.5556; 0.6667; 0.7778; 0.8889" begin="1.08s" dur="4s" fill="freeze" calcMode="discrete"/>
+            6
+          </text>
+        <text x="368" y="348" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="28" font-weight="bold" fill="#f0b7ca">
+            <animate attributeName="opacity" values="0; 0; 0; 0; 0; 0; 0; 1; 0" keyTimes="0.0000; 0.1111; 0.2222; 0.3333; 0.4444; 0.5556; 0.6667; 0.7778; 0.8889" begin="1.08s" dur="4s" fill="freeze" calcMode="discrete"/>
+            7
+          </text>
+        <text x="368" y="348" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="28" font-weight="bold" fill="#f0b7ca">
+            <animate attributeName="opacity" values="0; 0; 0; 0; 0; 0; 0; 0; 1" keyTimes="0.0000; 0.1111; 0.2222; 0.3333; 0.4444; 0.5556; 0.6667; 0.7778; 0.8889" begin="1.08s" dur="4s" fill="freeze" calcMode="discrete"/>
+            8
+          </text>
+        
+        <text x="388" y="348" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="28" font-weight="bold" fill="#f0b7ca">
+            <animate attributeName="opacity" values="1; 0; 0; 0" keyTimes="0.0000; 0.2500; 0.5000; 0.7500" begin="1.08s" dur="4s" fill="freeze" calcMode="discrete"/>
+            0
+          </text>
+        <text x="388" y="348" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="28" font-weight="bold" fill="#f0b7ca">
+            <animate attributeName="opacity" values="0; 1; 0; 0" keyTimes="0.0000; 0.2500; 0.5000; 0.7500" begin="1.08s" dur="4s" fill="freeze" calcMode="discrete"/>
+            1
+          </text>
+        <text x="388" y="348" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="28" font-weight="bold" fill="#f0b7ca">
+            <animate attributeName="opacity" values="0; 0; 1; 0" keyTimes="0.0000; 0.2500; 0.5000; 0.7500" begin="1.08s" dur="4s" fill="freeze" calcMode="discrete"/>
+            2
+          </text>
+        <text x="388" y="348" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="28" font-weight="bold" fill="#f0b7ca">
+            <animate attributeName="opacity" values="0; 0; 0; 1" keyTimes="0.0000; 0.2500; 0.5000; 0.7500" begin="1.08s" dur="4s" fill="freeze" calcMode="discrete"/>
+            3
+          </text>
         </g>
-      
 
-        <g class="stat-card" id="stat-10" style="animation: fadeInUp 0.8s ease-out 1.5s both;">
+        <g class="stat-card" id="stat-10">
           <rect x="466" y="286" width="180" height="90" rx="10" fill="#0C1116" stroke="#86bf86" stroke-width="1.5"/>
           <text x="556" y="314" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="14" font-weight="bold" fill="#f23888" text-anchor="middle">Streaks</text>
-          <text x="556" y="348" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="28" font-weight="bold" fill="#f0b7ca" text-anchor="middle">239 days</text>
+          
+        <text x="536" y="348" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="28" font-weight="bold" fill="#f0b7ca">
+            <animate attributeName="opacity" values="1; 0; 0; 0; 0; 0; 0; 0; 0; 0" keyTimes="0.0000; 0.1000; 0.2000; 0.3000; 0.4000; 0.5000; 0.6000; 0.7000; 0.8000; 0.9000" begin="1.2s" dur="4s" fill="freeze" calcMode="discrete"/>
+            0
+          </text>
+        <text x="536" y="348" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="28" font-weight="bold" fill="#f0b7ca">
+            <animate attributeName="opacity" values="0; 1; 0; 0; 0; 0; 0; 0; 0; 0" keyTimes="0.0000; 0.1000; 0.2000; 0.3000; 0.4000; 0.5000; 0.6000; 0.7000; 0.8000; 0.9000" begin="1.2s" dur="4s" fill="freeze" calcMode="discrete"/>
+            1
+          </text>
+        <text x="536" y="348" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="28" font-weight="bold" fill="#f0b7ca">
+            <animate attributeName="opacity" values="0; 0; 1; 0; 0; 0; 0; 0; 0; 0" keyTimes="0.0000; 0.1000; 0.2000; 0.3000; 0.4000; 0.5000; 0.6000; 0.7000; 0.8000; 0.9000" begin="1.2s" dur="4s" fill="freeze" calcMode="discrete"/>
+            2
+          </text>
+        <text x="536" y="348" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="28" font-weight="bold" fill="#f0b7ca">
+            <animate attributeName="opacity" values="0; 0; 0; 1; 0; 0; 0; 0; 0; 0" keyTimes="0.0000; 0.1000; 0.2000; 0.3000; 0.4000; 0.5000; 0.6000; 0.7000; 0.8000; 0.9000" begin="1.2s" dur="4s" fill="freeze" calcMode="discrete"/>
+            3
+          </text>
+        <text x="536" y="348" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="28" font-weight="bold" fill="#f0b7ca">
+            <animate attributeName="opacity" values="0; 0; 0; 0; 1; 0; 0; 0; 0; 0" keyTimes="0.0000; 0.1000; 0.2000; 0.3000; 0.4000; 0.5000; 0.6000; 0.7000; 0.8000; 0.9000" begin="1.2s" dur="4s" fill="freeze" calcMode="discrete"/>
+            4
+          </text>
+        <text x="536" y="348" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="28" font-weight="bold" fill="#f0b7ca">
+            <animate attributeName="opacity" values="0; 0; 0; 0; 0; 1; 0; 0; 0; 0" keyTimes="0.0000; 0.1000; 0.2000; 0.3000; 0.4000; 0.5000; 0.6000; 0.7000; 0.8000; 0.9000" begin="1.2s" dur="4s" fill="freeze" calcMode="discrete"/>
+            5
+          </text>
+        <text x="536" y="348" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="28" font-weight="bold" fill="#f0b7ca">
+            <animate attributeName="opacity" values="0; 0; 0; 0; 0; 0; 1; 0; 0; 0" keyTimes="0.0000; 0.1000; 0.2000; 0.3000; 0.4000; 0.5000; 0.6000; 0.7000; 0.8000; 0.9000" begin="1.2s" dur="4s" fill="freeze" calcMode="discrete"/>
+            6
+          </text>
+        <text x="536" y="348" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="28" font-weight="bold" fill="#f0b7ca">
+            <animate attributeName="opacity" values="0; 0; 0; 0; 0; 0; 0; 1; 0; 0" keyTimes="0.0000; 0.1000; 0.2000; 0.3000; 0.4000; 0.5000; 0.6000; 0.7000; 0.8000; 0.9000" begin="1.2s" dur="4s" fill="freeze" calcMode="discrete"/>
+            7
+          </text>
+        <text x="536" y="348" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="28" font-weight="bold" fill="#f0b7ca">
+            <animate attributeName="opacity" values="0; 0; 0; 0; 0; 0; 0; 0; 1; 0" keyTimes="0.0000; 0.1000; 0.2000; 0.3000; 0.4000; 0.5000; 0.6000; 0.7000; 0.8000; 0.9000" begin="1.2s" dur="4s" fill="freeze" calcMode="discrete"/>
+            8
+          </text>
+        <text x="536" y="348" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="28" font-weight="bold" fill="#f0b7ca">
+            <animate attributeName="opacity" values="0; 0; 0; 0; 0; 0; 0; 0; 0; 1" keyTimes="0.0000; 0.1000; 0.2000; 0.3000; 0.4000; 0.5000; 0.6000; 0.7000; 0.8000; 0.9000" begin="1.2s" dur="4s" fill="freeze" calcMode="discrete"/>
+            9
+          </text>
+        
+        <text x="556" y="348" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="28" font-weight="bold" fill="#f0b7ca">
+            <animate attributeName="opacity" values="1; 0; 0; 0; 0; 0" keyTimes="0.0000; 0.1667; 0.3333; 0.5000; 0.6667; 0.8333" begin="1.2s" dur="4s" fill="freeze" calcMode="discrete"/>
+            0
+          </text>
+        <text x="556" y="348" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="28" font-weight="bold" fill="#f0b7ca">
+            <animate attributeName="opacity" values="0; 1; 0; 0; 0; 0" keyTimes="0.0000; 0.1667; 0.3333; 0.5000; 0.6667; 0.8333" begin="1.2s" dur="4s" fill="freeze" calcMode="discrete"/>
+            1
+          </text>
+        <text x="556" y="348" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="28" font-weight="bold" fill="#f0b7ca">
+            <animate attributeName="opacity" values="0; 0; 1; 0; 0; 0" keyTimes="0.0000; 0.1667; 0.3333; 0.5000; 0.6667; 0.8333" begin="1.2s" dur="4s" fill="freeze" calcMode="discrete"/>
+            2
+          </text>
+        <text x="556" y="348" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="28" font-weight="bold" fill="#f0b7ca">
+            <animate attributeName="opacity" values="0; 0; 0; 1; 0; 0" keyTimes="0.0000; 0.1667; 0.3333; 0.5000; 0.6667; 0.8333" begin="1.2s" dur="4s" fill="freeze" calcMode="discrete"/>
+            3
+          </text>
+        <text x="556" y="348" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="28" font-weight="bold" fill="#f0b7ca">
+            <animate attributeName="opacity" values="0; 0; 0; 0; 1; 0" keyTimes="0.0000; 0.1667; 0.3333; 0.5000; 0.6667; 0.8333" begin="1.2s" dur="4s" fill="freeze" calcMode="discrete"/>
+            4
+          </text>
+        <text x="556" y="348" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="28" font-weight="bold" fill="#f0b7ca">
+            <animate attributeName="opacity" values="0; 0; 0; 0; 0; 1" keyTimes="0.0000; 0.1667; 0.3333; 0.5000; 0.6667; 0.8333" begin="1.2s" dur="4s" fill="freeze" calcMode="discrete"/>
+            5
+          </text>
         </g>
-      
 
-        <g class="stat-card" id="stat-11" style="animation: fadeInUp 0.8s ease-out 1.65s both;">
+        <g class="stat-card" id="stat-11">
           <rect x="674" y="286" width="180" height="90" rx="10" fill="#0C1116" stroke="#e6d3b4" stroke-width="1.5"/>
           <text x="764" y="314" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="14" font-weight="bold" fill="#f23888" text-anchor="middle">Rank</text>
-          <text x="764" y="348" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="28" font-weight="bold" fill="#f0b7ca" text-anchor="middle">2,587</text>
+          
+        <text x="714" y="348" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="28" font-weight="bold" fill="#f0b7ca">
+            <animate attributeName="opacity" values="1; 0; 0; 0" keyTimes="0.0000; 0.2500; 0.5000; 0.7500" begin="1.3199999999999998s" dur="4s" fill="freeze" calcMode="discrete"/>
+            0
+          </text>
+        <text x="714" y="348" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="28" font-weight="bold" fill="#f0b7ca">
+            <animate attributeName="opacity" values="0; 1; 0; 0" keyTimes="0.0000; 0.2500; 0.5000; 0.7500" begin="1.3199999999999998s" dur="4s" fill="freeze" calcMode="discrete"/>
+            1
+          </text>
+        <text x="714" y="348" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="28" font-weight="bold" fill="#f0b7ca">
+            <animate attributeName="opacity" values="0; 0; 1; 0" keyTimes="0.0000; 0.2500; 0.5000; 0.7500" begin="1.3199999999999998s" dur="4s" fill="freeze" calcMode="discrete"/>
+            2
+          </text>
+        <text x="714" y="348" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="28" font-weight="bold" fill="#f0b7ca">
+            <animate attributeName="opacity" values="0; 0; 0; 1" keyTimes="0.0000; 0.2500; 0.5000; 0.7500" begin="1.3199999999999998s" dur="4s" fill="freeze" calcMode="discrete"/>
+            3
+          </text>
+        <text x="734" y="348" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="28" font-weight="bold" fill="#f0b7ca">,</text>
+        
+        <text x="754" y="348" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="28" font-weight="bold" fill="#f0b7ca">
+            <animate attributeName="opacity" values="1; 0; 0" keyTimes="0.0000; 0.3333; 0.6667" begin="1.3199999999999998s" dur="4s" fill="freeze" calcMode="discrete"/>
+            0
+          </text>
+        <text x="754" y="348" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="28" font-weight="bold" fill="#f0b7ca">
+            <animate attributeName="opacity" values="0; 1; 0" keyTimes="0.0000; 0.3333; 0.6667" begin="1.3199999999999998s" dur="4s" fill="freeze" calcMode="discrete"/>
+            1
+          </text>
+        <text x="754" y="348" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="28" font-weight="bold" fill="#f0b7ca">
+            <animate attributeName="opacity" values="0; 0; 1" keyTimes="0.0000; 0.3333; 0.6667" begin="1.3199999999999998s" dur="4s" fill="freeze" calcMode="discrete"/>
+            2
+          </text>
+        
+        <text x="774" y="348" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="28" font-weight="bold" fill="#f0b7ca">
+            <animate attributeName="opacity" values="1; 0; 0; 0; 0; 0; 0" keyTimes="0.0000; 0.1429; 0.2857; 0.4286; 0.5714; 0.7143; 0.8571" begin="1.3199999999999998s" dur="4s" fill="freeze" calcMode="discrete"/>
+            0
+          </text>
+        <text x="774" y="348" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="28" font-weight="bold" fill="#f0b7ca">
+            <animate attributeName="opacity" values="0; 1; 0; 0; 0; 0; 0" keyTimes="0.0000; 0.1429; 0.2857; 0.4286; 0.5714; 0.7143; 0.8571" begin="1.3199999999999998s" dur="4s" fill="freeze" calcMode="discrete"/>
+            1
+          </text>
+        <text x="774" y="348" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="28" font-weight="bold" fill="#f0b7ca">
+            <animate attributeName="opacity" values="0; 0; 1; 0; 0; 0; 0" keyTimes="0.0000; 0.1429; 0.2857; 0.4286; 0.5714; 0.7143; 0.8571" begin="1.3199999999999998s" dur="4s" fill="freeze" calcMode="discrete"/>
+            2
+          </text>
+        <text x="774" y="348" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="28" font-weight="bold" fill="#f0b7ca">
+            <animate attributeName="opacity" values="0; 0; 0; 1; 0; 0; 0" keyTimes="0.0000; 0.1429; 0.2857; 0.4286; 0.5714; 0.7143; 0.8571" begin="1.3199999999999998s" dur="4s" fill="freeze" calcMode="discrete"/>
+            3
+          </text>
+        <text x="774" y="348" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="28" font-weight="bold" fill="#f0b7ca">
+            <animate attributeName="opacity" values="0; 0; 0; 0; 1; 0; 0" keyTimes="0.0000; 0.1429; 0.2857; 0.4286; 0.5714; 0.7143; 0.8571" begin="1.3199999999999998s" dur="4s" fill="freeze" calcMode="discrete"/>
+            4
+          </text>
+        <text x="774" y="348" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="28" font-weight="bold" fill="#f0b7ca">
+            <animate attributeName="opacity" values="0; 0; 0; 0; 0; 1; 0" keyTimes="0.0000; 0.1429; 0.2857; 0.4286; 0.5714; 0.7143; 0.8571" begin="1.3199999999999998s" dur="4s" fill="freeze" calcMode="discrete"/>
+            5
+          </text>
+        <text x="774" y="348" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="28" font-weight="bold" fill="#f0b7ca">
+            <animate attributeName="opacity" values="0; 0; 0; 0; 0; 0; 1" keyTimes="0.0000; 0.1429; 0.2857; 0.4286; 0.5714; 0.7143; 0.8571" begin="1.3199999999999998s" dur="4s" fill="freeze" calcMode="discrete"/>
+            6
+          </text>
+        
+        <text x="794" y="348" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="28" font-weight="bold" fill="#f0b7ca">
+            <animate attributeName="opacity" values="1; 0; 0; 0; 0; 0" keyTimes="0.0000; 0.1667; 0.3333; 0.5000; 0.6667; 0.8333" begin="1.3199999999999998s" dur="4s" fill="freeze" calcMode="discrete"/>
+            0
+          </text>
+        <text x="794" y="348" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="28" font-weight="bold" fill="#f0b7ca">
+            <animate attributeName="opacity" values="0; 1; 0; 0; 0; 0" keyTimes="0.0000; 0.1667; 0.3333; 0.5000; 0.6667; 0.8333" begin="1.3199999999999998s" dur="4s" fill="freeze" calcMode="discrete"/>
+            1
+          </text>
+        <text x="794" y="348" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="28" font-weight="bold" fill="#f0b7ca">
+            <animate attributeName="opacity" values="0; 0; 1; 0; 0; 0" keyTimes="0.0000; 0.1667; 0.3333; 0.5000; 0.6667; 0.8333" begin="1.3199999999999998s" dur="4s" fill="freeze" calcMode="discrete"/>
+            2
+          </text>
+        <text x="794" y="348" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="28" font-weight="bold" fill="#f0b7ca">
+            <animate attributeName="opacity" values="0; 0; 0; 1; 0; 0" keyTimes="0.0000; 0.1667; 0.3333; 0.5000; 0.6667; 0.8333" begin="1.3199999999999998s" dur="4s" fill="freeze" calcMode="discrete"/>
+            3
+          </text>
+        <text x="794" y="348" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="28" font-weight="bold" fill="#f0b7ca">
+            <animate attributeName="opacity" values="0; 0; 0; 0; 1; 0" keyTimes="0.0000; 0.1667; 0.3333; 0.5000; 0.6667; 0.8333" begin="1.3199999999999998s" dur="4s" fill="freeze" calcMode="discrete"/>
+            4
+          </text>
+        <text x="794" y="348" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="28" font-weight="bold" fill="#f0b7ca">
+            <animate attributeName="opacity" values="0; 0; 0; 0; 0; 1" keyTimes="0.0000; 0.1667; 0.3333; 0.5000; 0.6667; 0.8333" begin="1.3199999999999998s" dur="4s" fill="freeze" calcMode="discrete"/>
+            5
+          </text>
         </g>
-      
-  </g>
-  <text x="874" y="448" font-family="'JetBrains Mono', 'Fira Code', 'Consolas', monospace" font-size="11" fill="#f23888" text-anchor="end" class="live-indicator">● LIVE</text>
+    </g>
 </svg>

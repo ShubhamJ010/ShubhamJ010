@@ -1,7 +1,7 @@
 import { Octokit } from "@octokit/rest";
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
-import { generateReadme } from "./src/gen_readme";
+import { generateReadme } from "./src/readme-updater";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
