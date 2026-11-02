@@ -1,6 +1,6 @@
 ## Hi there <a href="https://github.com/shubhamj010"><img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="5%"></a>, I'm Shubham Jha!
 
-<a href="https://flowcv.com/resume/cqqqb67qrh" target="_blank">
+<a href="https://raw.githubusercontent.com/ShubhamJ010/ShubhamJ010/main/assets/shubham-jha-resume-2026-en.pdf" target="_blank">
   <img src="assets/ sj.png" alt="Shubham Jha">
 </a>
 <p align="center"><font face="Comic Sans MS">click ascii for resume</font></p>
